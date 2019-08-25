@@ -2,13 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Import icons/images
-import neonkaLogo from '../assets/logo_text.svg';
 import neonkaImg from '../assets/logo_image.svg';
 
-//Import components
-
 //Colors
-import { yellowColor, pinkColor } from '../colors/colors';
+import { pinkColor } from '../colors/colors';
 
 //Main component
 export default class Banner extends React.Component {
@@ -16,14 +13,16 @@ export default class Banner extends React.Component {
         return (
             <StyledLandingBanner>
                 <LandingHeader>
-                    <h1>Ahojte a vitajte na našej stránke!</h1>
+                    <h1>
+                        Ahojte a vitajte na našej stránke <span className='pink'>Neónky!</span>
+                    </h1>
                     <div>
-                        Sme Neónka, občianske združenie na pomoc detským pacientom II.Detskej kliniky DFNsP v Banskej Bystrici. Sme Neónka, občianske združenie na pomoc detským pacientom II.Detskej
-                        kliniky DFNsP v Banskej Bystrici.
+                        Sme občianske združenie na pomoc detským pacientom s neonkologickými, často veľmi závažnými ochoreniami. Pomáhame hospitalizovaným deťom na detskom oddelení v Detskej fakultnej
+                        nemocnici v Banskej Bystrici a deťom v ambulantnej starostlivosti našej nemocnice.
                     </div>
                 </LandingHeader>
                 <LandingBubble>
-                    <img className='banner' src={neonkaLogo} alt='neonka logo' />
+                    <img className='banner' src={neonkaImg} alt='neonka logo' />
                 </LandingBubble>
                 <img className='banner-small' src={neonkaImg} alt='neonka logo' />
             </StyledLandingBanner>
@@ -96,15 +95,22 @@ const LandingHeader = styled.div`
     @media screen and (max-width: 800px) {
         margin-top: 5vh;
         width: 80%;
+        text-align: left;
     }
     div {
         font-size: 1.2rem;
         padding: 10px 0;
+        @media screen and (max-width: 500px) {
+            font-size: 1.1rem;
+        }
     }
     h1 {
         font-size: 2.5rem;
-        @media screen and (max-width: 400px) {
-            font-size: 2rem;
+        @media screen and (max-width: 500px) {
+            font-size: 1.8rem;
         }
+    }
+    .pink {
+        color: ${pinkColor};
     }
 `;

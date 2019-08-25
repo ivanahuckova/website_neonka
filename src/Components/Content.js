@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-//Import icons/images
-import neonkaLogo from '../assets/logo_image.svg';
+// //Import icons/images
+// import neonkaLogo from '../assets/logo_image.svg';
 
-//Import components
+//Colors
+import { pinkColor } from '../colors/colors';
 
 //Main component
 export default class Content extends React.Component {
@@ -12,38 +13,62 @@ export default class Content extends React.Component {
         return (
             <StyledContent>
                 <StyledContentSection>
-                    {/* <video autoPlay loop muted playsInline>
-                        <source src={neonkaLogo} type='video/mp4' />
-                    </video> */}
-                    <img srs={neonkaLogo} alt='logo neonky' />
-                </StyledContentSection>
-                <StyledContentSection>
                     <StyledDescribtionCard>
-                        <h3 className='green'>Create an organisation</h3>
+                        <h3 className='heading'>Naše ciele:</h3>
                         <div className='content-div'>
-                            We believe that Pinely will help all teams, groups, organisations and companies with comunication, decision making and inclusion. As an idividual, you can be member of as
-                            many organisations, as you need. Because every team deserves a place where you can go to get caught up on your most important discussions.
+                            <ol>
+                                <li>
+                                    zlepšovanie kvality nemedicínskej starostlivosti pediatrickým pacientom (s neonkologickými ochoreniami) hospitalizovaných na lôžkovom oddelení II. DK SZU DFNsP BB{' '}
+                                </li>
+                                <li>
+                                    pomoc pri zabezpečení liečebného režimu (preplácanie liekov, sociálna a materiálna podpora) u chronicky chorých pediatrických pacientov v ambulantnom dispenzári
+                                </li>
+                                <li>
+                                    zabezpečovanie nového prístrojového, materiálneho vybavenia na oddelení, ambulanciách, zabezpečenie zdravotných pomôcok pre domácu liečbu, zabezpečovanie dopravy na
+                                    vyšetrenia{' '}
+                                </li>
+                                <li>
+                                    zlepšovanie prostredia na oddelení, komfortu sprevádzajúcich osôb a pacientov, zlepšovanie prostredia na ambulanciách, zlepšovanie a skrášlovanie okolia nemocnice{' '}
+                                </li>
+                                <li>poradenské služby pre rodičov a laikov formou verbálnej komunikácie a publikačných materiálov </li>
+                                <li>edukačné kurzy pre laikov aj odbornú verejnosť formou seminárov, kurzov, školení a skupinových sedení, organizácia letných táborov pre chronicky choré deti </li>
+                                <li>organizácia benefičných zbierok </li>
+                                <li>publikácie informačných materiálov, sprístupňovanie informácií </li>
+                                <li>zakúpenie odbornej literatúry pre lekárov, sestry, pacientov </li>
+                                <li>podpora vzdelávania lekárov a sestier </li>
+                                <li>pomoc pri zabezpečení potrebnej životnej úrovne v rámci liečebného režimu </li>
+                                <li>zabezpečenie nutričného programu na detskom oddelení </li>
+                                <li>zavedenie canisterapie </li>
+                                <li>vytváranie zahraničnej spolupráce, výmenne odborné pobyty na zahraničných pracoviskách </li>
+                                <li>vytváranie možností na zlepšenie medicínskej starostlivosti komunikáciou so zahraničím</li>
+                            </ol>
                         </div>
                     </StyledDescribtionCard>
                     <StyledDescribtionCard>
-                        <h3 className='orange'>Create a space</h3>
+                        <h3 className='heading'>Naši pacienti trpia spektrom ochorení:</h3>
                         <div className='content-div'>
-                            Spaces are your team's meeting rooms. Once they are created, invite others and start the discussion. No scheduling required. Perfect for all, but especially distributed
-                            teams.
-                        </div>
-                    </StyledDescribtionCard>
-                    <StyledDescribtionCard>
-                        <h3 className='blue'>Start a thread</h3>
-                        <div className='content-div'>
-                            Ask questions, get feedback and hash out ideas with your team. Make better decisions with all the context you need in one place. And you can say goodbye to situations,
-                            where people are being left off meeting invites and group chats happenning in private with fewer people than before.
-                        </div>
-                    </StyledDescribtionCard>
-                    <StyledDescribtionCard>
-                        <h3 className='red'>Mark the decision</h3>
-                        <div className='content-div'>
-                            When you're done hearing from everyone on a thread, highlight the final decision so everyone is on the same page. Make decision making simpler, more pleasant and more
-                            productive.
+                            <ul>
+                                <li>
+                                    <span className='main-part'>neurologickí pacienti</span> (detská mozgová obrna DMO, epilepsie, genetické syndrómy, pacienti s porušenou miechou po úraze,...)
+                                </li>
+                                <li>
+                                    <span className='main-part'>nefrologickí pacienti</span> - pacienti s poruchou obličiek (nefrotický syndróm, glomerulonefritídy, tubulopatie, obličkové
+                                    zlyhania,...)
+                                </li>
+                                <li>
+                                    <span className='main-part'>metabolickí pacienti</span> (cukrovka, vrodené metabolické poruchy)
+                                </li>
+                                <li>
+                                    <span className='main-part'>reumatologickí pacienti</span> (juvenílne idiopatické artritídy, systémový lupus,...)
+                                </li>
+                                <li>
+                                    <span className='main-part'>pacienti s ochoreniami pľúc</span>
+                                </li>
+                                <li>
+                                    <span className='main-part'>pacienti s poruchami imunity a transplantovaní</span>
+                                </li>
+                            </ul>
+                            <span className='pink'>Liečba a starostlivosť o tieto deti je často celoživotná!</span>
                         </div>
                     </StyledDescribtionCard>
                 </StyledContentSection>
@@ -57,90 +82,72 @@ const StyledContent = styled.div`
     margin-top: 10vh;
     padding: 0 15vw;
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    align-items: stretch;
     @media screen and (max-width: 1500px) {
         padding: 0 10vw;
-    }
-    @media screen and (max-width: 1500px) {
-        padding: 0 10vw;
-    }
-    @media screen and (max-width: 1200px) {
-        margin-top: 10vh;
     }
     @media screen and (max-width: 800px) {
         padding: 0 5vw;
+        margin-top: 0vh;
     }
     @media screen and (max-width: 400px) {
         padding: 3vw;
-        margin-top: 5vh;
     }
 `;
 
 const StyledContentSection = styled.div`
-    width: 45%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 10vh 0;
-    @media screen and (max-width: 1200px) {
-        width: 46%;
-    }
-    @media screen and (max-width: 1000px) {
-        width: 100%;
-        margin: 7vh 0 3vh 0;
-    }
-    video {
-        max-width: 100%;
-    }
 `;
 
 const StyledDescribtionCard = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
-    .blue {
-        color: #3670c6;
-    }
-    .red {
-        color: #f64e49;
-    }
-    .orange {
-        color: #ff8333;
-    }
-    .green {
-        color: #29c2a5;
+
+    .heading {
+        color: ${pinkColor};
     }
     @media screen and (max-width: 1000px) {
         padding-bottom: 50px;
     }
     h3 {
         font-size: 2rem;
-        @media screen and (max-width: 600px) {
-            text-align: center;
-            font-size: 1.7rem;
+        @media screen and (max-width: 500px) {
+            font-size: 1.4rem;
         }
     }
     @media screen and (max-width: 1000px) {
-        text-align: center;
         font-size: 1.5rem;
     }
-    div {
+    @media screen and (max-width: 500px) {
+        font-size: 1.1rem;
+    }
+    .content-div {
         font-size: 1.3rem;
         padding-bottom: 30px;
         text-align: left;
         @media screen and (max-width: 1200px) {
             padding-bottom: 10px;
-            text-align: left;
-        }
-        @media screen and (max-width: 1000px) {
-            text-align: center;
         }
         @media screen and (max-width: 600px) {
-            text-align: center;
             font-size: 1.2rem;
+        }
+        .pink {
+            color: ${pinkColor};
+            font-weight: bold;
+        }
+        li {
+            margin-top: 20px;
+            .main-part {
+                font-weight: bold;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 1.1rem;
+            }
         }
     }
 `;
