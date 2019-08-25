@@ -14,6 +14,7 @@ import Ciele from './Components/Ciele';
 import NasiPacienti from './Components/NasiPacienti';
 import Media from './Components/Media';
 import Partneri from './Components/Partneri';
+import PodporteNas from './Components/PodporteNas';
 import ONas from './Components/ONas';
 
 import Footer from './Components/Footer';
@@ -32,6 +33,7 @@ function App() {
                 <NasiPacienti />
                 <Media />
                 <Partneri />
+                <PodporteNas />
                 <Footer />
             </StyledLandingContainer>
         </div>

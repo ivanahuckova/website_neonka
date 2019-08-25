@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+//Assets
+
+import rallyklub from '../assets/partners/rallyklub.jpg';
+import koliba from '../assets/partners/kolibaozdany.png';
+
 //Colors + Fonts
 import * as colors from '../style/colors';
 import * as fonts from '../style/fonts';
@@ -9,38 +14,110 @@ import * as fonts from '../style/fonts';
 export default class Partneri extends React.Component {
     render() {
         return (
-            <StyledMidBanner>
-                <h1 id='podporte'>Podporte nás aj vy!</h1>
-                <div>Číslo účtu: SK 96 1100 0000 0029 4507 2424</div>
-                <div>IČO: 52301826</div>
-            </StyledMidBanner>
+            <StyledContent>
+                <StyledContentSection>
+                    <StyledDescribtionCard>
+                        <h3 className='heading'>Ďakujeme veľmi pekne naším partnerom! </h3>
+                        <PartnersContainer>
+                            <PartnersCard>
+                                <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='_blank'>
+                                    <img src={rallyklub} alt='logo rally klubu dolna strehova'></img>
+                                </a>
+                            </PartnersCard>
+                            <PartnersCard>
+                                <a href='https://kolibaozdany.sk/' rel='noopener noreferrer' target='_blank'>
+                                    <img src={koliba} alt='logo koliba ozdany'></img>
+                                </a>
+                            </PartnersCard>
+                        </PartnersContainer>
+                    </StyledDescribtionCard>
+                </StyledContentSection>
+            </StyledContent>
         );
     }
 }
 
-const StyledMidBanner = styled.div`
-    margin: 5vh 0 3vh 0;
-    padding: 10vh 15vw;
-    background-color: ${colors.yellowColor};
+const StyledContent = styled.div`
+    padding: 0 15vw;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1500px) {
+        padding: 0 10vw;
+    }
+    @media screen and (max-width: 800px) {
+        padding: 0 5vw;
+        margin-top: 0vh;
+    }
+    @media screen and (max-width: 400px) {
+        padding: 3vw;
+    }
+`;
+
+const StyledContentSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media screen and (max-width: 1500px) {
-        padding: 10vh 10vw;
+    align-items: center;
+    margin: 10vh 0;
+`;
+
+const StyledDescribtionCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .heading {
+        color: ${colors.yellowColor};
     }
-    h1 {
-        font-size: ${fonts.mainHeadingScreen};
-        text-align: center;
-        @media screen and (max-width: 600px) {
-            font-size: ${fonts.mainHeadingMobile};
+    @media screen and (max-width: 1000px) {
+        padding-bottom: 50px;
+    }
+    h3 {
+        font-size: ${fonts.subHeadingScreen};
+        @media screen and (max-width: 500px) {
+            font-size: ${fonts.subHeadingMobile};
         }
     }
-    div {
+    .content-div {
         font-size: ${fonts.textScreen};
-        padding-top: 10px;
+        padding-bottom: 30px;
         text-align: center;
-        @media screen and (max-width: 600px) {
-            ont-size: ${fonts.textMobile};
+        @media screen and (max-width: 1200px) {
+            padding-bottom: 10px;
         }
+        @media screen and (max-width: 600px) {
+            font-size: ${fonts.textMobile};
+        }
+        .pink {
+            color: ${colors.pinkColor};
+            font-weight: bold;
+        }
+
+        li {
+            margin-top: 15px;
+            .main-part {
+                font-weight: bold;
+            }
+        }
+    }
+`;
+
+const PartnersContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+`;
+
+const PartnersCard = styled.div`
+    width: 200px;
+    margin: 0 5px;
+    img {
+        width: 100%;
     }
 `;

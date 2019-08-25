@@ -19,7 +19,8 @@ export default class LandingBanner extends React.Component {
                     </h1>
                     <div>
                         Sme občianske združenie na pomoc detským pacientom s neonkologickými, často veľmi závažnými ochoreniami. Pomáhame hospitalizovaným deťom na detskom oddelení v Detskej fakultnej
-                        nemocnici v Banskej Bystrici a deťom v ambulantnej starostlivosti našej nemocnice.
+                        nemocnici v Banskej Bystrici a deťom v ambulantnej starostlivosti našej nemocnice. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré
+                        deti.
                     </div>
                 </LandingHeader>
                 <LandingBubble>

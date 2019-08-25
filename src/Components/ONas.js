@@ -17,8 +17,8 @@ export default class ONas extends React.Component {
                 <StyledPeopleConatiner>
                     <div>
                         Sme 4 mladé lekárky - <span className='name'>Ninka</span>, <span className='name'>Ľudka</span>, <span className='name'>Žofka</span> a <span className='name'>Mirka</span> z
-                        Detskej fakultnej nemocnici v Banskej Bystrici. Túžime pomáhať deťom a rodinám chronicky shorých detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na našom
-                        detskom oddelení. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre choré deti.
+                        Detskej fakultnej nemocnice v Banskej Bystrici. Túžime pomáhať deťom a rodinám chronicky chorých detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na našom
+                        detskom oddelení. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré deti.
                     </div>
                     <img src={neonkaTeam} alt='fotografia teamu'></img>
                 </StyledPeopleConatiner>

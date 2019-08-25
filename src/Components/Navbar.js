@@ -4,6 +4,9 @@ import styled from 'styled-components';
 //logo
 import logoText from '../assets/logo_text.svg';
 
+//Colors + Fonts
+import * as colors from '../style/colors';
+
 //Main component
 export default class Navbar extends React.Component {
     render() {
@@ -36,7 +39,7 @@ export default class Navbar extends React.Component {
                         </div>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='#podporte' className='mobile-none'>
+                            <a href='#podporte' className='pink'>
                                 Podporte nás
                             </a>
                         </div>
@@ -78,6 +81,9 @@ const NavbarItemsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .pink {
+        color: ${colors.pinkColor};
+    }
     @media screen and (max-width: 1200px) {
         width: 95%;
     }
