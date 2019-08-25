@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// //Import icons/images
-// import neonkaLogo from '../assets/logo_image.svg';
-
-//Colors
-import { pinkColor } from '../colors/colors';
+//Colors + Fonts
+import * as colors from '../style/colors';
+import * as fonts from '../style/fonts';
 
 //Main component
-export default class Content extends React.Component {
+export default class Ciele extends React.Component {
     render() {
         return (
             <StyledContent>
@@ -44,33 +42,6 @@ export default class Content extends React.Component {
                             </ol>
                         </div>
                     </StyledDescribtionCard>
-                    <StyledDescribtionCard>
-                        <h3 className='heading'>Naši pacienti trpia spektrom ochorení:</h3>
-                        <div className='content-div'>
-                            <ul>
-                                <li>
-                                    <span className='main-part'>neurologickí pacienti</span> (detská mozgová obrna DMO, epilepsie, genetické syndrómy, pacienti s porušenou miechou po úraze,...)
-                                </li>
-                                <li>
-                                    <span className='main-part'>nefrologickí pacienti</span> - pacienti s poruchou obličiek (nefrotický syndróm, glomerulonefritídy, tubulopatie, obličkové
-                                    zlyhania,...)
-                                </li>
-                                <li>
-                                    <span className='main-part'>metabolickí pacienti</span> (cukrovka, vrodené metabolické poruchy)
-                                </li>
-                                <li>
-                                    <span className='main-part'>reumatologickí pacienti</span> (juvenílne idiopatické artritídy, systémový lupus,...)
-                                </li>
-                                <li>
-                                    <span className='main-part'>pacienti s ochoreniami pľúc</span>
-                                </li>
-                                <li>
-                                    <span className='main-part'>pacienti s poruchami imunity a transplantovaní</span>
-                                </li>
-                            </ul>
-                            <span className='pink'>Liečba a starostlivosť o tieto deti je často celoživotná!</span>
-                        </div>
-                    </StyledDescribtionCard>
                 </StyledContentSection>
             </StyledContent>
         );
@@ -78,7 +49,6 @@ export default class Content extends React.Component {
 }
 
 const StyledContent = styled.div`
-    width: 100%;
     margin-top: 10vh;
     padding: 0 15vw;
     display: flex;
@@ -95,11 +65,10 @@ const StyledContent = styled.div`
 `;
 
 const StyledContentSection = styled.div`
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin: 10vh 0;
 `;
 
@@ -109,45 +78,34 @@ const StyledDescribtionCard = styled.div`
     text-align: left;
 
     .heading {
-        color: ${pinkColor};
+        color: ${colors.pinkColor};
     }
     @media screen and (max-width: 1000px) {
         padding-bottom: 50px;
     }
     h3 {
-        font-size: 2rem;
+        font-size: ${fonts.subHeadingScreen};
         @media screen and (max-width: 500px) {
-            font-size: 1.4rem;
+            font-size: ${fonts.subHeadingMobile};
         }
     }
-    @media screen and (max-width: 1000px) {
-        font-size: 1.5rem;
-    }
-    @media screen and (max-width: 500px) {
-        font-size: 1.1rem;
-    }
     .content-div {
-        font-size: 1.3rem;
+        font-size: ${fonts.textScreen};
         padding-bottom: 30px;
         text-align: left;
         @media screen and (max-width: 1200px) {
             padding-bottom: 10px;
         }
         @media screen and (max-width: 600px) {
-            font-size: 1.2rem;
+            font-size: ${fonts.textMobile};
         }
         .pink {
-            color: ${pinkColor};
+            color: ${colors.pinkColor};
             font-weight: bold;
         }
+
         li {
-            margin-top: 20px;
-            .main-part {
-                font-weight: bold;
-            }
-            @media screen and (max-width: 500px) {
-                font-size: 1.1rem;
-            }
+            margin-top: 15px;
         }
     }
 `;

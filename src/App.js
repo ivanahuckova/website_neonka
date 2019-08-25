@@ -5,14 +5,17 @@ import styled from 'styled-components';
 import './App.css';
 
 //Colors
-import { yellowColor, pinkColor } from './colors/colors';
+import { yellowColor, pinkColor } from './style/colors';
 
 //Import components
-import Header from './Components/Header';
-import Banner from './Components/Banner';
-import Content from './Components/Content';
-import MidBanner from './Components/MidBanner';
-import Team from './Components/Team';
+import Navbar from './Components/Navbar';
+import LandingBanner from './Components/LandingBanner';
+import Ciele from './Components/Ciele';
+import NasiPacienti from './Components/NasiPacienti';
+import Media from './Components/Media';
+import Partneri from './Components/Partneri';
+import ONas from './Components/ONas';
+
 import Footer from './Components/Footer';
 
 function App() {
@@ -20,13 +23,15 @@ function App() {
         <div>
             <StyledLandingContainer>
                 <TopLandingContainer>
-                    <Header />
-                    <Banner />
+                    <Navbar />
+                    <LandingBanner />
                     <div className='circle' />
                 </TopLandingContainer>
-                <Content />
-                <Team />
-                <MidBanner />
+                <Ciele />
+                <ONas />
+                <NasiPacienti />
+                <Media />
+                <Partneri />
                 <Footer />
             </StyledLandingContainer>
         </div>
@@ -50,7 +55,6 @@ const StyledLandingContainer = styled.div`
 `;
 
 const TopLandingContainer = styled.div`
-    /* width: 100%; */
     height: 75vh;
     padding: 0 15vw;
     display: flex;

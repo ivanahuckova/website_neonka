@@ -4,11 +4,12 @@ import styled from 'styled-components';
 //Import icons/images
 import neonkaImg from '../assets/logo_image.svg';
 
-//Colors
-import { pinkColor } from '../colors/colors';
+//Colors + Fonts
+import * as colors from '../style/colors';
+import * as fonts from '../style/fonts';
 
 //Main component
-export default class Banner extends React.Component {
+export default class LandingBanner extends React.Component {
     render() {
         return (
             <StyledLandingBanner>
@@ -31,7 +32,7 @@ export default class Banner extends React.Component {
 }
 
 const StyledLandingBanner = styled.div`
-    margin: 0vh 0 0 0;
+    margin: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,12 +106,12 @@ const LandingHeader = styled.div`
         }
     }
     h1 {
-        font-size: 2.5rem;
+        font-size: ${fonts.mainHeadingScreen};
         @media screen and (max-width: 500px) {
-            font-size: 1.8rem;
+            font-size: ${fonts.mainHeadingMobile};
         }
     }
     .pink {
-        color: ${pinkColor};
+        color: ${colors.pinkColor};
     }
 `;
