@@ -36,7 +36,12 @@ export default class Ciele extends React.Component {
                                 <li>podpora vzdelávania lekárov a sestier </li>
                                 <li>pomoc pri zabezpečení potrebnej životnej úrovne v rámci liečebného režimu </li>
                                 <li>zabezpečenie nutričného programu na detskom oddelení </li>
-                                <li>zavedenie canisterapie 🐶</li>
+                                <li>
+                                    zavedenie canisterapie{' '}
+                                    <span role='img' aria-label='obrazok psika'>
+                                        🐶
+                                    </span>
+                                </li>
                                 <li>vytváranie zahraničnej spolupráce, výmenne odborné pobyty na zahraničných pracoviskách </li>
                                 <li>vytváranie možností na zlepšenie medicínskej starostlivosti komunikáciou so zahraničím</li>
                             </ol>
