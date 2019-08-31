@@ -15,30 +15,31 @@ export default class LandingBanner extends React.Component {
             <StyledLandingBanner>
                 <LandingHeader>
                     <h1>
-                        Ahojte a vitajte na našej stránke <span className='pink'>Neónky!</span>
+                        Vitajte na našej stránke <span className='pink'>Neónky!</span>
                     </h1>
                     <div>
                         Sme občianske združenie na pomoc detským pacientom s neonkologickými, často veľmi závažnými ochoreniami. Pomáhame hospitalizovaným deťom na detskom oddelení v Detskej fakultnej
                         nemocnici v Banskej Bystrici a deťom v ambulantnej starostlivosti našej nemocnice. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré
-                        deti.
+                        deti a ich rodiny.
                     </div>
                 </LandingHeader>
                 <LandingBubble>
                     <img className='banner' src={neonkaImg} alt='neonka logo' />
                 </LandingBubble>
-                <img className='banner-small' src={neonkaImg} alt='neonka logo' />
+                <LandingBubbleSmall>
+                    <img className='banner-small' src={neonkaImg} alt='neonka logo' />
+                </LandingBubbleSmall>
             </StyledLandingBanner>
         );
     }
 }
 
 const StyledLandingBanner = styled.div`
-    margin: 0;
+    margin-top: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
     @media screen and (max-width: 1000px) {
         align-items: center;
         justify-content: center;
@@ -49,6 +50,12 @@ const StyledLandingBanner = styled.div`
         justify-content: center;
         flex-direction: column;
     }
+    @media screen and (max-width: 600px) {
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 130px;
+    }
     .banner {
         width: 100%;
         @media screen and (max-width: 1000px) {
@@ -56,11 +63,19 @@ const StyledLandingBanner = styled.div`
             width: 20vw;
         }
     }
-    .banner-small {
-        display: none;
-        @media screen and (max-width: 1000px) {
-            display: block;
-            width: 30vw;
+`;
+
+const LandingBubbleSmall = styled.div`
+    display: none;
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 30vw;
+        margin-top: 30px;
+        img {
+            width: 100%;
         }
     }
 `;
@@ -73,7 +88,7 @@ const LandingBubble = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: white;
+    background-color: ${colors.yellowColor};
 
     @media screen and (max-width: 1300px) {
         height: 25vw;
@@ -96,7 +111,7 @@ const LandingHeader = styled.div`
     }
     @media screen and (max-width: 800px) {
         margin-top: 5vh;
-        width: 80%;
+        width: 100%;
         text-align: left;
     }
     div {

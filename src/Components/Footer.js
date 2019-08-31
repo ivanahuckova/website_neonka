@@ -9,7 +9,6 @@ export default class Footer extends React.Component {
 }
 
 const StyledFooter = styled.div`
-    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;

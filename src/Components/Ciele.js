@@ -14,7 +14,7 @@ export default class Ciele extends React.Component {
                     <StyledDescribtionCard>
                         <h3 className='heading'>Naše ciele:</h3>
                         <div className='content-div'>
-                            <ol>
+                            <ul>
                                 <li>
                                     zlepšovanie kvality nemedicínskej starostlivosti pediatrickým pacientom (s neonkologickými ochoreniami) hospitalizovaných na lôžkovom oddelení II. DK SZU DFNsP BB{' '}
                                 </li>
@@ -44,7 +44,7 @@ export default class Ciele extends React.Component {
                                 </li>
                                 <li>vytváranie zahraničnej spolupráce, výmenne odborné pobyty na zahraničných pracoviskách </li>
                                 <li>vytváranie možností na zlepšenie medicínskej starostlivosti komunikáciou so zahraničím</li>
-                            </ol>
+                            </ul>
                         </div>
                     </StyledDescribtionCard>
                 </StyledContentSection>
@@ -62,10 +62,11 @@ const StyledContent = styled.div`
     }
     @media screen and (max-width: 800px) {
         padding: 0 5vw;
-        margin-top: 0vh;
+        margin-top: 100px;
     }
     @media screen and (max-width: 400px) {
         padding: 3vw;
+        margin-top: 200px;
     }
 `;
 

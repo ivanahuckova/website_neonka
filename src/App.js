@@ -7,6 +7,9 @@ import './App.css';
 //Colors
 import { yellowColor, pinkColor } from './style/colors';
 
+//Assets
+import logo_image from './assets/logo_image.svg'
+
 //Import components
 import Navbar from './Components/Navbar';
 import LandingBanner from './Components/LandingBanner';
@@ -20,20 +23,20 @@ import ONas from './Components/ONas';
 import Footer from './Components/Footer';
 
 function App() {
+
     return (
         <div>
             <StyledLandingContainer>
                 <TopLandingContainer>
                     <Navbar />
                     <LandingBanner />
-                    <div className='circle' />
                 </TopLandingContainer>
                 <Ciele />
-                <ONas />
-                <NasiPacienti />
-                <Media />
-                <Partneri />
                 <PodporteNas />
+                <NasiPacienti />
+                <ONas />
+                <Partneri />
+                <Media />
                 <Footer />
             </StyledLandingContainer>
         </div>
@@ -87,6 +90,13 @@ const TopLandingContainer = styled.div`
     @media screen and (max-width: 800px) {
         padding: 0 5vw;
     }
+    @media screen and (max-width: 600px) {
+        &::after {
+            content: '';
+            bottom: -200px;
+        }
+    }
+
     @media screen and (max-width: 400px) {
         padding: 0 3vw;
     }

@@ -16,7 +16,7 @@ export default class ONas extends React.Component {
                 <h3>O nás</h3>
                 <StyledPeopleConatiner>
                     <div>
-                        Sme 4 mladé lekárky - <span className='name'>Ninka</span>, <span className='name'>Ľudka</span>, <span className='name'>Žofka</span> a <span className='name'>Mirka</span> z
+                        Sme 4 mladé lekárky v príprave na pediatriu - <span className='name'>Ninka</span>, <span className='name'>Ľudka</span>, <span className='name'>Žofka</span> a <span className='name'>Mirka</span> z
                         Detskej fakultnej nemocnice v Banskej Bystrici. Túžime pomáhať deťom a rodinám chronicky chorých detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na našom
                         detskom oddelení. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré deti.
                     </div>
@@ -34,10 +34,10 @@ const StyledTeamContainer = styled.div`
     align-items: center;
     background-color: ${colors.yellowColor};
     h3 {
-        font-size: 2.5rem;
+        font-size: ${fonts.subHeadingScreen};
         text-align: center;
         @media screen and (max-width: 500px) {
-            font-size: 1.4rem;
+            font-size: ${fonts.subHeadingMobile};
         }
     }
 `;
@@ -48,7 +48,7 @@ const StyledPeopleConatiner = styled.div`
     align-items: center;
     justify-content: center;
     font-size: ${fonts.textScreen};
-    margin: 50px 0;
+    margin: 0 0 50px 0;
     display: flex;
     flex-direction: column;
     .name {
@@ -63,6 +63,9 @@ const StyledPeopleConatiner = styled.div`
     }
     @media screen and (max-width: 600px) {
         font-size: ${fonts.textMobile};
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     img {
