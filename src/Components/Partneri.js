@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import rallyklub from '../assets/partners/rallyklub.jpg';
 import koliba from '../assets/partners/kolibaozdany.png';
+import cincuacik from '../assets/partners/cincuacik.jpg';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -17,8 +18,13 @@ export default class Partneri extends React.Component {
             <StyledContent>
                 <StyledContentSection>
                     <StyledDescribtionCard>
-                        <h3 className='heading'>Ďakujeme naším partnerom! </h3>
+                        <h3 className='heading'>Ďakujeme naším partnerom</h3>
                         <PartnersContainer>
+                            <PartnersCard>
+                                <a href='https://http://cincuacik.sk/.sk/' rel='noopener noreferrer' target='_blank'>
+                                    <img src={cincuacik} alt='logo cincuacik'></img>
+                                </a>
+                            </PartnersCard>
                             <PartnersCard>
                                 <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='_blank'>
                                     <img src={rallyklub} alt='logo rally klubu dolna strehova'></img>
@@ -49,12 +55,14 @@ const StyledContent = styled.div`
         margin-top: 0vh;
     }
     @media screen and (max-width: 400px) {
-        padding: 3vw;
+        padding: 7vw;
+        padding-bottom: 3vw;
     }
 `;
 
 const StyledContentSection = styled.div`
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -62,6 +70,7 @@ const StyledContentSection = styled.div`
 `;
 
 const StyledDescribtionCard = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -104,6 +113,7 @@ const StyledDescribtionCard = styled.div`
 `;
 
 const PartnersContainer = styled.div`
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -117,9 +127,13 @@ const PartnersContainer = styled.div`
 
 const PartnersCard = styled.div`
     width: 200px;
-    margin: 0 5px;
+    margin: 10px;
     @media screen and (max-width: 600px) {
-        margin: 50px 20px 0 20px;
+        margin: 50px;
+        width: 200px;
+    }
+    @media screen and (max-width: 400px) {
+        margin: 30px;
         width: 200px;
     }
     img {

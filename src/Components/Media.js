@@ -13,7 +13,7 @@ export default class Media extends React.Component {
                 <StyledContentSection>
                     <StyledDescribtionCard>
                         <h3 className='heading' id='media'>
-                            Mohli ste nás vidieť:{' '}
+                            Videli ste nás
                         </h3>
                         <div className='content-div'>
                             <a href='https://videoarchiv.markiza.sk/video/televizne-noviny/epizoda/23896-televizne-noviny/15-pribeh-dobra'>
@@ -44,7 +44,7 @@ const StyledContent = styled.div`
         margin-top: 0vh;
     }
     @media screen and (max-width: 400px) {
-        padding: 3vw;
+        padding: 7vw;
     }
 `;
 

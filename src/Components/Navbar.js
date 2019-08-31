@@ -9,12 +9,36 @@ import * as colors from '../style/colors';
 
 //Main component
 export default class Navbar extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            idx: 0,
+        }
+        this.colors = [colors.yellowColor, colors.pinkColor]
+        this.fonts = [colors.pinkColor, colors.yellowColor]
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll, true);
+    }
+    handleScroll = () => {
+        if (window.scrollY < 30) {
+            this.setState({idx: 0});
+        }
+        else if (window.scrollY >= 30) {
+            this.setState({idx: 1});
+        }
+    }
+    
     render() {
         return (
-            <StyledNavbar>
+            <StyledNavbar style={{backgroundColor: this.colors[this.state.idx]}}>
                 <NavbarContainer>
                     <NavbarItemsContainer>
-                        <LogoContainer>
+                        <LogoContainer >
                             <a href='/'>
                                 <img className='logo' src={logoText} alt='logo' />
                             </a>
@@ -28,7 +52,7 @@ export default class Navbar extends React.Component {
                         <div className='navbar-item'>
                             {' '}
                             <a href='#media' className='mobile-none'>
-                                Média
+                                Médiá
                             </a>
                         </div>
                         <div className='navbar-item'>
@@ -39,7 +63,7 @@ export default class Navbar extends React.Component {
                         </div>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='#podporte' className='pink'>
+                            <a href='#podporte' className='pink' style={{color: this.fonts[this.state.idx]}}>
                                 Podporte nás
                             </a>
                         </div>
@@ -51,9 +75,9 @@ export default class Navbar extends React.Component {
 }
 
 const StyledNavbar = styled.div`
-    background-color: ${colors.yellowColor};
     width: 100%;
     height: 80px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,7 +104,7 @@ const NavbarContainer = styled.div`
         height: 100vh;
     }
     @media screen and (max-width: 800px) {
-        padding: 0 5vw;
+        padding: 0 7vw;
     }
     .navbar-item {
         font-size: 16px;

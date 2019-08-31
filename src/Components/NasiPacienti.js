@@ -12,7 +12,7 @@ export default class NasiPacienti extends React.Component {
             <StyledContent>
                 <StyledContentSection>
                     <StyledDescribtionCard>
-                        <h3 className='heading'>Čím trpia naši pacienti?</h3>
+                        <h3 className='heading'>Komu pomáhame</h3>
                         <div className='content-div'>
                             <ul>
                                 <li>
@@ -47,6 +47,7 @@ export default class NasiPacienti extends React.Component {
 const StyledContent = styled.div`
     padding: 0 15vw;
     display: flex;
+    background-color: ${colors.yellowColor};
     @media screen and (max-width: 1500px) {
         padding: 0 10vw;
     }
@@ -55,7 +56,7 @@ const StyledContent = styled.div`
         margin-top: 0vh;
     }
     @media screen and (max-width: 400px) {
-        padding: 3vw;
+        padding: 2vw 7vw;
     }
 `;
 

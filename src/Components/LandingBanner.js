@@ -68,17 +68,19 @@ const StyledLandingBanner = styled.div`
 
 const LandingBubbleSmall = styled.div`
     display: none;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1000px) {
         display: flex;
         justify-content: center;
         align-items: center;
         align-self: center;
-        width: 40vw;
-        margin-top: 30px;
+        width: 30vw;
         img {
             width: 100%;
         }
     }
+    @media screen and (max-width: 600px) {
+            width: 50vw;
+        }
 `;
 
 const LandingBubble = styled.div`
@@ -112,6 +114,9 @@ const LandingHeader = styled.div`
         margin-top: 5vh;
         width: 100%;
         text-align: left;
+    }
+    @media screen and (max-width: 600px) {
+        margin-bottom: 70px;
     }
     div {
         font-size: 1.2rem;
