@@ -12,7 +12,7 @@ export default class Ciele extends React.Component {
             <StyledContent>
                 <StyledContentSection>
                     <StyledDescribtionCard>
-                        <h3 className='heading'>Naše ciele:</h3>
+                        <h3 className='heading'>Naše ciele</h3>
                         <div className='content-div'>
                             <ul>
                                 <li>
@@ -65,7 +65,7 @@ const StyledContent = styled.div`
         margin-top: 100px;
     }
     @media screen and (max-width: 400px) {
-        padding: 3vw;
+        padding: 7vw;
         margin-top: 200px;
     }
 `;

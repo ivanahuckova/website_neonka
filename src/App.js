@@ -32,10 +32,10 @@ function App() {
                 </TopLandingContainer>
                 <Ciele />
                 <PodporteNas />
-                <NasiPacienti />
                 <ONas />
-                <Partneri />
                 <Media />
+                <Partneri />
+                <NasiPacienti />
                 <Footer />
             </StyledLandingContainer>
         </div>
@@ -87,7 +87,7 @@ const TopLandingContainer = styled.div`
         height: 100vh;
     }
     @media screen and (max-width: 800px) {
-        padding: 0 5vw;
+        padding: 0 7vw;
     }
     @media screen and (max-width: 600px) {
         &::after {
@@ -97,6 +97,6 @@ const TopLandingContainer = styled.div`
     }
 
     @media screen and (max-width: 400px) {
-        padding: 0 3vw;
+        padding: 0 7vw;
     }
 `;
