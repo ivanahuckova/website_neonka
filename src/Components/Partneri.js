@@ -62,6 +62,7 @@ const StyledContent = styled.div`
 
 const StyledContentSection = styled.div`
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,6 +70,7 @@ const StyledContentSection = styled.div`
 `;
 
 const StyledDescribtionCard = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -111,6 +113,7 @@ const StyledDescribtionCard = styled.div`
 `;
 
 const PartnersContainer = styled.div`
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -124,9 +127,13 @@ const PartnersContainer = styled.div`
 
 const PartnersCard = styled.div`
     width: 200px;
-    margin: 0 10px;
+    margin: 10px;
     @media screen and (max-width: 600px) {
-        margin: 50px 30px 30px 30px;
+        margin: 50px;
+        width: 200px;
+    }
+    @media screen and (max-width: 400px) {
+        margin: 30px;
         width: 200px;
     }
     img {
