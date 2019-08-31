@@ -17,7 +17,7 @@ export default class Partneri extends React.Component {
             <StyledContent>
                 <StyledContentSection>
                     <StyledDescribtionCard>
-                        <h3 className='heading'>Ďakujeme veľmi pekne naším úžasným partnerom! </h3>
+                        <h3 className='heading'>Ďakujeme naším partnerom! </h3>
                         <PartnersContainer>
                             <PartnersCard>
                                 <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='_blank'>
@@ -68,14 +68,15 @@ const StyledDescribtionCard = styled.div`
 
     .heading {
         color: ${colors.pinkColor};
+        margin-bottom: 40px;
     }
     @media screen and (max-width: 1000px) {
         padding-bottom: 50px;
     }
     h3 {
-        font-size: ${fonts.subHeadingScreen};
+        font-size: ${fonts.mainHeadingScreen};
         @media screen and (max-width: 500px) {
-            font-size: ${fonts.subHeadingMobile};
+            font-size: ${fonts.mainHeadingMobile};
         }
     }
     .content-div {

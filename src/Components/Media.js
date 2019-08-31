@@ -68,9 +68,9 @@ const StyledDescribtionCard = styled.div`
         padding-bottom: 50px;
     }
     h3 {
-        font-size: ${fonts.subHeadingScreen};
+        font-size: ${fonts.mainHeadingScreen};
         @media screen and (max-width: 500px) {
-            font-size: ${fonts.subHeadingMobile};
+            font-size: ${fonts.mainHeadingMobile};
         }
     }
     .content-div {

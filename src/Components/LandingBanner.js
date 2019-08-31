@@ -36,6 +36,7 @@ export default class LandingBanner extends React.Component {
 
 const StyledLandingBanner = styled.div`
     margin-top: 70px;
+    margin-top: 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -67,12 +68,12 @@ const StyledLandingBanner = styled.div`
 
 const LandingBubbleSmall = styled.div`
     display: none;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 600px) {
         display: flex;
         justify-content: center;
         align-items: center;
         align-self: center;
-        width: 30vw;
+        width: 40vw;
         margin-top: 30px;
         img {
             width: 100%;
@@ -81,14 +82,12 @@ const LandingBubbleSmall = styled.div`
 `;
 
 const LandingBubble = styled.div`
-    height: 20vw;
-    width: 20vw;
+    height: 22vw;
+    width: 22vw;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    background-color: ${colors.yellowColor};
 
     @media screen and (max-width: 1300px) {
         height: 25vw;

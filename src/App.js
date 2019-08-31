@@ -7,8 +7,7 @@ import './App.css';
 //Colors
 import { yellowColor, pinkColor } from './style/colors';
 
-//Assets
-import logo_image from './assets/logo_image.svg'
+
 
 //Import components
 import Navbar from './Components/Navbar';

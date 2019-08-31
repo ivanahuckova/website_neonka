@@ -51,20 +51,37 @@ export default class Navbar extends React.Component {
 }
 
 const StyledNavbar = styled.div`
+    background-color: ${colors.yellowColor};
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
 `;
 
 const NavbarContainer = styled.div`
     width: 100%;
     margin-top: 18px;
+    padding: 0 15vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1500px) {
+        padding: 0 10vw;
+    }
+
+    @media screen and (max-width: 1000px) {
+        height: 100vh;
+    }
+    @media screen and (max-width: 800px) {
+        padding: 0 5vw;
+    }
     .navbar-item {
         font-size: 16px;
         cursor: pointer;
@@ -73,6 +90,8 @@ const NavbarContainer = styled.div`
         @media screen and (max-width: 650px) {
             display: none;
         }
+
+
     }
 `;
 

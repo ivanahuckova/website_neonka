@@ -4,7 +4,7 @@ import styled from 'styled-components';
 //Main component
 export default class Footer extends React.Component {
     render() {
-        return <StyledFooter>Created in © 2019. Občianske združenie Neónka Banská Bystrica, Sídlo DFNsP BB Námestie Ludvika Svobodu 4, Banská Bystrica, 974 09</StyledFooter>;
+        return <StyledFooter>Created in © 2019. Občianske združenie Neónka Banská Bystrica. Sídlo DFNsP BB Námestie Ludvika Svobodu 4, Banská Bystrica, 974 09. Email: smeneonka@gmail.com</StyledFooter>;
     }
 }
 
