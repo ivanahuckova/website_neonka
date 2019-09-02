@@ -84,19 +84,13 @@ const TopLandingContainer = styled.div`
     }
 
     @media screen and (max-width: 1000px) {
-        height: 100vh;
-    }
-    @media screen and (max-width: 800px) {
-        padding: 0 7vw;
-    }
-    @media screen and (max-width: 600px) {
+        background-color: ${yellowColor};
+        height: auto;
         &::after {
-            content: '';
-            bottom: -200px;
+            display: none;
         }
     }
-
-    @media screen and (max-width: 400px) {
+    /* @media screen and (max-width: 400px) {
         padding: 0 7vw;
-    }
+    } */
 `;

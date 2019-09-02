@@ -116,7 +116,7 @@ const LandingHeader = styled.div`
         text-align: left;
     }
     @media screen and (max-width: 600px) {
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
     div {
         font-size: 1.2rem;

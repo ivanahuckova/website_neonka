@@ -21,9 +21,9 @@ export default class Partneri extends React.Component {
                         <h3 className='heading'>Ďakujeme naším partnerom</h3>
                         <PartnersContainer>
                             <PartnersCard>
-                                <a href='https://http://cincuacik.sk/.sk/' rel='noopener noreferrer' target='_blank'>
+
                                     <img src={cincuacik} alt='logo cincuacik'></img>
-                                </a>
+                                
                             </PartnersCard>
                             <PartnersCard>
                                 <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='_blank'>
