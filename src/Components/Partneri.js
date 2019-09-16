@@ -132,6 +132,9 @@ const PartnersCard = styled.div`
     margin: 10px;
     .koliba {
         padding: 20px;
+        @media screen and (max-width: 600px) {
+            padding: 5px;
+        }
     }
     @media screen and (max-width: 600px) {
         margin: 50px;
