@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Import icons/images
-import neonkaImg from '../assets/logo_image.svg';
+import neonkaImg from '../assets/logo_animated.svg';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -35,8 +35,7 @@ export default class LandingBanner extends React.Component {
 }
 
 const StyledLandingBanner = styled.div`
-    margin-top: 70px;
-    margin-top: 120px;
+    margin-top: 130px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -76,6 +75,7 @@ const LandingBubbleSmall = styled.div`
         width: 30vw;
         img {
             width: 100%;
+            margin: 40px;
         }
     }
     @media screen and (max-width: 600px) {
@@ -84,16 +84,16 @@ const LandingBubbleSmall = styled.div`
 `;
 
 const LandingBubble = styled.div`
-    height: 22vw;
-    width: 22vw;
+    height: 18vw;
+    width: 18vw;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 1300px) {
-        height: 25vw;
-        width: 25vw;
+        height: 18vw;
+        width: 18vw;
     }
 
     @media screen and (max-width: 1000px) {
@@ -116,7 +116,7 @@ const LandingHeader = styled.div`
         text-align: left;
     }
     @media screen and (max-width: 600px) {
-        margin-bottom: 70px;
+        margin-bottom: 10px;
     }
     div {
         font-size: 1.2rem;

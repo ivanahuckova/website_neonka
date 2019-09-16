@@ -62,11 +62,11 @@ const StyledContent = styled.div`
     }
     @media screen and (max-width: 800px) {
         padding: 0 5vw;
-        margin-top: 100px;
+        margin-top: 20px;
     }
     @media screen and (max-width: 400px) {
         padding: 7vw;
-        margin-top: 200px;
+        margin-top: 0px;
     }
 `;
 

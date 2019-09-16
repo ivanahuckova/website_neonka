@@ -96,7 +96,10 @@ const StyledPeopleConatiner = styled.div`
 
 const CarouselContainer = styled.div`
     margin-top: 30px;
-    width: 90%;
+    width: 75%;
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
     @media screen and (max-width: 600px) {
         width: 100%;
     }
