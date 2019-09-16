@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Import icons/images
-import neonkaImg from '../assets/logo_image.svg';
+import neonkaImg from '../assets/neonka_animation.svg';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -76,6 +76,7 @@ const LandingBubbleSmall = styled.div`
         width: 30vw;
         img {
             width: 100%;
+            margin: 40px;
         }
     }
     @media screen and (max-width: 600px) {
@@ -84,16 +85,16 @@ const LandingBubbleSmall = styled.div`
 `;
 
 const LandingBubble = styled.div`
-    height: 22vw;
-    width: 22vw;
+    height: 18vw;
+    width: 18vw;
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 1300px) {
-        height: 25vw;
-        width: 25vw;
+        height: 18vw;
+        width: 18vw;
     }
 
     @media screen and (max-width: 1000px) {

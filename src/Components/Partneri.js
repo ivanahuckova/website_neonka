@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import rallyklub from '../assets/partners/rallyklub.jpg';
 import koliba from '../assets/partners/kolibaozdany.png';
-import cincuacik from '../assets/partners/cincuacik.jpg';
+import cincuacik from '../assets/partners/cincuacik.png';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -21,18 +21,18 @@ export default class Partneri extends React.Component {
                         <h3 className='heading'>Ďakujeme naším partnerom</h3>
                         <PartnersContainer>
                             <PartnersCard>
-
+                                <a href='http://cincuacik.sk' rel='noopener noreferrer' target='self'>
                                     <img src={cincuacik} alt='logo cincuacik'></img>
-                                
+                                </a>
                             </PartnersCard>
                             <PartnersCard>
-                                <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='_blank'>
+                                <a href='http://rallyshowds.sk' rel='noopener noreferrer' target='self'>
                                     <img src={rallyklub} alt='logo rally klubu dolna strehova'></img>
                                 </a>
                             </PartnersCard>
                             <PartnersCard>
-                                <a href='https://kolibaozdany.sk/' rel='noopener noreferrer' target='_blank'>
-                                    <img src={koliba} alt='logo koliba ozdany'></img>
+                                <a href='https://kolibaozdany.sk/' rel='noopener noreferrer' target='self' >
+                                    <img className="koliba" src={koliba} alt='logo koliba ozdany'></img>
                                 </a>
                             </PartnersCard>
                         </PartnersContainer>
@@ -119,8 +119,10 @@ const PartnersContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
     a {
+        filter: grayscale(100%);
         &:hover {
             cursor: pointer;
+            filter: grayscale(0);
         }
     }
 `;
@@ -128,6 +130,9 @@ const PartnersContainer = styled.div`
 const PartnersCard = styled.div`
     width: 200px;
     margin: 10px;
+    .koliba {
+        padding: 20px;
+    }
     @media screen and (max-width: 600px) {
         margin: 50px;
         width: 200px;

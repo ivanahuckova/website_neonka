@@ -16,12 +16,12 @@ export default class Media extends React.Component {
                             Videli ste nás
                         </h3>
                         <div className='content-div'>
-                            <a href='https://videoarchiv.markiza.sk/video/televizne-noviny/epizoda/23896-televizne-noviny/15-pribeh-dobra'>
+                            <a href='https://videoarchiv.markiza.sk/video/televizne-noviny/epizoda/23896-televizne-noviny/15-pribeh-dobra' target="_self">
                                 Reportáž Markízy o našej benefičnej akcii Rally Show v Dolnej Strehovej
                             </a>
                         </div>
                         <div className='content-div'>
-                            <a href='https://www.bystricoviny.sk/bystricoviny-tv/rally-show-v-dolnej-strehovej-podpori-pacientov-bystrickej-detskej-nemocnice-cez-neonku/?fbclid=IwAR1ovErhKlLrF7tu_jNV2Q0LNMLch-4pjpD4ztBjhr3MkLyhQ6Y_-mVwqR0'>
+                            <a href='https://www.bystricoviny.sk/bystricoviny-tv/rally-show-v-dolnej-strehovej-podpori-pacientov-bystrickej-detskej-nemocnice-cez-neonku/?fbclid=IwAR1ovErhKlLrF7tu_jNV2Q0LNMLch-4pjpD4ztBjhr3MkLyhQ6Y_-mVwqR0' target="_self">
                                 Článok v Bystricoviny.sk o našej benefičnej akcii Rally Show v Dolnej Strehovej
                             </a>
                         </div>
