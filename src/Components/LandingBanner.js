@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 //Import icons/images
-import neonkaImg from '../assets/neonka_animation.svg';
+import neonkaImg from '../assets/logo_animated.svg';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -35,8 +35,7 @@ export default class LandingBanner extends React.Component {
 }
 
 const StyledLandingBanner = styled.div`
-    margin-top: 70px;
-    margin-top: 120px;
+    margin-top: 130px;
     width: 100%;
     display: flex;
     align-items: center;
