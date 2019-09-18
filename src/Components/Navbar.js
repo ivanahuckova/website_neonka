@@ -99,10 +99,7 @@ const NavbarContainer = styled.div`
     @media screen and (max-width: 1500px) {
         padding: 0 10vw;
     }
-
-    @media screen and (max-width: 1000px) {
-        height: 100vh;
-    }
+    
     @media screen and (max-width: 800px) {
         padding: 0 7vw;
     }
