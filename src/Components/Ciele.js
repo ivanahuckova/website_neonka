@@ -70,6 +70,7 @@ const StyledContent = styled.div`
     }
 `;
 
+
 const StyledContentSection = styled.div`
     display: flex;
     flex-direction: column;
