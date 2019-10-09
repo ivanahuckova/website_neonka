@@ -16,7 +16,7 @@ export default class Media extends React.Component {
                             Videli ste nás
                         </h3>
                         <div className='content-div'>
-                            <a href='https://videoarchiv.markiza.sk/video/televizne-noviny/epizoda/23896-televizne-noviny/15-pribeh-dobra' target="_self">
+                            <a href='https://youtu.be/Y21nN6zfoPU' target="_self">
                                 Reportáž Markízy o našej benefičnej akcii Rally Show v Dolnej Strehovej
                             </a>
                         </div>
