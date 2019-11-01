@@ -8,6 +8,8 @@ import neonkaTeam1 from '../assets/neonka_team.jpg';
 import neonkaTeam2 from '../assets/neonka_team2.jpg';
 import neonkaTeam3 from '../assets/neonka_team3.jpg';
 import neonkaTeam4 from '../assets/neonka_team4.jpg';
+import neonkaTeam5 from '../assets/neonka_team5.jpg';
+import neonkaTeam6 from '../assets/neonka_team6.jpg';
 
 
 
@@ -32,16 +34,21 @@ export default function ONas() {
                         <div>
                             <img className="main-img" src={neonkaTeam1} alt='fotografia teamu' />
                         </div>
-                    <div>
-                        <img className="main-img" src={neonkaTeam2} alt='fotografia teamu' />
-                    </div>
-                    <div>
-                        <img className="main-img" src={neonkaTeam3} alt='fotografia teamu' />
-                    </div>
-                    <div>
-                        <img className="main-img" src={neonkaTeam4} alt='fotografia teamu' />
-                    </div>
-
+                        <div>
+                            <img className="main-img" src={neonkaTeam6} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam2} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam3} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam4} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam5} alt='fotografia teamu' />
+                        </div>
                     </Carousel>
                 </CarouselContainer>
             </StyledPeopleConatiner>
