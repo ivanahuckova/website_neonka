@@ -6,9 +6,10 @@ import * as colors from '../style/colors';
 import * as fonts from '../style/fonts';
 
 //Import icons/images
-import neonkaBeh from '../assets/neonka_beh.svg';
+// import neonkaBeh from '../assets/neonka_beh.svg';
+import bannerBeh from '../assets/banner_beh.jpg';
 
-const url = 'https://www.activeplanet.sk/clanok/ked-sa-neonka-zoznami-s-mikulasom?fbclid=IwAR13Zcqhl0tploGJM1tE5uNSqJ7uQsSO-jV_3zniUVydWsHT6JdotWw2CeM'
+const url = 'https://www.activeplanet.sk/podujatie/charitativny-mikulassky-beh-b-bystrica-7122019-6rocnik/registracia'
 
 
 
@@ -17,11 +18,11 @@ export default class Akcie extends React.Component {
     render() {
         return (
             <StyledMidBanner>
-                <h1 id='akcie'>Nasledujúce charitatívne akcie</h1>
-                <div><a href={url} target="_self"><img alt="neonka beh" src={neonkaBeh} /></a></div>
-                <div className="heading">Charitatívny Mikulášsky beh</div>
+                <h1 id='akcie'>Charitatívny Mikulášsky beh</h1>
+                <div className="banner"><img alt="plagat behu" src={bannerBeh} /></div>
+                {/* <div><a href={url} target="_self"><img alt="neonka beh" src={neonkaBeh} /></a></div> */}
                 <div>7.12.2019 o 16:00 pred BB ESC </div>
-                <div><a href={url} target="_self">Viac o behu</a></div>
+                <div><a href={url} target="_self">Registrácia</a></div>
             </StyledMidBanner>
         );
     }
@@ -34,6 +35,7 @@ const StyledMidBanner = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 1500px) {
         padding: 10vh 10vw;
@@ -45,7 +47,18 @@ const StyledMidBanner = styled.div`
             font-size: ${fonts.mainHeadingMobile};
         }
     }
-    .heading {
+    .banner {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        @media screen and (max-width: 600px) {
+            width: 95%;
+        }
+        img {
+            width: 100%;
+        }
     }
     div {
         font-size: ${fonts.textScreen};
