@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, true);
     }
-    
+
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll, true);
     }
@@ -32,7 +32,7 @@ export default class Navbar extends React.Component {
             this.setState({idx: 1});
         }
     }
-    
+
     render() {
         const { idx } = this.state
         const colorClass = idx ? 'yellow' : 'pink'
@@ -102,7 +102,7 @@ const NavbarContainer = styled.div`
     @media screen and (max-width: 1500px) {
         padding: 0 10vw;
     }
-    
+
     @media screen and (max-width: 800px) {
         padding: 0 7vw;
     }

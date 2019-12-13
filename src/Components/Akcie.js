@@ -7,9 +7,9 @@ import * as fonts from '../style/fonts';
 
 //Import icons/images
 // import neonkaBeh from '../assets/neonka_beh.svg';
-import bannerBeh from '../assets/banner_beh.jpg';
+import eventBanner from '../assets/event_banner.jpg';
 
-const url = 'https://www.activeplanet.sk/podujatie/charitativny-mikulassky-beh-b-bystrica-7122019-6rocnik/registracia'
+const url = 'https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY'
 
 
 
@@ -18,11 +18,11 @@ export default class Akcie extends React.Component {
     render() {
         return (
             <StyledMidBanner>
-                <h1 id='akcie'>Charitatívny Mikulášsky beh</h1>
-                <div className="banner"><img alt="plagat behu" src={bannerBeh} /></div>
-                {/* <div><a href={url} target="_self"><img alt="neonka beh" src={neonkaBeh} /></a></div> */}
-                <div>7.12.2019 o 16:00 pred BB ESC </div>
-                <div><a href={url} target="_self">Registrácia</a></div>
+                <h1 id='akcie'>Tajácky Benefičný Punč</h1>
+                <div className="banner"><img alt="plagat beneficneho puncu" src={eventBanner} /></div>
+                <div>17.12.2019 o 16:00 - 19:00</div>
+                <div>Gymnázium J. G. Tajovského v Banskej Bystrici</div>
+                <div><a href={url} rel="noopener noreferrer" target="_blank">Viac</a></div>
             </StyledMidBanner>
         );
     }

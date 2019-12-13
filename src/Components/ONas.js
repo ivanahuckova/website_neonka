@@ -10,6 +10,12 @@ import neonkaTeam3 from '../assets/neonka_team3.jpg';
 import neonkaTeam4 from '../assets/neonka_team4.jpg';
 import neonkaTeam5 from '../assets/neonka_team5.jpg';
 import neonkaTeam6 from '../assets/neonka_team6.jpg';
+import neonkaTeam7 from '../assets/neonka_team7.jpg';
+import neonkaTeam8 from '../assets/neonka_team8.jpg';
+import neonkaTeam9 from '../assets/neonka_team9.jpg';
+import neonkaTeam10 from '../assets/neonka_team10.jpg';
+import neonkaTeam11 from '../assets/neonka_team11.jpg';
+import neonkaTeam12 from '../assets/neonka_team12.jpg';
 
 
 
@@ -32,6 +38,24 @@ export default function ONas() {
                 <CarouselContainer>
                     <Carousel>
                         <div>
+                            <img className="main-img" src={neonkaTeam7} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam8} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam9} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam10} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam11} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam12} alt='fotografia teamu' />
+                        </div>
+                        <div>
                             <img className="main-img" src={neonkaTeam1} alt='fotografia teamu' />
                         </div>
                         <div>
@@ -48,6 +72,9 @@ export default function ONas() {
                         </div>
                         <div>
                             <img className="main-img" src={neonkaTeam5} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam6} alt='fotografia teamu' />
                         </div>
                     </Carousel>
                 </CarouselContainer>
@@ -80,6 +107,8 @@ const StyledPeopleConatiner = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 15vw;
+    max-width: 100vw;
+    box-sizing: border-box;
     .name {
         color: ${colors.pinkColor};
         font-weight: bold;

@@ -16,13 +16,23 @@ export default class Media extends React.Component {
                             Videli ste nás
                         </h3>
                         <div className='content-div'>
-                            <a href='https://youtu.be/Y21nN6zfoPU' target="_self">
+                            <a href='https://youtu.be/Y21nN6zfoPU' rel="noopener noreferrer" target="_blank">
                                 Reportáž Markízy o našej benefičnej akcii Rally Show v Dolnej Strehovej
                             </a>
                         </div>
                         <div className='content-div'>
-                            <a href='https://www.bystricoviny.sk/bystricoviny-tv/rally-show-v-dolnej-strehovej-podpori-pacientov-bystrickej-detskej-nemocnice-cez-neonku/?fbclid=IwAR1ovErhKlLrF7tu_jNV2Q0LNMLch-4pjpD4ztBjhr3MkLyhQ6Y_-mVwqR0' target="_self">
+                            <a href='https://www.bystricoviny.sk/bystricoviny-tv/rally-show-v-dolnej-strehovej-podpori-pacientov-bystrickej-detskej-nemocnice-cez-neonku/?fbclid=IwAR1ovErhKlLrF7tu_jNV2Q0LNMLch-4pjpD4ztBjhr3MkLyhQ6Y_-mVwqR0' rel="noopener noreferrer" target="_blank">
                                 Článok v Bystricoviny.sk o našej benefičnej akcii Rally Show v Dolnej Strehovej
+                            </a>
+                        </div>
+                        <div className='content-div'>
+                            <a href='https://bbonline.sk/foto-250-mikulasov-si-pod-urpinom-zabehalo-pre-dobru-vec/?fbclid=IwAR3HgUIDyCR_2UQj-vnQXtUzeOpGfZfwA_WiFoEsspflJeE3aWgIMLheaVo' rel="noopener noreferrer" target="_blank">
+                                Článok na bbonline.sk o našom benefinčnom Mikulášskom behu, ktorého sa zúčastnilo viac ako 250 bežcov
+                            </a>
+                        </div>
+                        <div className='content-div'>
+                            <a href='https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY' rel="noopener noreferrer" target="_blank">
+                                Článok na bystrica.dnes24.sk o benefičnom punči v areáli Gymnázia J. G. Tajovského, z ktorého výťažok pôojde na našu Neónku
                             </a>
                         </div>
                     </StyledDescribtionCard>
