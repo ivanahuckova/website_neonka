@@ -20,7 +20,7 @@ export default class Navbar extends React.Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, true);
     }
-    
+
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll, true);
     }
@@ -32,8 +32,11 @@ export default class Navbar extends React.Component {
             this.setState({idx: 1});
         }
     }
-    
+
     render() {
+        const { idx } = this.state
+        const colorClass = idx ? 'yellow' : 'pink'
+
         return (
             <StyledNavbar style={{backgroundColor: this.colors[this.state.idx]}}>
                 <NavbarContainer>
@@ -45,19 +48,19 @@ export default class Navbar extends React.Component {
                         </LogoContainer>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='#team' className='mobile-none'>
+                            <a href='#team' className={`${colorClass} mobile-none`}>
                                 O nás
                             </a>
                         </div>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='#media' className='mobile-none'>
+                            <a href='#media' className={`${colorClass} mobile-none`}>
                                 Médiá
                             </a>
                         </div>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='https://www.facebook.com/pg/neonkabanskabystrica/' className='mobile-none' rel='noopener noreferrer' target='_blank'>
+                            <a href='https://www.facebook.com/pg/neonkabanskabystrica/' className={`${colorClass} mobile-none`} rel='noopener noreferrer' target='_blank'>
                                 Sledujte nás na FB
                             </a>
                         </div>
@@ -99,13 +102,27 @@ const NavbarContainer = styled.div`
     @media screen and (max-width: 1500px) {
         padding: 0 10vw;
     }
-    
+
     @media screen and (max-width: 800px) {
         padding: 0 7vw;
     }
+
     .navbar-item {
         font-size: 16px;
         cursor: pointer;
+
+        .yellow {
+            color: black;
+            &:hover {
+                color: ${colors.yellowColor}
+            }
+        }
+        .pink {
+            color: black;
+            &:hover {
+                color: ${colors.pinkColor}
+            }
+        }
     }
     .mobile-none {
         @media screen and (max-width: 650px) {
