@@ -18,7 +18,7 @@ import Media from './Components/Media';
 import Partneri from './Components/Partneri';
 import PodporteNas from './Components/PodporteNas';
 import ONas from './Components/ONas';
-import Akcie from './Components/Akcie';
+// import Akcie from './Components/Akcie';
 
 import Footer from './Components/Footer';
 
@@ -34,7 +34,7 @@ function App() {
                 <Ciele />
                 <PodporteNas />
                 <ONas />
-                <Akcie />
+                {/* <Akcie /> */}
                 <Media />
                 <Partneri />
                 <NasiPacienti />

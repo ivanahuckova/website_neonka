@@ -16,8 +16,7 @@ import neonkaTeam9 from '../assets/neonka_team9.jpg';
 import neonkaTeam10 from '../assets/neonka_team10.jpg';
 import neonkaTeam11 from '../assets/neonka_team11.jpg';
 import neonkaTeam12 from '../assets/neonka_team12.jpg';
-import neonkaTeam13 from '../assets/neonka_team11.jpg';
-import neonkaTeam14 from '../assets/neonka_team12.jpg';
+import neonkaTeam14 from '../assets/neonka_team14.jpg';
 
 
 
@@ -47,9 +46,6 @@ export default function ONas() {
                         </div>
                         <div>
                             <img className="main-img" src={neonkaTeam9} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam13} alt='fotografia teamu' />
                         </div>
                         <div>
                             <img className="main-img" src={neonkaTeam14} alt='fotografia teamu' />
