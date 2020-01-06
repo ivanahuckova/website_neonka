@@ -60,7 +60,7 @@ export default class Navbar extends React.Component {
                         </div>
                         <div className='navbar-item'>
                             {' '}
-                            <a href='#facebookfeed' className={`${colorClass} mobile-none`} >
+                            <a href='#facebook' className={`${colorClass} mobile-none`} >
                                 Sledujte nás na FB
                             </a>
                         </div>

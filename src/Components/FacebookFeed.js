@@ -26,11 +26,11 @@ export default class FacebookFeed extends React.Component {
     render() {
         const { size } = this.state
         return (
-            <StyledContent id='facebookfeed'>
+            <StyledContent id='facebook'>
                 <h3>Sledujte nás na Facebooku</h3>
-                { size > 600 && <StyledIframe title="facebook feed" scrolling="yes" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=500&height=600&stream=true&header=true"></StyledIframe> }
-                { size <= 600 && size > 500 && <StyledIframe title="facebook feed" scrolling="yes" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=400&height=500&stream=true&header=true"></StyledIframe> }
-                { size <= 500 && <StyledIframe title="facebook feed" scrolling="yes" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=300&height=500&stream=true&header=true"></StyledIframe> }
+                { size > 600 && <StyledIframe title="facebook feed" scrolling="yes" src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=500&height=600&stream=true&header=true"></StyledIframe> }
+                { size <= 600 && size > 500 && <StyledIframe title="facebook feed" scrolling="yes" src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=400&height=500&stream=true&header=true"></StyledIframe> }
+                { size <= 500 && <StyledIframe title="facebook feed" scrolling="yes" src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fneonkabanskabystrica&width=300&height=500&stream=true&header=true"></StyledIframe> }
             </StyledContent>
         );
     }
