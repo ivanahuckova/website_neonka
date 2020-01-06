@@ -14,6 +14,7 @@ import Navbar from './Components/Navbar';
 import LandingBanner from './Components/LandingBanner';
 import Ciele from './Components/Ciele';
 import NasiPacienti from './Components/NasiPacienti';
+import FacebookFeed from './Components/FacebookFeed';
 import Media from './Components/Media';
 import Partneri from './Components/Partneri';
 import PodporteNas from './Components/PodporteNas';
@@ -36,8 +37,9 @@ function App() {
                 <ONas />
                 {/* <Akcie /> */}
                 <Media />
-                <Partneri />
+                <FacebookFeed />
                 <NasiPacienti />
+                <Partneri />
                 <Footer />
             </StyledLandingContainer>
         </div>
