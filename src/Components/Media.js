@@ -26,13 +26,13 @@ export default class Media extends React.Component {
                             </a>
                         </div>
                         <div className='content-div'>
-                            <a href='https://bbonline.sk/foto-250-mikulasov-si-pod-urpinom-zabehalo-pre-dobru-vec/?fbclid=IwAR3HgUIDyCR_2UQj-vnQXtUzeOpGfZfwA_WiFoEsspflJeE3aWgIMLheaVo' rel="noopener noreferrer" target="_blank">
-                                Článok na bbonline.sk o našom benefinčnom Mikulášskom behu, ktorého sa zúčastnilo viac ako 250 bežcov
+                            <a href='www.priekopnik.sk%2F6-rocnik-charitativneho-mikulasskeho-behu-podporili-aj-sportove-osobnosti%2F%3Ffbclid%3DIwAR3G_-LE856nkWahhIRHoaBdDmGpt9pDAJkwYvrmPm_K-UfXmdXIioiat_Q&h=AT18MPKwq4R-2UIcPSpFzP36ue_jpkxK4qiQXqU0Z83FtqV1aQv9Kq0oggvMwzKKVAH7iyKstb90nq3D40rivHLDOXIeigYJ7scWBkV_k03gKesExSuJG_hgP2ZxzaU6R5QDn6E1xM9NtaA_tA06yyah' rel="noopener noreferrer" target="_blank">
+                                Článok na priekopnik.sk o našom benefinčnom Mikulášskom behu, ktorého sa zúčastnilo viac ako 250 bežcov
                             </a>
                         </div>
                         <div className='content-div'>
-                            <a href='https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY' rel="noopener noreferrer" target="_blank">
-                                Článok na bystrica.dnes24.sk o benefičnom punči v areáli Gymnázia J. G. Tajovského, z ktorého výťažok pôojde na našu Neónku
+                            <a href='https://bystrica.dnes24.sk/krasne-co-sa-podarilo-bystrickym-gymnazistom-pre-chore-deti-vyzbierali-stovky-eur-349403?fbclid=IwAR3vhMuKz1XlA94JwKLZJoKlwFUjjPlP6gIFr1zKhwacanFfuCl-NDxUzoA' rel="noopener noreferrer" target="_blank">
+                                Článok na bystrica.dnes24.sk o benefičnom punči v areáli Gymnázia J. G. Tajovského, z ktorého výťažok podporil Neónku
                             </a>
                         </div>
                     </StyledDescribtionCard>

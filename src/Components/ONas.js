@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 //Import icons/images
-import neonkaTeam1 from '../assets/neonka_team.jpg';
+import neonkaTeam1 from '../assets/neonka_team1.jpg';
 import neonkaTeam2 from '../assets/neonka_team2.jpg';
 import neonkaTeam3 from '../assets/neonka_team3.jpg';
 import neonkaTeam4 from '../assets/neonka_team4.jpg';
@@ -14,8 +14,6 @@ import neonkaTeam7 from '../assets/neonka_team7.jpg';
 import neonkaTeam8 from '../assets/neonka_team8.jpg';
 import neonkaTeam9 from '../assets/neonka_team9.jpg';
 import neonkaTeam10 from '../assets/neonka_team10.jpg';
-import neonkaTeam11 from '../assets/neonka_team11.jpg';
-import neonkaTeam12 from '../assets/neonka_team12.jpg';
 
 
 
@@ -38,43 +36,34 @@ export default function ONas() {
                 <CarouselContainer>
                     <Carousel>
                         <div>
-                            <img className="main-img" src={neonkaTeam7} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam8} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam9} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam10} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam11} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam12} alt='fotografia teamu' />
-                        </div>
-                        <div>
-                            <img className="main-img" src={neonkaTeam1} alt='fotografia teamu' />
-                        </div>
-                        <div>
                             <img className="main-img" src={neonkaTeam6} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam7} alt='fotografia teamu' />
                         </div>
                         <div>
                             <img className="main-img" src={neonkaTeam2} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam3} alt='fotografia teamu' />
+                            <img className="main-img" src={neonkaTeam1} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam9} alt='fotografia teamu' />
                         </div>
                         <div>
                             <img className="main-img" src={neonkaTeam4} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam5} alt='fotografia teamu' />
+                            <img className="main-img" src={neonkaTeam10} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam6} alt='fotografia teamu' />
+                            <img className="main-img" src={neonkaTeam8} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam3} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className="main-img" src={neonkaTeam5} alt='fotografia teamu' />
                         </div>
                     </Carousel>
                 </CarouselContainer>
