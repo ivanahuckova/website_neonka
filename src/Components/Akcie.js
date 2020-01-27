@@ -6,10 +6,10 @@ import * as colors from '../style/colors';
 import * as fonts from '../style/fonts';
 
 //Import icons/images
-// import neonkaBeh from '../assets/neonka_beh.svg';
-import eventBanner from '../assets/event_banner.jpg';
+// import eventBanner from '../assets/event_banner.jpg';
+import neonka from '../assets/logo_image.svg';
 
-const url = 'https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY'
+// const url = 'https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY'
 
 
 
@@ -17,12 +17,14 @@ const url = 'https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-ta
 export default class Akcie extends React.Component {
     render() {
         return (
-            <StyledMidBanner>
-                <h1 id='akcie'>Tajácky Benefičný Punč</h1>
-                <div className="banner"><img alt="plagat beneficneho puncu" src={eventBanner} /></div>
-                <div>17.12.2019 o 16:00 - 19:00</div>
-                <div>Gymnázium J. G. Tajovského v Banskej Bystrici</div>
-                <div><a href={url} rel="noopener noreferrer" target="_blank">Viac</a></div>
+            <StyledMidBanner id='mikulas'>
+                <h1>Mikuláš sa vrátil do DFN</h1>
+                <div>6. ročník Charitatívneho Mikulášskeho behu dopadol nad naše očakávanie, s rekordnou účasťou 222 mikulášov. Všetci sme behali za spoločný cieľ, za deti s cystickou fibrózou.</div>
+                <div>Za vyzbierané peniaze sa nám podarilo zakúpiť 5 najmodernejších inhalátorov od spoločnosti MR diagno - stic. Prístroje budú venované 5 deťom s cystickou fibrózou. Tieto deti boli zachytené novorodeneckým skríningom a sú mladšie ako dva roky. Inhalátory im zlepšia kvalitu života - pocit nadýchnuť sa!</div>
+                <div>Oficiálne odovzdanie prístrojov rodinám bude za účasti Dr. Takáča, ktorý vedie Centrum pre liečbu cystickej fibrózy v Banskej Bystrici. Prístroje odovzdajú organizátori behu - OZ Neónka Banská Bystrica a OZ Crazy woman v zastúpení Dr. Belicovej.</div>
+                <div className="bold">Save the date! 12.2.2020, o 16:00 v zasadačke DFN v Banskej Bystrici.</div>
+                <div>Občerstvenie zabezpečíme.</div>
+                <div>Vaše Neónky!<img alt="logo neonky" src={neonka}></img></div>
             </StyledMidBanner>
         );
     }
@@ -30,7 +32,7 @@ export default class Akcie extends React.Component {
 
 const StyledMidBanner = styled.div`
     margin: 0;
-    padding: 10vh 15vw;
+    padding: 10vh 20vw;
     background-color: ${colors.yellowColor};
     display: flex;
     flex-direction: column;
@@ -38,7 +40,13 @@ const StyledMidBanner = styled.div`
     align-items: center;
 
     @media screen and (max-width: 1500px) {
-        padding: 10vh 10vw;
+        padding: 10vh 15vw;
+    }
+    @media screen and (max-width: 700px) {
+        padding: 10vh 5vw;
+    }
+    .bold {
+        font-weight: bold;
     }
     h1 {
         font-size: ${fonts.mainHeadingScreen};
@@ -64,7 +72,6 @@ const StyledMidBanner = styled.div`
         font-size: ${fonts.textScreen};
         padding-top: 10px;
         text-align: center;
-        font-weight: bold;
         @media screen and (max-width: 600px) {
             ont-size: ${fonts.textMobile};
         }
