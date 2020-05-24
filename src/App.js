@@ -7,8 +7,6 @@ import './App.css';
 //Colors
 import { yellowColor, pinkColor } from './style/colors';
 
-
-
 //Import components
 import Navbar from './Components/Navbar';
 import LandingBanner from './Components/LandingBanner';
@@ -24,7 +22,6 @@ import Akcie from './Components/Akcie';
 import Footer from './Components/Footer';
 
 function App() {
-
     return (
         <div>
             <StyledLandingContainer>

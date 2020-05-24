@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 //Import icons/images
+import neonkaTeam0 from '../assets/neonka_team0.jpg';
 import neonkaTeam1 from '../assets/neonka_team1.jpg';
 import neonkaTeam2 from '../assets/neonka_team2.jpg';
 import neonkaTeam3 from '../assets/neonka_team3.jpg';
@@ -15,12 +16,9 @@ import neonkaTeam8 from '../assets/neonka_team8.jpg';
 import neonkaTeam9 from '../assets/neonka_team9.jpg';
 import neonkaTeam10 from '../assets/neonka_team10.jpg';
 
-
-
 //Colors + Fonts
 import * as colors from '../style/colors';
 import * as fonts from '../style/fonts';
-
 
 //Main component
 export default function ONas() {
@@ -29,48 +27,52 @@ export default function ONas() {
             <h3>O nás</h3>
             <StyledPeopleConatiner>
                 <div>
-                    Sme 4 mladé lekárky v príprave na pediatriu - <span className='name'>Ninka</span>, <span className='name'>Ľudka</span>, <span className='name'>Žofka</span> a <span className='name'>Mirka</span> z
-                    Detskej fakultnej nemocnice v Banskej Bystrici. Túžime pomáhať deťom a rodinám chronicky chorých detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na našom
-                    detskom oddelení. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré deti.
+                    Sme 4 mladé lekárky v príprave na pediatriu - <span className='name'>Ninka</span>, <span className='name'>Ľudka</span>,{' '}
+                    <span className='name'>Žofka</span> a <span className='name'>Mirka</span> z Detskej fakultnej nemocnice v Banskej Bystrici. Túžime
+                    pomáhať deťom a rodinám chronicky chorých detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na našom detskom
+                    oddelení. Neónka je známa tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre všetky choré deti.
                 </div>
                 <CarouselContainer>
                     <Carousel>
                         <div>
-                            <img className="main-img" src={neonkaTeam6} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam0} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam7} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam6} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam2} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam7} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam1} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam2} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam9} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam1} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam4} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam9} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam10} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam4} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam8} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam10} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam3} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam8} alt='fotografia teamu' />
                         </div>
                         <div>
-                            <img className="main-img" src={neonkaTeam5} alt='fotografia teamu' />
+                            <img className='main-img' src={neonkaTeam3} alt='fotografia teamu' />
+                        </div>
+                        <div>
+                            <img className='main-img' src={neonkaTeam5} alt='fotografia teamu' />
                         </div>
                     </Carousel>
                 </CarouselContainer>
             </StyledPeopleConatiner>
         </StyledTeamContainer>
     );
-};
+}
 
 const StyledTeamContainer = styled.div`
     display: flex;
@@ -82,7 +84,6 @@ const StyledTeamContainer = styled.div`
         text-align: center;
         @media screen and (max-width: 500px) {
             font-size: ${fonts.mainHeadingMobile};
-
         }
     }
 `;
@@ -115,9 +116,7 @@ const StyledPeopleConatiner = styled.div`
         justify-content: flex-start;
         text-align: left;
     }
-
 `;
-
 
 const CarouselContainer = styled.div`
     margin-top: 30px;
@@ -128,6 +127,4 @@ const CarouselContainer = styled.div`
     @media screen and (max-width: 600px) {
         width: 100%;
     }
-`
-
-
+`;

@@ -35,6 +35,11 @@ export default class Media extends React.Component {
                                 Článok na bystrica.dnes24.sk o benefičnom punči v areáli Gymnázia J. G. Tajovského, z ktorého výťažok podporil Neónku
                             </a>
                         </div>
+                        <div className='content-div'>
+                            <a href='https://www.startitup.sk/nie-vsetci-mladi-lekari-odchadzaju-zo-slovenska-styri-pediatricky-ostali-a-pomahaju-chronicky-chorym-detom/' rel="noopener noreferrer" target="_blank">
+                                Článok o OZ Neonka na Startitup.sk
+                            </a>
+                        </div>
                     </StyledDescribtionCard>
                 </StyledContentSection>
             </StyledContent>
