@@ -7,8 +7,6 @@ import './App.css';
 //Colors
 import { yellowColor, pinkColor } from './style/colors';
 
-
-
 //Import components
 import Navbar from './Components/Navbar';
 import LandingBanner from './Components/LandingBanner';
@@ -19,12 +17,11 @@ import Media from './Components/Media';
 import Partneri from './Components/Partneri';
 import PodporteNas from './Components/PodporteNas';
 import ONas from './Components/ONas';
-// import Akcie from './Components/Akcie';
+import Akcie from './Components/Akcie';
 
 import Footer from './Components/Footer';
 
 function App() {
-
     return (
         <div>
             <StyledLandingContainer>
@@ -35,7 +32,7 @@ function App() {
                 <Ciele />
                 <PodporteNas />
                 <ONas />
-                {/* <Akcie /> */}
+                <Akcie />
                 <Media />
                 <FacebookFeed />
                 <NasiPacienti />

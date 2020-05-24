@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import rallyklub from '../assets/partners/rallyklub.jpg';
 import koliba from '../assets/partners/kolibaozdany.png';
 import cincuacik from '../assets/partners/cincuacik.png';
+import mnambox from '../assets/partners/mnambox.png';
 
 //Colors + Fonts
 import * as colors from '../style/colors';
@@ -32,7 +33,12 @@ export default class Partneri extends React.Component {
                             </PartnersCard>
                             <PartnersCard>
                                 <a href='https://kolibaozdany.sk/' rel="noopener noreferrer" target="_blank">
-                                    <img className="koliba" src={koliba} alt='logo koliba ozdany'></img>
+                                    <img src={koliba} alt='logo koliba ozdany'></img>
+                                </a>
+                            </PartnersCard>
+                            <PartnersCard>
+                                <a href='https://mnambox.sk/' rel="noopener noreferrer" target="_blank">
+                                    <img src={mnambox} alt='logo mnambox'></img>
                                 </a>
                             </PartnersCard>
                         </PartnersContainer>
@@ -128,14 +134,8 @@ const PartnersContainer = styled.div`
 `;
 
 const PartnersCard = styled.div`
-    width: 200px;
+    height: 100px;
     margin: 10px;
-    .koliba {
-        padding: 20px;
-        @media screen and (max-width: 600px) {
-            padding: 5px;
-        }
-    }
     @media screen and (max-width: 600px) {
         margin: 50px;
         width: 200px;
