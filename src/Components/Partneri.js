@@ -134,17 +134,18 @@ const PartnersContainer = styled.div`
 `;
 
 const PartnersCard = styled.div`
-    height: 100px;
+    max-height: 100px;
+    width: 200px;
     margin: 10px;
     @media screen and (max-width: 600px) {
         margin: 50px;
-        width: 200px;
+        width: 150px;
     }
     @media screen and (max-width: 400px) {
         margin: 30px;
-        width: 200px;
     }
     img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
 `;

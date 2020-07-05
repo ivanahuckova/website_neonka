@@ -7,7 +7,7 @@ import * as fonts from '../style/fonts';
 
 //Import icons/images
 // import eventBanner from '../assets/event_banner.jpg';
-import neonka from '../assets/logo_image.svg';
+// import neonka from '../assets/logo_image.svg';
 
 // const url = 'https://bystrica.dnes24.sk/slachetny-cin-bystrickych-gymnazistov-takto-sa-rozhodli-pomoct-detom-priputanym-na-lozka-348436?fbclid=IwAR3Ijn8mA7dLaord_ErvzyaEc5o8R03rXVZBoxyS21VhpdzAwWG0_0VS1vY'
 
