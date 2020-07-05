@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 //Colors + Fonts
-import * as colors from "../style/colors";
-import * as fonts from "../style/fonts";
+import * as colors from "../../style/colors";
+import * as fonts from "../../style/fonts";
 
 //Main component
 export default class PodporteNas extends React.Component {
