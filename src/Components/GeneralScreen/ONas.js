@@ -23,7 +23,8 @@ import * as fonts from "../../style/fonts";
 //Main component
 export default function ONas() {
   return (
-    <StyledTeamContainer id="team">
+    <StyledTeamContainer>
+      <div id="team"></div>
       <h3>O nás</h3>
       <StyledPeopleConatiner>
         <div>
@@ -127,6 +128,7 @@ const StyledTeamContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   h3 {
     color: ${colors.pinkColor};
     font-size: ${fonts.mainHeadingScreen};
@@ -134,6 +136,10 @@ const StyledTeamContainer = styled.div`
     @media screen and (max-width: 500px) {
       font-size: ${fonts.mainHeadingMobile};
     }
+  }
+  #team {
+    position: absolute;
+    margin-top: -100px;
   }
 `;
 

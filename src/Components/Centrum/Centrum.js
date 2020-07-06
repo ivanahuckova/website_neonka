@@ -27,9 +27,7 @@ export default class Centrum extends React.Component {
     const { size } = this.state;
     return (
       <StyledMidBanner id="novinky">
-        <h1>
-          Stredoslovenské centrum nervovo-svalových ochorení v detskom veku
-        </h1>
+        <h1>Stredoslovenské centrum pre nervovo-svalové ochorenia</h1>
         <div>
           Najmä vďaka vašej podpore sme v Banskej Bystrici otvorili moderné{" "}
           <span className="bold yellow">
@@ -84,7 +82,7 @@ export default class Centrum extends React.Component {
           <span className="bold">Košiciach</span>. Liečba nami diagnostikovaných
           pacientov je niekedy obmedzená a môže byť podávaná len v centre, čo
           pre rodiny môže znamenať dochádzanie niekoľko stoviek kilometrov.
-          Práve preto sme v <span className="bold">Banskej Bystrici</span>
+          Práve preto sme v <span className="bold">Banskej Bystrici </span>
           otvorili Stredoslovenské centrum pre diagnostiku a liečbu
           nervovo-svalových ochorení v detskom veku.
         </div>

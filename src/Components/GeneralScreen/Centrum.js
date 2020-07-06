@@ -29,12 +29,7 @@ export default class Akcie extends React.Component {
     // const { size } = this.state;
     return (
       <StyledMidBanner id="novinky">
-        <a href="/nervovo-svalove-centrum">
-          <h1>
-            Stredoslovenské centrum pre diagnostiku a liečbu nervovo-svalových
-            ochorení v detskom veku
-          </h1>
-        </a>
+        <h1>Stredoslovenské centrum pre nervovo-svalové ochorenia</h1>
         <div>
           Aj vďaka Vašej podpore, za ktorú veľmi ďakujeme otvárame
           Stredoslovenské centrum pre diagnostiku a liečbu nervovo-svalových
