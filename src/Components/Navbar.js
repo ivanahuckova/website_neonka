@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import Menu, { SubMenu, Item as MenuItem } from "rc-menu";
+
+import { css } from "emotion";
+import "rc-menu/assets/index.css";
 
 //Assets
 import logoText from "../assets/logo_text.svg";
-
-//Assets
-import badge from "../assets/centrum_badge.svg";
 
 //Colors + Fonts
 import * as colors from "../style/colors";
 
 //Main component
+
 export default class Navbar extends React.Component {
   constructor() {
     super();
@@ -36,51 +38,145 @@ export default class Navbar extends React.Component {
   };
 
   render() {
-    const { idx } = this.state;
-    const colorClass = idx ? "yellow" : "pink";
-
     return (
       <StyledNavbar style={{ backgroundColor: this.colors[this.state.idx] }}>
         <NavbarContainer>
           <NavbarItemsContainer>
+            <CommonMenu mode="horizontal" openAnimation="slide-up" />
             <LogoContainer>
               <a href="/">
                 <img className="logo" src={logoText} alt="logo" />
               </a>
             </LogoContainer>
-            <LogoContainer className="mobile-none">
-              <a href="/nervovo-svalove-centrum">
-                <img className="logo" src={badge} alt="logo" />
-              </a>
-            </LogoContainer>
-            <div className="navbar-item">
-              {" "}
-              <a href="/#team" className={`${colorClass} mobile-none`}>
-                O nás
-              </a>
-            </div>
-            <div className="navbar-item">
-              {" "}
-              <a href="/#facebook" className={`${colorClass} mobile-none`}>
-                Sledujte nás na FB
-              </a>
-            </div>
-            <div className="navbar-item">
-              {" "}
-              <a
-                href="/#podporte"
-                className="pink"
-                style={{ color: this.fonts[this.state.idx] }}
-              >
-                Podporte nás
-              </a>
-            </div>
           </NavbarItemsContainer>
         </NavbarContainer>
       </StyledNavbar>
     );
   }
 }
+
+const menuItemCss = css`
+  color: black;
+  cursor: pointer;
+  z-index: 1000;
+  position: static;
+
+  &:hover,
+  &:active {
+    background-color: ${colors.pinkColor} !important;
+    border-radius: 3px;
+  }
+`;
+
+const subMenuItemCss = css`
+  color: black;
+  z-index: 100;
+  * {
+    &:hover,
+    &:active {
+      background-color: ${colors.pinkColor} !important;
+      border-radius: 3px;
+    }
+  }
+`;
+
+const CommonMenu = (props) => {
+  const updateLocation = (href) => {
+    window.location.replace(href);
+  };
+
+  return (
+    <Menu
+      selectedKeys={["1"]}
+      mode={props.mode}
+      openAnimation={props.openAnimation}
+      defaultOpenKeys={props.defaultOpenKeys}
+    >
+      {[
+        <SubMenu className={subMenuItemCss} title="Projekty" key="2">
+          <MenuItem
+            className={menuItemCss}
+            key="2-1"
+            onClick={() => updateLocation("/mikulassky-beh")}
+          >
+            Mikulášsky beh
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-2"
+            onClick={() => updateLocation("/nervovo-svalove-centrum")}
+          >
+            Centrum nervovo-svalových ochorení
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-3"
+            onClick={() => updateLocation("/cysticka-fibroza")}
+          >
+            Diagnostika cystickej fibrózy
+          </MenuItem>
+        </SubMenu>,
+        <SubMenu className={subMenuItemCss} title="O nás" key="1">
+          <MenuItem
+            className={menuItemCss}
+            key="1-1"
+            onClick={() => updateLocation("/#team")}
+          >
+            OZ Neónka
+          </MenuItem>
+
+          <MenuItem
+            className={menuItemCss}
+            key="1-2"
+            onClick={() => updateLocation("/#ciele")}
+          >
+            Naše ciele
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="1-3"
+            onClick={() => updateLocation("/#media")}
+          >
+            Videli ste nás
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="1-4"
+            onClick={() =>
+              updateLocation("https://www.facebook.com/neonkabanskabystrica")
+            }
+          >
+            Facebook
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="1-5"
+            onClick={() => updateLocation("/#kontakt")}
+          >
+            Kontakt
+          </MenuItem>
+        </SubMenu>,
+
+        <MenuItem
+          className={menuItemCss}
+          key="3"
+          onClick={() => updateLocation("/podpora")}
+          title="Podporte nás"
+        >
+          Podporte nás
+        </MenuItem>,
+
+        <MenuItem
+          className={menuItemCss}
+          key="4"
+          onClick={() => updateLocation("/galeria")}
+        >
+          Galéria
+        </MenuItem>,
+      ]}
+    </Menu>
+  );
+};
 
 const StyledNavbar = styled.div`
   width: 100%;
@@ -108,7 +204,7 @@ const NavbarContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    padding: 0 7vw;
+    padding: 0;
   }
 
   .navbar-item {
@@ -142,13 +238,49 @@ const NavbarContainer = styled.div`
 const NavbarItemsContainer = styled.div`
   width: 95%;
   display: flex;
+  align-items: flex-start;
+
   justify-content: space-between;
-  align-items: center;
   .pink {
     color: ${colors.pinkColor};
   }
+
   @media screen and (max-width: 1200px) {
     width: 95%;
+  }
+  @media screen and (max-width: 400px) {
+    align-items: flex-end;
+  }
+  * {
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+    .rc-menu-submenu-title {
+      background-color: ${colors.pinkColor};
+    }
+
+    .rc-menu-item {
+      color: black;
+    }
+    .rc-menu-submenu-title {
+      background-color: transparent;
+      border: none;
+      color: black;
+    }
+
+    .rc-menu-submenu-active {
+      background: transparent;
+      border: none;
+      color: black;
+    }
+    &:hover,
+    &:active {
+      background: transparent;
+      border: none;
+      color: black;
+    }
   }
 `;
 
@@ -156,8 +288,14 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  @media screen and (max-width: 400px) {
+    align-items: flex-end;
+  }
   .logo {
     padding-top: 10px;
     width: 150px;
+    @media screen and (max-width: 400px) {
+      width: 100px;
+    }
   }
 `;

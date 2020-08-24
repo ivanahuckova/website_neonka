@@ -9,12 +9,10 @@ import * as fonts from "../../style/fonts";
 export default class Media extends React.Component {
   render() {
     return (
-      <StyledContent>
+      <StyledContent id="media">
         <StyledContentSection>
           <StyledDescribtionCard>
-            <h3 className="heading" id="media">
-              Videli ste nás
-            </h3>
+            <h3 className="heading">Videli ste nás</h3>
 
             <div className="content-div">
               <a

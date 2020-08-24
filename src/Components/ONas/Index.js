@@ -8,12 +8,10 @@ import { yellowColor, pinkColor } from "../../style/colors";
 import LandingBanner from "./LandingBanner";
 import Ciele from "./Ciele";
 import NasiPacienti from "./NasiPacienti";
-import FacebookFeed from "./FacebookFeed";
+import Kontakt from "./Kontakt";
 import Media from "./Media";
-import Partneri from "./Partneri";
-import PodporteNas from "./PodporteNas";
-import ONas from "./ONas";
-import Centrum from "./Centrum";
+
+import ONeonke from "./ONeonke";
 
 function General() {
   return (
@@ -21,14 +19,12 @@ function General() {
       <TopLandingContainer>
         <LandingBanner />
       </TopLandingContainer>
-      <Ciele />
-      <PodporteNas />
-      <ONas />
-      <Media />
-      <Centrum />
-      <FacebookFeed />
+      <ONeonke />
       <NasiPacienti />
-      <Partneri />
+      <Ciele />
+
+      <Media />
+      <Kontakt />
     </Wrapper>
   );
 }

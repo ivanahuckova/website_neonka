@@ -4,7 +4,7 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../../style/colors";
 import * as fonts from "../../style/fonts";
-import pozvanka from "../../assets/pozvanka.png";
+import otvorenie from "../../assets/otvorenie.jpg";
 
 //Main component
 export default class Centrum extends React.Component {
@@ -46,7 +46,7 @@ export default class Centrum extends React.Component {
             src="https://www.ta3.com/embed/20200613-hw-444f2aeb-4dbe-4ef5-a765-d4cb991ba778.html"
             width="500"
             height="320"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             className="padding"
             title="Reportaz o centre vacsia"
@@ -57,12 +57,37 @@ export default class Centrum extends React.Component {
             src="https://www.ta3.com/embed/20200613-hw-444f2aeb-4dbe-4ef5-a765-d4cb991ba778.html"
             width="350"
             height="224"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             className="padding"
             title="Reportaz o centre mensia"
           ></iframe>
         )}
+        <div className="bold padding">Slávnostné otvorenie</div>
+        <div>
+          Centrum pokrstil{" "}
+          <a href="https://www.instagram.com/fero_joke/">Fero Joke</a> s pani
+          primárkou u nás v Detskej fakultnej nemocnici v Banskej Bystrici.
+          Prišiel nás podporiť aj hlavný sponzor
+          <a href="https://www.instagram.com/nataliapazicka/">
+            {" "}
+            Natália Pažická
+          </a>{" "}
+          s jej{" "}
+          <a href="https://www.instagram.com/everyindividualmatters/">
+            OZ every individual matters
+          </a>
+          . Kultúrnu zložku- Minuet od Bacha zahrala naša známa pacientka a
+          kamarátka. Darček pre Fera nachystali naše deti za pomoci pani
+          učiteliek a ďakovnú kartu vytvorila Pani Anna z Facebooku a jej známe
+          Obrázky pani Anny. Za výborný catering ďakujeme{" "}
+          <a href="https://www.instagram.com/sympl.food/">symplfood</a>. Hlavne
+          ďakujeme všetkým Vám, ktorý ste prišli a boli ste s nami.
+        </div>
+
+        <div>
+          <img src={otvorenie} alt="otvoreniee centra" />
+        </div>
         <div className="bold padding">Prečo sme centrum vytvorili?</div>
         <div>
           Svalové ochorenia v detskom veku nie sú veľmi časté, ale takmer vždy
@@ -91,7 +116,7 @@ export default class Centrum extends React.Component {
             width="500"
             height="297"
             src="https://www.youtube.com/embed/Hs2bO7_3uvo"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="Sibylka o ochoreni vacsie"
@@ -103,21 +128,13 @@ export default class Centrum extends React.Component {
             width="350"
             height="208"
             src="https://www.youtube.com/embed/Hs2bO7_3uvo"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="Sibylka o ochoreni mensie"
             className="padding"
           ></iframe>
         )}
-        <div className="bold padding">Slávnostné otvorenie</div>
-        <div>
-          Slávnostné otvorenie sa uskutoční 24.7.2020 o 14:00 v Detskej
-          fakultnej nemocnici v Banskej Bystrici, na prvom poschodí
-          v priestoroch EMG ambulancie. Krstným otcom bude{" "}
-          <a href="https://www.instagram.com/fero_joke/?hl=en">Fero Joke</a>.{" "}
-          <img alt="pozvanka na akciu" src={pozvanka}></img>
-        </div>
       </StyledMidBanner>
     );
   }

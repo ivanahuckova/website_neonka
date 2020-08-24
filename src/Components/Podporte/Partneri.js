@@ -7,6 +7,7 @@ import rallyklub from "../../assets/partners/rallyklub.jpg";
 import koliba from "../../assets/partners/kolibaozdany.png";
 import cincuacik from "../../assets/partners/cincuacik.png";
 import mnambox from "../../assets/partners/mnambox.png";
+import invelity from "../../assets/partners/invelity.png";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -16,7 +17,7 @@ import * as fonts from "../../style/fonts";
 export default class Partneri extends React.Component {
   render() {
     return (
-      <StyledContent>
+      <StyledContent id="partneri">
         <StyledContentSection>
           <StyledDescribtionCard>
             <h3 className="heading">Ďakujeme naším partnerom</h3>
@@ -44,6 +45,15 @@ export default class Partneri extends React.Component {
               </PartnersCard>
               <PartnersCard>
                 <a
+                  href="https://mnambox.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={mnambox} alt="logo mnambox"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
                   href="https://kolibaozdany.sk/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -53,11 +63,11 @@ export default class Partneri extends React.Component {
               </PartnersCard>
               <PartnersCard>
                 <a
-                  href="https://mnambox.sk/"
+                  href="https://invelity.com/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <img src={mnambox} alt="logo mnambox"></img>
+                  <img src={invelity} alt="logo invelity"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>

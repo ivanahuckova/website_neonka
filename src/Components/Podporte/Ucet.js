@@ -9,8 +9,8 @@ import * as fonts from "../../style/fonts";
 export default class PodporteNas extends React.Component {
   render() {
     return (
-      <StyledMidBanner>
-        <StyledLinkDiv id="podporte" />
+      <StyledMidBanner id="podporte">
+        <StyledLinkDiv />
         <h1>Budeme vďačné za vašu pomoc!</h1>
         <div>Číslo účtu: SK 96 1100 0000 0029 4507 2424</div>
         <div>IČO: 52301826</div>
@@ -20,10 +20,10 @@ export default class PodporteNas extends React.Component {
 }
 
 const StyledMidBanner = styled.div`
-  margin: 0vh 0 6vh 0;
+  margin: 5vh 0 6vh 0;
   padding: 10vh 15vw;
   position: relative;
-  background-color: ${colors.yellowColor};
+  background-color: ${colors.pinkColor};
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -9,7 +9,7 @@ import * as fonts from "../../style/fonts";
 export default class Ciele extends React.Component {
   render() {
     return (
-      <StyledContent>
+      <StyledContent id="ciele">
         <StyledContentSection>
           <StyledDescribtionCard>
             <h3 className="heading">Naše ciele</h3>
@@ -81,7 +81,6 @@ export default class Ciele extends React.Component {
 }
 
 const StyledContent = styled.div`
-  margin-top: 10vh;
   padding: 0 15vw;
   display: flex;
   @media screen and (max-width: 1500px) {

@@ -11,8 +11,12 @@ import { pinkColor } from "./style/colors";
 //Import components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import General from "./Components/GeneralScreen/GeneralScreen";
-import Centrum from "./Components/Centrum/Centrum";
+import General from "./Components/ONas/Index";
+import Galeria from "./Components/Galeria/Index";
+import Podporte from "./Components/Podporte/Index";
+import NervoveCentrum from "./Components/Projekty/NervoveCentrum";
+import MikBeh from "./Components/Projekty/MikBeh";
+import Fibroza from "./Components/Projekty/Fibroza";
 
 function App() {
   return (
@@ -23,8 +27,29 @@ function App() {
           <Route exact path="/" render={(props) => <General {...props} />} />
           <Route
             exact
+            path="/galeria"
+            render={(props) => <Galeria {...props} />}
+          />
+          <Route
+            exact
             path="/nervovo-svalove-centrum"
-            render={(props) => <Centrum {...props} />}
+            render={(props) => <NervoveCentrum {...props} />}
+          />
+          <Route
+            exact
+            path="/mikulassky-beh"
+            render={(props) => <MikBeh {...props} />}
+          />
+          <Route
+            exact
+            path="/cysticka-fibroza"
+            render={(props) => <Fibroza {...props} />}
+          />
+
+          <Route
+            exact
+            path="/podpora"
+            render={(props) => <Podporte {...props} />}
           />
         </Switch>
       </StyledLandingContainer>
