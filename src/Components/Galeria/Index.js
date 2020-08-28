@@ -25,7 +25,7 @@ export default function Galeria() {
       </div>
       <iframe
         title="instagram feed"
-        src="https://snapwidget.com/embed/865512"
+        src="https://snapwidget.com/embed/867385"
         className="snapwidget-widget"
         allowtransparency="true"
         frameBorder="0"
