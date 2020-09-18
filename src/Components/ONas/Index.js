@@ -22,7 +22,6 @@ function General() {
       <ONeonke />
       <NasiPacienti />
       <Ciele />
-
       <Media />
       <Kontakt />
     </Wrapper>

@@ -8,12 +8,56 @@ import * as fonts from "../../style/fonts";
 
 //Main component
 export default class Fibroza extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      size: null,
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("resize", this.resize);
+    this.resize();
+  }
+
+  resize = () => {
+    this.setState({ size: window.innerWidth });
+  };
   render() {
+    const { size } = this.state;
     return (
       <StyledMidBanner>
         <h1>
           Prečo potrebujeme modernejší spôsob vyšetrovania chloridov v pote?
         </h1>
+        {size > 560 && (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/bLpMd881g-A"
+            frameBorder="0"
+            title="Video zbierky"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
+        {size < 561 && (
+          <iframe
+            width="350"
+            height="197"
+            src="https://www.youtube.com/embed/bLpMd881g-A"
+            frameBorder="0"
+            title="Video zbierky"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        )}
+        <div>
+          Číslo transparentného účtu zbierky je{" "}
+          <a href="https://www.transparentneucty.sk/#/ucet/SK9709000000005171611554">
+            SK 97 0900 0000 0051 7161 1554
+          </a>
+          .
+        </div>
         <div>
           Naším cieľom je zaviesť na našej ambulancii moderné vyšetrovanie
           chloridov v pote pomocou Macroduct systému, čím by sme nielenže
@@ -29,7 +73,7 @@ export default class Fibroza extends React.Component {
           <ul>
             <li>
               Banská Bystrica je jedným z 
-              <span className="className=" bold padding>
+              <span className="bold padding">
                 3 Centier pre liečbu pacientov s cystickou fibrózou v Slovenskej
                 republike
               </span>
@@ -45,16 +89,15 @@ export default class Fibroza extends React.Component {
               prínosových dutín, zápaly pľúc), vykašliavaním hustého hlienu,
               neprospievaním a objemnými stolicami.
             </li>
+            <li>Trpí ním cca 150 detských pacientov na Slovensku.</li>
             <li>
-              Trpí ním cca 150 detských pacientov na Slovensku.
-              <li>
-                Od roku 2013 je toto ochorenie súčasťou tzv. novorodeneckého
-                skríningu. U každého novorodenca detekujeme na 4.deň života
-                prítomnosť imunorektívneho trypsinogénu metódou suchej kvapky
-                získanej z pätičky. Hladina sa potom vyšetruje v Národnom
-                skríningovom centre v Banskej Bystrici.
-              </li>
+              Od roku 2013 je toto ochorenie súčasťou tzv. novorodeneckého
+              skríningu. U každého novorodenca detekujeme na 4.deň života
+              prítomnosť imunorektívneho trypsinogénu metódou suchej kvapky
+              získanej z pätičky. Hladina sa potom vyšetruje v Národnom
+              skríningovom centre v Banskej Bystrici.
             </li>
+
             <li>
               Pri vyššej hodnote sú deti predvolané na pokračovanie
               v diagnostike vyšetrením, ktoré predstavujú chloridy v pote.

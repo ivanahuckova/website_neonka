@@ -163,8 +163,7 @@ const PartnersContainer = styled.div`
 `;
 
 const PartnersCard = styled.div`
-  max-height: 100px;
-  width: 200px;
+  height: 100px;
   margin: 10px;
   @media screen and (max-width: 600px) {
     margin: 50px;

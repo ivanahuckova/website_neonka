@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -11,6 +11,7 @@ import { pinkColor } from "./style/colors";
 //Import components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import WelcomeModal from "./Components/WelcomeModal";
 import General from "./Components/ONas/Index";
 import Galeria from "./Components/Galeria/Index";
 import Podporte from "./Components/Podporte/Index";
@@ -19,9 +20,25 @@ import MikBeh from "./Components/Projekty/MikBeh";
 import Fibroza from "./Components/Projekty/Fibroza";
 
 function App() {
+  const [showModal, setShowModal] = useState(
+    !localStorage.getItem("modalShown")
+  );
+
+  const closeModal = () => {
+    setShowModal(false);
+    localStorage.setItem("modalShown", true);
+  };
+
   return (
     <Router>
       <StyledLandingContainer>
+        {showModal && (
+          <WelcomeModal
+            visible={showModal}
+            onClickAway={closeModal}
+            closeModal={closeModal}
+          />
+        )}
         <Navbar />
         <Switch>
           <Route exact path="/" render={(props) => <General {...props} />} />
