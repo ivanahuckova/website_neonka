@@ -8,6 +8,8 @@ import koliba from "../../assets/partners/kolibaozdany.png";
 import cincuacik from "../../assets/partners/cincuacik.png";
 import mnambox from "../../assets/partners/mnambox.png";
 import invelity from "../../assets/partners/invelity.png";
+import nebalene from "../../assets/partners/nebalene.png";
+import modrapupava from "../../assets/partners/modrapupava.png";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -68,6 +70,25 @@ export default class Partneri extends React.Component {
                   target="_blank"
                 >
                   <img src={invelity} alt="logo invelity"></img>
+                </a>
+              </PartnersCard>
+
+              <PartnersCard>
+                <a
+                  href="https://nebalene.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={nebalene} alt="logo nebalene"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://modrapupava.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={modrapupava} alt="logo modra pupava"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>
