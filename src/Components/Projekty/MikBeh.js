@@ -4,8 +4,10 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../../style/colors";
 import * as fonts from "../../style/fonts";
-import mikBeh from "../../assets/mik_beh.jpg";
-import neonkaBeh from "../../assets/neonka_beh.svg";
+import mik2019_1 from "../../assets/events/mik2019_1.jpg";
+import mik2020_1 from "../../assets/events/mik2020_1.jpg";
+import mik2020_2 from "../../assets/events/mik2020_2.jpg";
+// import neonkaBeh from "../../assets/neonka_beh.svg";
 
 //Main component
 export default class MikBeh extends React.Component {
@@ -14,62 +16,59 @@ export default class MikBeh extends React.Component {
       <StyledMidBanner id="novinky">
         <h1>„Čas je drahý!“ - Charitatívny Mikulášsky beh 2020</h1>
         <div>
-          7.ročník najstaršieho Mikulášskeho charitatívneho behu na Slovensku{" "}
-          <span className="bold yellow">BUDE</span> a je určený pre deti s
-          cystickou fibrózou.
+          OZ Neónka spojilo sily s OZ Crazy Women Active Planet. Keď sa spojí 5
+          žien, tak to má zmysel a veľkú silu pomôcť.
         </div>
-        <div className="bold padding">Ako sme si to vymysleli?</div>
+        <div className="bold padding">VÝNIMOČNE - CELOSVETOVO - DIŠTANČNE</div>
         <div>
-          Registrácia pre symbolický počet 100 osôb sa rozbehne čoskoro cestou
-          web stránky a následne uhradíte tradičné štartovné 10,-Eur na účet
-          O.Z. Crazy WoMen Active Planet.{" "}
-          <span className="bold yellow">
-            IBAN: SK 20 0900 0000 0051 5254 9724, Poznámka: Vaše meno, VS:
-            MIKY20
-          </span>
-          . Mikulášske oblečenie a štartové čísla si budete môcť prevziať na
-          predajni,3-4.12.2020. Beh bude prebiehať na tradičnej dráhe v dĺžke 1
-          km, v malých skupinkách do 6 osôb.
+          7. ročník Mikulášskeho behu „Čas je drahý“ bol určený pre deti s
+          cystickou fibrózou. Od októbra 2020 beží verejná zbierka s cieľom
+          vyzbierať{" "}
+          <span className="bold yellow">7000 Eur na diagnostický prístroj</span>
+          , ktorý umožní rýchlejšiu diagnostiku. Diagnostika cystickej fibrózy
+          je postavená na stanovení chloridov v pote. Pri tomto ochorení je
+          v pote vysoká koncentrácia chloridov. V okolitých krajinách je možné
+          diagnostikovať cystickú fibrózu jednoducho do 1 hodiny pomocou
+          moderného hodinkového prístroja Macroduct. Na Slovensku vyšetrujeme
+          chloridy v pote zastaralou metódou, kedy výsledok vyšetrenia máme
+          k dispozícii za 24 hodín od odobratia vzorky.
         </div>
-        <img src={neonkaBeh} alt="mikulassky beh" style={{ width: "200px" }} />
-        <div className="bold padding">5.12.2020 16.00-18.00</div>
         <div>
-          Každej skupinke bude pridelený čas štartu na web stránke a Facebook-u
-          s dostatočným odstupom medzi skupinkami. Môžete svoje skupinky aj
-          pomenovať. Mikulášski bežci budú mať rúška aj bradu. Agent Mikuláš
-          bude pred Europa Shopping Center dohliadať na dodržiavanie pravidiel a
-          ďalší agent Mikuláš 2 bude v cieli na Námestí SNP, pri Plzenskej
-          reštaurácii vydávať bežcom so štartovným číslom čaj a bude dbať na to,
-          aby sme sa nekumulovali. <br />
-          <br />
-          PROSÍME fotiť, fotiť a fotiť. Pre účastníkov v BB máme pripravenú
-          tombolu, ktorú vylosujeme zo štartovacích čísel a oznámime na webe a
-          FCB výhercov . Výhra bude pripravená na predajni v Banskej Bystrici.
+          <img src={mik2020_1} alt="mikulassky beh" />
         </div>
         <div className="bold padding">
-          Samozrejme, že si prajeme aby Vás bolo viac a tak je tu celosvetová
-          VÝZVA!
+          Ako náš charitatívny Mikulášsky beh vyzeral?
         </div>
         <div>
-          Bežte, kdekoľvek na svete v určenom čase{" "}
-          <span className="bold yellow">5.12.2020 medzi 16.00-18.00</span> a
-          buďte oblečení ako Mikuláš. Pošlite finančný príspevok na
-          transparentný účet OZ Neónka Banská Bystrica.{" "}
-          <span className="bold yellow">SK 97 0900 0000 00517161 1554</span>.
-          Tento účet je určený pre verejnú zbierku{" "}
-          <span className="bold yellow">„Čas je drahý“</span>, za dospelého
-          10,-Eur a dieťa 1,-Euro. Zapojte sa do súťaže zdieľaním fotky s názvom
-          #casjedrahy #activeplanet_svk #charityrun #banskabystrica na FB Active
-          Planet Outdoor centrum a Neónka Banská Bystrica Cenu získa:
+          Vytvorili sme skupinky po 6 bežcov a tých sme štartovali každých 10
+          minút. V cieli na bežcov čakala skupina pánov z 
+          <span className="bold yellow">Lions klubu</span> s teplým čajom, jedna
+          z rodín doniesla perníky, podarilo sa spraviť pekné fotografie,
+          podujatie prišli podporiť aj samotní pacienti s cystickou fibrózou
+          a tohtoročná 1. Vicemiss SR pochádzajúca z Banskej Bystrice Viktória
+          Podmanická . Vďaka ochote a podpore firmy{" "}
+          <span className="bold yellow">BB EXPO</span> sme mali darom 2
+          bilboardy.{" "}
+          <span className="bold yellow">
+            Firmy LIDL, Urpiner, Nebalené, Modrá púpava, Galvex, Active Planet
+          </span>{" "}
+          venovali krásnu tombolu a za to im ďakujeme, tombola čakala v cieli
+          a potešila naozaj každého. <br />
           <br />
-          1.Najveselšia fotka z Vášho behu vybratá členkami O.Z. NEÓNKA Banská
-          Bystrica osobne.
-          <br />
-          2.Mikuláš s najviac nabehanými km (doložené screenshotom z bežeckej
-          aplikácie) <br />
-          3.Mikuláš, ktorý pobeží v najvyššej nadmorskej výške (doložené
-          screenshotom z bežeckej aplikácie)
+          Bežci, ktorí sa nemohli zúčastniť behu v Banskej Bystrici, podporovali
+          deti s cystickou fibrózou distančne z celého sveta.V čase mikulášskeho
+          behu si zabehli a poslali nám krásne mikulášske fotky spolu
+          s finančnou podporou na transparentný účet zbierky. Distančnou formou
+          sme vyzbierali <span className="bold yellow">320 eur</span>, cez
+          registráciu účastníkov sa nám podarilo vyzbierať{" "}
+          <span className="bold yellow">622 eur</span>, čiastku na
+          transparentnom účte pripíšeme, keď vybavíme zaseknuté mikulášske
+          oblečenie na colnici 🙂. Všetkým veľmi pekne ďakujeme!
         </div>
+        <div>
+          <img src={mik2020_2} alt="mikulassky beh" />
+        </div>
+
         <div className="bold padding">Čo je to cystická fibróza?</div>
         <div>
           Cystická fibróza je genetické celoživotné ochorenie, ktorým trpí
@@ -94,7 +93,7 @@ export default class MikBeh extends React.Component {
           bežali za jeden spoločný cieľ.
         </div>
         <div>
-          <img src={mikBeh} alt="mikulassky beh" />
+          <img src={mik2019_1} alt="mikulassky beh" />
         </div>
 
         <div className="bold padding">Za deti s cystickou fibrózou</div>

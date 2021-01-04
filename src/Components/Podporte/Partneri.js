@@ -10,6 +10,8 @@ import mnambox from "../../assets/partners/mnambox.png";
 import invelity from "../../assets/partners/invelity.png";
 import nebalene from "../../assets/partners/nebalene.png";
 import modrapupava from "../../assets/partners/modrapupava.png";
+import activeplanet from "../../assets/partners/activeplanet.jpg";
+import crazywomen from "../../assets/partners/crazywomen.jpg";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -89,6 +91,24 @@ export default class Partneri extends React.Component {
                   target="_blank"
                 >
                   <img src={modrapupava} alt="logo modra pupava"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://www.activeplanet.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={activeplanet} alt="logo active planet"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://www.katarinabelicova.sk/mili-priatelia-sportu-a-o-z-crazy-woman-active-planet/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={crazywomen} alt="logo crazy women"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>
@@ -186,6 +206,7 @@ const PartnersContainer = styled.div`
 const PartnersCard = styled.div`
   height: 100px;
   margin: 10px;
+  margin-bottom: 30px;
   @media screen and (max-width: 600px) {
     margin: 50px;
     width: 150px;
