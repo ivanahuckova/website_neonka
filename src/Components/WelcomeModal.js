@@ -5,6 +5,8 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../style/colors";
 
+import modal from "../assets/modal.png";
+
 export default class WelcomeModal extends Component {
   updateLocation = (href) => {
     window.location.replace(href);
@@ -18,29 +20,14 @@ export default class WelcomeModal extends Component {
       >
         <StyledModal>
           <h2 style={{ margin: "10px", textAlign: "center" }}>
-            Zbierka na kúpu hodinkového prístroja <br /> na rýchlu diagnostiku
-            cystickej fibrózy
+            Venujte svoje 2% a pomôžte chorým deťom
           </h2>
-          <iframe
-            width="350"
-            height="197"
-            src="https://www.youtube.com/embed/bLpMd881g-A"
-            frameBorder="0"
-            title="Video zbierky"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-          <StyledText>
-            Číslo transparentného účtu zbierky je <br />
-            <a href="https://www.transparentneucty.sk/#/ucet/SK9709000000005171611554">
-              SK 97 0900 0000 0051 7161 1554
-            </a>
-          </StyledText>
+          <img src={modal} alt="2% z dani" />
           <StyledButtons>
             <span
               onClick={() => {
                 this.props.closeModal();
-                window.location.replace("/cysticka-fibroza");
+                window.location.replace("/podpora");
               }}
             >
               Chcem sa dozvedieť viac
@@ -63,11 +50,13 @@ const StyledModal = styled.div`
   background: ${colors.yellowColor};
   padding: 10px;
   border-radius: 5px;
+  height: 60vh;
   div {
     text-align: center;
   }
-  iframe {
-    margin-bottom: 10px;
+  img {
+    max-width: 50%;
+    max-height: 50%;
   }
 `;
 

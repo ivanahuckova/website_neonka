@@ -21,12 +21,13 @@ import Fibroza from "./Components/Projekty/Fibroza";
 
 function App() {
   const [showModal, setShowModal] = useState(
-    !localStorage.getItem("modalShown")
+    !localStorage.getItem("modal2percenta")
   );
 
   const closeModal = () => {
     setShowModal(false);
-    localStorage.setItem("modalShown", true);
+    localStorage.setItem("modal2percenta", true);
+    localStorage.removeItem("modalShown");
   };
 
   return (

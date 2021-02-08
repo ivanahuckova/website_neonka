@@ -11,7 +11,7 @@ export default class PodporteNas extends React.Component {
     return (
       <StyledMidBanner id="podporte">
         <StyledLinkDiv />
-        <h1>Budeme vďačné za vašu pomoc</h1>
+        <h1>Budeme vďačné za každú vašu pomoc</h1>
         <h2>OZ Neónka</h2>
         <div>Číslo účtu: SK 96 1100 0000 0029 4507 2424</div>
         <div>IČO: 52301826</div>
@@ -32,7 +32,7 @@ export default class PodporteNas extends React.Component {
 }
 
 const StyledMidBanner = styled.div`
-  margin: 5vh 0 6vh 0;
+  margin: 0 0 6vh 0;
   padding: 10vh 15vw;
   position: relative;
   background-color: ${colors.yellowColor};
