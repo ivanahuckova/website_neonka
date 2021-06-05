@@ -1,10 +1,16 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
+import * as colors from '../../style/colors';
+import * as fonts from '../../style/fonts';
 // import mikBeh from "../../assets/mik_beh.jpg";
+
+//Asseers
+import zbierka0 from '../../assets/events/zbierka/zbierka0.jpg';
+import zbierka1 from '../../assets/events/zbierka/zbierka1.jpg';
+import zbierka2 from '../../assets/events/zbierka/zbierka2.jpg';
+import zbierka3 from '../../assets/events/zbierka/zbierka3.jpg';
 
 //Main component
 export default class Fibroza extends React.Component {
@@ -15,7 +21,7 @@ export default class Fibroza extends React.Component {
     };
   }
   componentDidMount() {
-    window.addEventListener("resize", this.resize);
+    window.addEventListener('resize', this.resize);
     this.resize();
   }
 
@@ -26,9 +32,24 @@ export default class Fibroza extends React.Component {
     const { size } = this.state;
     return (
       <StyledMidBanner>
-        <h1>
-          Prečo potrebujeme modernejší spôsob vyšetrovania chloridov v pote?
-        </h1>
+        <h1>Oznam o ukončení zbierky</h1>
+        <div>
+          Aj vďaka Vašej finančnej pomoci sa v Detskej fakultnej nemocnici s poliklinikou Banská Bystrica rozbieha
+          modernejšia a rýchlejšia diagnostika cystickej fibrózy. S podporou Svetielko nádeje bude táto diagnostická
+          metóda dostupná pre všetkých detských pacientov. Sme radi, že takýto “zlatý štandard” v pneumologickej
+          ambulancii máme a myšlienku modernej a finančne dostupnej diagnostiky cystickej fibrózy budeme naďalej
+          podporovať!Na tomto projekte sa podieľalo množstvo ľudí a my vám všetkým zo srdca ďakujeme!
+          <span role="img">❤️</span> Vážime si jedinečnú spoluprácu s Jana Križová a Michaela Mimi Križová! Zvládli sme
+          to?! Iba čas ukáže. Stále platí, že čas je drahý!
+          <span role="img">⏱</span>
+        </div>
+        <StyledImageBox>
+          <img src={zbierka0} alt="fotka z pouzitia zakupeneho prostroja" />
+          <img src={zbierka1} alt="fotka z pouzitia zakupeneho prostroja" />
+          <img src={zbierka2} alt="fotka z pouzitia zakupeneho prostroja" />
+          <img src={zbierka3} alt="fotka z pouzitia zakupeneho prostroja" />
+        </StyledImageBox>
+        <h1>O ukončenej zbierke </h1>
         {size > 560 && (
           <iframe
             width="560"
@@ -52,69 +73,51 @@ export default class Fibroza extends React.Component {
           ></iframe>
         )}
         <div>
-          Číslo transparentného účtu zbierky je{" "}
-          <a href="https://www.transparentneucty.sk/#/ucet/SK9709000000005171611554">
-            SK 97 0900 0000 0051 7161 1554
-          </a>
-          .
+          Číslo transparentného účtu zbierky je{' '}
+          <a href="https://www.transparentneucty.sk/#/ucet/SK9709000000005171611554">SK 97 0900 0000 0051 7161 1554</a>.
         </div>
         <div>
-          Naším cieľom je zaviesť na našej ambulancii moderné vyšetrovanie
-          chloridov v pote pomocou Macroduct systému, čím by sme nielenže
-          zefektívnili našu prácu, ale v prvom rade dali šancu pacientom
-          s cystickou fibrózou na rýchle a kvalitné stanovenie diagnózy. Pred
-          niekoľkými rokmi sa rovnala diagnóza cystickej fibrózy nielen
-          nemožnosti prežiť detstvo plnohodnotne a mimo stien nemocnice, ale
-          bohužiaľ aj slabú nádej na dosiahnutie dospelosti vôbec. Avšak žijeme
-          v dobe, kedy medicína dosiahla obrovský pokrok v podobe kauzálnej
-          liečby.
+          Naším cieľom je zaviesť na našej ambulancii moderné vyšetrovanie chloridov v pote pomocou Macroduct systému,
+          čím by sme nielenže zefektívnili našu prácu, ale v prvom rade dali šancu pacientom s cystickou fibrózou na
+          rýchle a kvalitné stanovenie diagnózy. Pred niekoľkými rokmi sa rovnala diagnóza cystickej fibrózy nielen
+          nemožnosti prežiť detstvo plnohodnotne a mimo stien nemocnice, ale bohužiaľ aj slabú nádej na dosiahnutie
+          dospelosti vôbec. Avšak žijeme v dobe, kedy medicína dosiahla obrovský pokrok v podobe kauzálnej liečby.
         </div>
-        <div style={{ textAlign: "start" }}>
+        <div style={{ textAlign: 'start' }}>
           <ul>
             <li>
               Banská Bystrica je jedným z 
               <span className="bold padding">
-                3 Centier pre liečbu pacientov s cystickou fibrózou v Slovenskej
-                republike
+                3 Centier pre liečbu pacientov s cystickou fibrózou v Slovenskej republike
               </span>
               . Ostatné dva sa nachádzajú v Bratislave a v Košiciach.
             </li>
             <li>
-              Cystická fibróza je autozomálne recesívne ochorenie, ktoré patrí
-              medzi zriedkavé choroby. Je celoživotné. Podstatou je porucha na
-              úrovni CFTR génu, ktorá má za následok poruchu transportu sodíka
-              a chloridov v orgánoch obsahujúcich žľazy s vonkajším vylučovaním.
-              Postihuje takmer všetky orgány, no najviac dýchací a tráviaci
-              trakt. Prejavuje sa opakovanými zápalmi dýchacích ciest (zápaly
-              prínosových dutín, zápaly pľúc), vykašliavaním hustého hlienu,
-              neprospievaním a objemnými stolicami.
+              Cystická fibróza je autozomálne recesívne ochorenie, ktoré patrí medzi zriedkavé choroby. Je celoživotné.
+              Podstatou je porucha na úrovni CFTR génu, ktorá má za následok poruchu transportu sodíka a chloridov v
+              orgánoch obsahujúcich žľazy s vonkajším vylučovaním. Postihuje takmer všetky orgány, no najviac dýchací
+              a tráviaci trakt. Prejavuje sa opakovanými zápalmi dýchacích ciest (zápaly prínosových dutín, zápaly
+              pľúc), vykašliavaním hustého hlienu, neprospievaním a objemnými stolicami.
             </li>
             <li>Trpí ním cca 150 detských pacientov na Slovensku.</li>
             <li>
-              Od roku 2013 je toto ochorenie súčasťou tzv. novorodeneckého
-              skríningu. U každého novorodenca detekujeme na 4.deň života
-              prítomnosť imunorektívneho trypsinogénu metódou suchej kvapky
-              získanej z pätičky. Hladina sa potom vyšetruje v Národnom
-              skríningovom centre v Banskej Bystrici.
+              Od roku 2013 je toto ochorenie súčasťou tzv. novorodeneckého skríningu. U každého novorodenca detekujeme
+              na 4.deň života prítomnosť imunorektívneho trypsinogénu metódou suchej kvapky získanej z pätičky. Hladina
+              sa potom vyšetruje v Národnom skríningovom centre v Banskej Bystrici.
             </li>
 
             <li>
-              Pri vyššej hodnote sú deti predvolané na pokračovanie
-              v diagnostike vyšetrením, ktoré predstavujú chloridy v pote.
-              Mesačne vyšetríme okolo 15 pacientov.{" "}
+              Pri vyššej hodnote sú deti predvolané na pokračovanie v diagnostike vyšetrením, ktoré predstavujú chloridy
+              v pote. Mesačne vyšetríme okolo 15 pacientov.{' '}
             </li>
             <li>
-              Väčšina pochádza zo skríningu, niektorí pacienti sú vyšetrovaní
-              pre tzv. „podozrivú anamnézu“. Na našej ambulancii sa vykonáva
-              metódou pilokarpínovej ionoforézy a trvá približne 60 minút.
-              Výsledok vyšetrenia máme k dispozícii na druhý deň. Ttreba
-              podotknúť, že táto metóda je v celosvetovom meradle považovaná už
-              za zastaralú. Momentálne sa preferuje stanovenie chloridov v pote
-              pomocou Macroduct systému (zber potu je pomocou hodiniek). Výhodou
-              je jednoduchosť, kratšia doba samotnej procedúry (20 minút), väčší
-              komfort pre pacienta, ako aj možnosť mať k dispozícii výsledok už
-              v deň vyšetrenia, nižší počet chýb v predanalytickej a analytickej
-              fáze.
+              Väčšina pochádza zo skríningu, niektorí pacienti sú vyšetrovaní pre tzv. „podozrivú anamnézu“. Na našej
+              ambulancii sa vykonáva metódou pilokarpínovej ionoforézy a trvá približne 60 minút. Výsledok vyšetrenia
+              máme k dispozícii na druhý deň. Ttreba podotknúť, že táto metóda je v celosvetovom meradle považovaná už
+              za zastaralú. Momentálne sa preferuje stanovenie chloridov v pote pomocou Macroduct systému (zber potu je
+              pomocou hodiniek). Výhodou je jednoduchosť, kratšia doba samotnej procedúry (20 minút), väčší komfort pre
+              pacienta, ako aj možnosť mať k dispozícii výsledok už v deň vyšetrenia, nižší počet chýb v predanalytickej
+              a analytickej fáze.
             </li>
           </ul>
         </div>
@@ -189,5 +192,16 @@ const StyledMidBanner = styled.div`
         cursor: pointer;
       }
     }
+  }
+`;
+
+const StyledImageBox = styled.div`
+  display: flex;
+  width: 85vw;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  img {
+    width: 23%;
   }
 `;

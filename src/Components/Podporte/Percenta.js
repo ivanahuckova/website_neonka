@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
+import * as colors from '../../style/colors';
+// import * as fonts from "../../style/fonts";
 
-import percenta from "../../assets/percenta.jpg";
+import percenta from '../../assets/percenta.jpg';
 
 //Main component
 export default class Percenta extends React.Component {
@@ -16,7 +16,7 @@ export default class Percenta extends React.Component {
           <StyledDownload>
             <h2>Venujte svoje 2% a pomôžte chronicky chorým deťom</h2>
             <div>
-              Vyplnené tlačivo si môžete stiahnuť tu:{" "}
+              Vyplnené tlačivo si môžete stiahnuť tu:{' '}
               <a href="/files/tlacivo.pdf" download="danove_tlacivo_neonka">
                 Vyplnený forumlár na venovanie 2% daní
               </a>
