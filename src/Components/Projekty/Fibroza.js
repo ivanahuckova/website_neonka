@@ -32,15 +32,23 @@ export default class Fibroza extends React.Component {
     const { size } = this.state;
     return (
       <StyledMidBanner>
-        <h1>Oznam o ukončení zbierky</h1>
+        <h1>Oznam o ukončení verejnej zbierky Čas je drahý</h1>
         <div>
-          Aj vďaka Vašej finančnej pomoci sa v Detskej fakultnej nemocnici s poliklinikou Banská Bystrica rozbieha
-          modernejšia a rýchlejšia diagnostika cystickej fibrózy. S podporou Svetielko nádeje bude táto diagnostická
-          metóda dostupná pre všetkých detských pacientov. Sme radi, že takýto “zlatý štandard” v pneumologickej
-          ambulancii máme a myšlienku modernej a finančne dostupnej diagnostiky cystickej fibrózy budeme naďalej
-          podporovať!Na tomto projekte sa podieľalo množstvo ľudí a my vám všetkým zo srdca ďakujeme!
-          <span role="img">❤️</span> Vážime si jedinečnú spoluprácu s Jana Križová a Michaela Mimi Križová! Zvládli sme
-          to?! Iba čas ukáže. Stále platí, že čas je drahý!
+          Oznam o ukončení verejnej zbierky Čas je drahý - "Pomôžte nám zmodernizovať diagnostiku cystickej fibrózy na
+          Slovensku“ zapísanú do registra verejných zbierok pod registrovým číslom verejnej zbierky 000-2020-028069.
+          Spolu s Vami sa nám podarilo vyzbierať{' '}
+          <span className="bold yellow">7290 eur potrebných na kúpu hodinkového prístroja Macroduct</span>. Tento
+          prístroj sme zakúpili 3.5.2021 a od polovice mája sme ním začali vyšetrovať naše deti! Vzhľadom nato, že toho
+          času toto moderné vyšetrenie nieje hradené zdravotnou poisťovňou (naši pneumológovia vybavujú zaradenie výkonu
+          k výkonom hradených zdravotnou poisťovňou) pomohlo a{' '}
+          <span className="bold yellow">
+            podporilo náš projekt aj Svetielko nádeje a táto diagnostická metóda je dostupná pre všetkých detských
+            pacientov bez hradenia
+          </span>
+          . Sme radi, že takýto “zlatý štandard” v pneumologickej ambulancii máme a myšlienku modernej a finančne
+          dostupnej diagnostiky cystickej fibrózy budeme naďalej podporovať! Na tomto projekte sa podieľalo množstvo
+          ľudí a my vám všetkým zo srdca ďakujeme! <span role="img">❤️</span> Vážime si jedinečnú spoluprácu s Jana
+          Križová a Michaela Mimi Križová! Zvládli sme to?! Iba čas ukáže. Stále platí, že čas je drahý!
           <span role="img">⏱</span>
         </div>
         <StyledImageBox>
