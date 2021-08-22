@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
+import * as colors from '../../style/colors';
+import * as fonts from '../../style/fonts';
 
 //Main component
 export default class PodporteNas extends React.Component {
@@ -15,7 +15,7 @@ export default class PodporteNas extends React.Component {
         <h2>OZ Neónka</h2>
         <div>Číslo účtu: SK 96 1100 0000 0029 4507 2424</div>
         <div>IČO: 52301826</div>
-        <h2>Aktívne zbierky</h2>
+        {/* <h2>Aktívne zbierky</h2>
         <div>
           V súčasnosti prebieha naša zbierka na kúpu hodinkového prístroja na
           rýchlu diagnostiku cystickej fibrózy. Číslo transparentného účtu
@@ -25,7 +25,7 @@ export default class PodporteNas extends React.Component {
           </a>
           . Viac informácii o zbierke nájdete na podstránke{" "}
           <a href="/cysticka-fibroza">cystickej fibrózy</a>.
-        </div>
+        </div> */}
       </StyledMidBanner>
     );
   }
