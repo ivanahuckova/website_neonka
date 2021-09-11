@@ -80,10 +80,10 @@ export default class Fibroza extends React.Component {
             allowFullScreen
           ></iframe>
         )}
-        <div>
+        {/* <div>
           Číslo transparentného účtu zbierky je{' '}
           <a href="https://www.transparentneucty.sk/#/ucet/SK9709000000005171611554">SK 97 0900 0000 0051 7161 1554</a>.
-        </div>
+        </div> */}
         <div>
           Naším cieľom je zaviesť na našej ambulancii moderné vyšetrovanie chloridov v pote pomocou Macroduct systému,
           čím by sme nielenže zefektívnili našu prácu, ale v prvom rade dali šancu pacientom s cystickou fibrózou na
