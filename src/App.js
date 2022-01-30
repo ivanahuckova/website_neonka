@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ import { pinkColor } from './style/colors';
 //Import components
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
-// import WelcomeModal from './Components/WelcomeModal';
+import WelcomeModal from './Components/WelcomeModal';
 import General from './Components/ONas/Index';
 import Galeria from './Components/Galeria/Index';
 import Podporte from './Components/Podporte/Index';
@@ -21,24 +21,23 @@ import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
 
 function App() {
-  // const [showModal, setShowModal] = useState(!localStorage.getItem('modal2percenta'));
+  const [showModal, setShowModal] = useState(!localStorage.getItem('modal2percenta2022'));
 
-  // const closeModal = () => {
-  //   setShowModal(false);
-  //   localStorage.setItem('modal2percenta', true);
-  //   localStorage.removeItem('modalShown');
-  // };
+  const closeModal = () => {
+    setShowModal(false);
+    localStorage.setItem('modal2percenta2022', true);
+  };
 
   return (
     <Router>
       <StyledLandingContainer>
-        {/* {showModal && (
+        {showModal && (
           <WelcomeModal
             visible={showModal}
             onClickAway={closeModal}
             closeModal={closeModal}
           />
-        )} */}
+        )}
         <Navbar />
         <Switch>
           <Route exact path="/" render={(props) => <General {...props} />} />

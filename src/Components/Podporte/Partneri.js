@@ -13,6 +13,7 @@ import modrapupava from "../../assets/partners/modrapupava.png";
 import activeplanet from "../../assets/partners/activeplanet.jpg";
 import crazywomen from "../../assets/partners/crazywomen.jpg";
 import chutzit from "../../assets/partners/chutzit.png";
+import panpagacik from "../../assets/partners/panpagacik.jpeg";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -119,6 +120,15 @@ export default class Partneri extends React.Component {
                   target="_blank"
                 >
                   <img src={chutzit} alt="logo chut zit"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://www.instagram.com/panpagacik"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={panpagacik} alt="logo pan pagacik"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>
