@@ -101,13 +101,29 @@ const CommonMenu = (props) => {
           >
             #Šnúrka
           </MenuItem>
+          <SubMenu title="Mikulášsky beh">
           <MenuItem
             className={menuItemCss}
-            key="2-2"
-            onClick={() => updateLocation("/mikulassky-beh")}
+            key="2-2-1"
+            onClick={() => updateLocation("/mikulassky-beh#novinky")}
           >
-            Mikulášsky beh
+            Mikulášsky beh 2021
           </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-2-2"
+            onClick={() => updateLocation("/mikulassky-beh#mikbeh2020")}
+          >
+            Mikulášsky beh 2020
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-2-3"
+            onClick={() => updateLocation("/mikulassky-beh#mikbeh2019")}
+          >
+            Mikulášsky beh 2019
+          </MenuItem>
+          </SubMenu>
           <MenuItem
             className={menuItemCss}
             key="2-3"

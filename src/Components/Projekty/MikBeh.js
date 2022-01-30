@@ -15,7 +15,7 @@ import mik2021_2 from "../../assets/events/mik2021_2.png";
 export default class MikBeh extends React.Component {
   render() {
     return (
-      <StyledMidBanner id="novinky">
+      <StyledMidBanner id="novinky" >
       <h1>#Šnúrka - Charitatívny Mikulášsky beh 2021</h1>
       <div>Mikuláššky Beh je srdcovka. S <a href="https://www.activeplanet.sk/">Active Planet Outdoor Centrum</a> 
         sme počas 3 rokov vytvorili silný  organizačný tím. Tento rok odštartoval Mikulášsky beh náš nový Neónka projekt  
@@ -41,7 +41,9 @@ export default class MikBeh extends React.Component {
         nutričnú terapiu 3 pacientom s poruchou príjmu potravy sa nám podarilo splniť. 
         A teraz obuť tenisky, zaviazať šnúrky a bežíme ďalej. Na dlhej trati, do kopca s novým projektom Šnúrka.
         </div>
-        <img src={mik2021_2} alt="mikulassky beh" /> 
+        <img src={mik2021_2} alt="mikulassky beh" />
+        <br id="mikbeh2020"/> 
+        <br/>
 
         <h1>„Čas je drahý!“ - Charitatívny Mikulášsky beh 2020</h1>
         <div>
@@ -113,6 +115,8 @@ export default class MikBeh extends React.Component {
           pomôžte nám naučiť Slovensko moderne a rýchlo diagnostikovať cystickú
           fibrózu a tým venujete slaným deťom a im rodinám čas.
         </div>
+        <br id="mikbeh2019"/>
+        <br/>
         <h1>„Dýchaj z hlboka!“ - Charitatívny Mikulášsky beh 2019</h1>
         <div>
           Občianske združenie Crazy WoMen Active Planet v spolupráci
