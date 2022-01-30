@@ -12,6 +12,7 @@ import nebalene from "../../assets/partners/nebalene.png";
 import modrapupava from "../../assets/partners/modrapupava.png";
 import activeplanet from "../../assets/partners/activeplanet.jpg";
 import crazywomen from "../../assets/partners/crazywomen.jpg";
+import chutzit from "../../assets/partners/chutzit.png";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -109,6 +110,15 @@ export default class Partneri extends React.Component {
                   target="_blank"
                 >
                   <img src={crazywomen} alt="logo crazy women"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://chutzit.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={chutzit} alt="logo chut zit"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>
