@@ -7,6 +7,8 @@ import * as fonts from "../../style/fonts";
 import mik2019_1 from "../../assets/events/mik2019_1.jpg";
 import mik2020_1 from "../../assets/events/mik2020_1.jpg";
 import mik2020_2 from "../../assets/events/mik2020_2.jpg";
+import mik2021_1 from "../../assets/events/mik2021_1.png";
+import mik2021_2 from "../../assets/events/mik2021_2.png";
 // import neonkaBeh from "../../assets/neonka_beh.svg";
 
 //Main component
@@ -14,6 +16,33 @@ export default class MikBeh extends React.Component {
   render() {
     return (
       <StyledMidBanner id="novinky">
+      <h1>#Šnúrka - Charitatívny Mikulášsky beh 2021</h1>
+      <div>Mikuláššky Beh je srdcovka. S <a href="https://www.activeplanet.sk/">Active Planet Outdoor Centrum</a> 
+        sme počas 3 rokov vytvorili silný  organizačný tím. Tento rok odštartoval Mikulášsky beh náš nový Neónka projekt  
+         <span className="bold yellow">#Šnúrka</span>, ktorý je venovaný pacientom s poruchami príjmu potravy. 
+        Detským pacientom s mentálnou anorexiou sme sa rozhodli pomôcť uhradením nutričnej terapie, v spolupráci
+        s <a href="https://chutzit.sk/">OZ Chuť žiť</a>. Keďže základným liekom u týchto porúch je potrava, správna 
+        diagnostika stravovacích návykov a nastavenie vhodného jedálnička šitého na mieru konkrétnemu pacientovi je 
+        kľúčová. Nutričné poradenstvo by malo byť pevnou súčasťou liečby porúch príjmu potravy, ale  
+        bohužiaľ nie je. Nie každý nutričný terapeut je dostatočne vzdelaný v prístupe k 
+        pacientom s týmto ochorením, navyše, takéto konzultácie nie sú hradené z verejného 
+        zdravotného poistenia. Pre mnohé rodiny je takáto konzultácia finančne nedostupná. Samé 
+        sme zažili nekvalifikovaného nutričného terapeuta, ktorý priebeh ochorenia ZHORŠIL! 
+        Naši pacienti budú od februára vedení odborníčkami na výživu z OZ Chuť žiť, pričom nutričné 
+        terapeutky majú skúsenosti v oblasti porúch príjmu potravy. Cieľom nutričného programu je 
+        naučiť pacientov zdravo sa stravovať, opäť nájsť väčšiu slobodu v jedle, a spoločne nastaviť a 
+        udržať nové návyky tak, aby si jedol dostatočne. Viac na <a href="https://chutzit.sk/nutricny-program/">www.chutzit.sk</a>.
+        <img src={mik2021_1} alt="mikulassky beh" /> 
+        <div className="bold padding">Ako to prebiehalo?</div>
+        Pre Covid situáciu bol prvý termín Mikulášskeho presunutý na 18.12.2021. Bežala sa typická 
+        1 km dlhá trasa od ESC po Námestie SNP. Bežalo sa na celom Slovensku distančne. 
+        <div className="bold padding">Bilancia na rok 2021</div>
+        Dokopy <span className="bold yellow">57 bežcov, 3 kočíky, 3 psy</span>. Sčítali sme, odpočítali sme a vyzbierali sme <span className="bold yellow">750 eur</span>. Náš úvodný cieľ finančne uhradiť 
+        nutričnú terapiu 3 pacientom s poruchou príjmu potravy sa nám podarilo splniť. 
+        A teraz obuť tenisky, zaviazať šnúrky a bežíme ďalej. Na dlhej trati, do kopca s novým projektom Šnúrka.
+        </div>
+        <img src={mik2021_2} alt="mikulassky beh" /> 
+
         <h1>„Čas je drahý!“ - Charitatívny Mikulášsky beh 2020</h1>
         <div>
           OZ Neónka spojilo sily s OZ Crazy Women Active Planet. Keď sa spojí 5

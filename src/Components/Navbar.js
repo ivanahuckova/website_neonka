@@ -97,20 +97,27 @@ const CommonMenu = (props) => {
           <MenuItem
             className={menuItemCss}
             key="2-1"
+            onClick={() => updateLocation("/snurka")}
+          >
+            #Šnúrka
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-2"
             onClick={() => updateLocation("/mikulassky-beh")}
           >
             Mikulášsky beh
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2"
+            key="2-3"
             onClick={() => updateLocation("/nervovo-svalove-centrum")}
           >
             Centrum nervovo-svalových ochorení
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-3"
+            key="2-4"
             onClick={() => updateLocation("/cysticka-fibroza")}
           >
             Diagnostika cystickej fibrózy

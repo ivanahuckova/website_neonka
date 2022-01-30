@@ -18,6 +18,7 @@ import Podporte from './Components/Podporte/Index';
 import NervoveCentrum from './Components/Projekty/NervoveCentrum';
 import MikBeh from './Components/Projekty/MikBeh';
 import Fibroza from './Components/Projekty/Fibroza';
+import Snurka from './Components/Projekty/Snurka';
 
 function App() {
   // const [showModal, setShowModal] = useState(!localStorage.getItem('modal2percenta'));
@@ -45,6 +46,7 @@ function App() {
           <Route exact path="/nervovo-svalove-centrum" render={(props) => <NervoveCentrum {...props} />} />
           <Route exact path="/mikulassky-beh" render={(props) => <MikBeh {...props} />} />
           <Route exact path="/cysticka-fibroza" render={(props) => <Fibroza {...props} />} />
+          <Route exact path="/snurka" render={(props) => <Snurka {...props} />} />
 
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
         </Switch>
