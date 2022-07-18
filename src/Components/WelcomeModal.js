@@ -5,7 +5,7 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../style/colors";
 
-import modal from "../assets/modal.png";
+import modal from "../assets/snurka_beh.jpg";
 
 export default class WelcomeModal extends Component {
   updateLocation = (href) => {
@@ -20,14 +20,14 @@ export default class WelcomeModal extends Component {
       >
         <StyledModal>
           <h2 style={{ margin: "10px", textAlign: "center" }}>
-            Venujte svoje 2% a pomôžte chorým deťom
+            24 hodinový charitatívny beh ŠNÚRKA
           </h2>
-          <img src={modal} alt="2% z dani" />
+          <img src={modal} alt="Beh ŠNÚRKA" />
           <StyledButtons>
             <span
               onClick={() => {
                 this.props.closeModal();
-                window.location.replace("/podpora");
+                window.location.replace("/snurka");
               }}
             >
               Chcem sa dozvedieť viac

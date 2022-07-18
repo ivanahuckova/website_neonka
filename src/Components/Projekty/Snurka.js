@@ -5,12 +5,15 @@ import styled from 'styled-components';
 import * as colors from '../../style/colors';
 import * as fonts from '../../style/fonts';
 import snurka from "../../assets/snurka.png";
+import snurka_beh from "../../assets/snurka_beh.jpg";
 
 //Main component
 export default function Snurka() {
 
     return (
       <StyledMidBanner>
+        <h1>24 hodinový charitatívny beh ŠNÚRKA</h1>
+          <img src={snurka_beh} alt="snurka beh"/>
           <h1>O projekte #Šnúrka</h1>
           <div> Počet detí s psychiatrickým ochorením na Slovensku dlhodobo rastie. Diagnóza porúch príjmu potravy
               v detskom veku sa trojnásobne zvýšila. Poruchy príjmu potravy (PPP) patria medzi závažné duševné ochorenia s 

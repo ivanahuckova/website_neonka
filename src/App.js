@@ -21,11 +21,11 @@ import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
 
 function App() {
-  const [showModal, setShowModal] = useState(!localStorage.getItem('modal2percenta2022'));
+  const [showModal, setShowModal] = useState(!localStorage.getItem('behSnurka2022'));
 
   const closeModal = () => {
     setShowModal(false);
-    localStorage.setItem('modal2percenta2022', true);
+    localStorage.setItem('behSnurka2022', true);
   };
 
   return (
