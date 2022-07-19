@@ -21,7 +21,7 @@ export default class MikBeh extends React.Component {
         sme počas 3 rokov vytvorili silný  organizačný tím. Tento rok odštartoval Mikulášsky beh náš nový Neónka projekt  
          <span className="bold yellow">#Šnúrka</span>, ktorý je venovaný pacientom s poruchami príjmu potravy. 
         Detským pacientom s mentálnou anorexiou sme sa rozhodli pomôcť uhradením nutričnej terapie, v spolupráci
-        s <a href="https://chutzit.sk/">OZ Chuť žiť</a>. Keďže základným liekom u týchto porúch je potrava, správna 
+        s OZ Chuť žiť. Keďže základným liekom u týchto porúch je potrava, správna 
         diagnostika stravovacích návykov a nastavenie vhodného jedálnička šitého na mieru konkrétnemu pacientovi je 
         kľúčová. Nutričné poradenstvo by malo byť pevnou súčasťou liečby porúch príjmu potravy, ale  
         bohužiaľ nie je. Nie každý nutričný terapeut je dostatočne vzdelaný v prístupe k 
@@ -31,15 +31,14 @@ export default class MikBeh extends React.Component {
         Naši pacienti budú od februára vedení odborníčkami na výživu z OZ Chuť žiť, pričom nutričné 
         terapeutky majú skúsenosti v oblasti porúch príjmu potravy. Cieľom nutričného programu je 
         naučiť pacientov zdravo sa stravovať, opäť nájsť väčšiu slobodu v jedle, a spoločne nastaviť a 
-        udržať nové návyky tak, aby si jedol dostatočne. Viac na <a href="https://chutzit.sk/nutricny-program/">www.chutzit.sk</a>.
+        udržať nové návyky tak, aby si jedol dostatočne.
         <img src={mik2021_1} alt="mikulassky beh" /> 
         <div className="bold padding">Ako to prebiehalo?</div>
         Pre Covid situáciu bol prvý termín Mikulášskeho presunutý na 18.12.2021. Bežala sa typická 
         1 km dlhá trasa od ESC po Námestie SNP. Bežalo sa na celom Slovensku distančne. 
         <div className="bold padding">Bilancia na rok 2021</div>
-        Dokopy <span className="bold yellow">57 bežcov, 3 kočíky, 3 psy</span>. Sčítali sme, odpočítali sme a vyzbierali sme <span className="bold yellow">750 eur</span>. Náš úvodný cieľ finančne uhradiť 
-        nutričnú terapiu 3 pacientom s poruchou príjmu potravy sa nám podarilo splniť. 
-        A teraz obuť tenisky, zaviazať šnúrky a bežíme ďalej. Na dlhej trati, do kopca s novým projektom Šnúrka.
+        Dokopy <span className="bold yellow">57 bežcov, 3 kočíky, 3 psy</span>. Sčítali sme, odpočítali sme a vyzbierali sme <span className="bold yellow">750 eur</span>, čím sa nám podarilo 
+        pomôcť 4 pacientom (doplnili sme pár eur ešte 🙂). A teraz obuť tenisky, zaviazať šnúrky a bežíme ďalej. Na dlhej trati, do kopca s novým projektom Šnúrka.
         </div>
         <img src={mik2021_2} alt="mikulassky beh" />
         <br id="mikbeh2020"/> 
@@ -53,11 +52,11 @@ export default class MikBeh extends React.Component {
         <div className="bold padding">VÝNIMOČNE - CELOSVETOVO - DIŠTANČNE</div>
         <div>
           7. ročník Mikulášskeho behu „Čas je drahý“ bol určený pre deti s
-          cystickou fibrózou. Od októbra 2020 beží verejná zbierka s cieľom
+          cystickou fibrózou. Od októbra 2020 beží verejná zbierka s cieľom
           vyzbierať{" "}
           <span className="bold yellow">7000 Eur na diagnostický prístroj</span>
           , ktorý umožní rýchlejšiu diagnostiku. Diagnostika cystickej fibrózy
-          je postavená na stanovení chloridov v pote. Pri tomto ochorení je
+          je postavená na stanovení chloridov v pote. Pri tomto ochorení je
           v pote vysoká koncentrácia chloridov. V okolitých krajinách je možné
           diagnostikovať cystickú fibrózu jednoducho do 1 hodiny pomocou
           moderného hodinkového prístroja Macroduct. Na Slovensku vyšetrujeme

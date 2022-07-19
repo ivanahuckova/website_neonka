@@ -14,6 +14,15 @@ export default function Snurka() {
       <StyledMidBanner>
         <h1>24 hodinový charitatívny beh ŠNÚRKA</h1>
           <img src={snurka_beh} alt="snurka beh"/>
+          <div style={{fontWeight: 'bold'}}>Viac info a registrácia na: <a href="https://www.activeplanet.sk/podujatie/24-snurka">https://www.activeplanet.sk/podujatie/24-snurka</a>.</div>
+          <div>Spolu s naším partnerom Crazy Women Active Planet (organizátor športových a charitatívnych behov) a outdoorovými predajňami Active Planet Outdoor 
+            centrum sme sa rozhodli zorganizovať <span className="bold yellow">horský 24-hodinový celoslovenský charitatívny beh s názvom ŠNÚRKA</span>. Vyzývame všetkých bežcov zaviazať šnúrky, spojiť 
+            sily a vydať sa spolu s nami v termíne od 31.8.2022- 1.9.2022 na bežecké „kolečko“ Park Snow Donovaly - Nová Hoľa v pohorí Veľkej Fatry. Cieľom behu je 
+            finančne podporiť našich detských pacientov s poruchami príjmu potravy. Prihlásiť sa je možné ako jednotlivec alebo ako 6-10 členný tím. Nazbierajte, čo 
+            najviac výškových metrov za 24 hodín alebo jednorázovo vybehnite traťami zjazdoviek na kopec Nová Hoľa s prevýšením 453 m! Pridajte sa s nami na dlhú cestu s 
+            cieľom poraziť ich.
+            </div>
+          <div>Informácie o behu: <a href="https://www.youtube.com/watch?v=7PBIlM0FoVk">https://www.youtube.com/watch?v=7PBIlM0FoVk</a>.</div>
           <h1>O projekte #Šnúrka</h1>
           <div> Počet detí s psychiatrickým ochorením na Slovensku dlhodobo rastie. Diagnóza porúch príjmu potravy
               v detskom veku sa trojnásobne zvýšila. Poruchy príjmu potravy (PPP) patria medzi závažné duševné ochorenia s 
@@ -36,45 +45,13 @@ export default function Snurka() {
               <br/>
               <br/>
               <img src={snurka} alt="snurka logo"/>
-            <div className="bold padding">Šnúrku sme odštartovali 8. ročníkom Mikulášskeho behu</div>
-            <div>Výťažok bol určený na úhradu nutričného programu <span className="bold yellow">3 našim pacientom</span>. Tento program bol realizovaný v spolupráci s OZ Chuť žiť, ktoré má v tíme kvalifikované 
-            nutričné terapeutky so skúsenosťami v oblasti porúch príjmu potravy.</div>
-            <br/>
-            Do budúcnosti chceme s  našim projektom podporiť a vyzdvihnúť potrebu vzdelávania
-            nutričných terapeutov v oblasti porúch príjmu potravy a v našej Banskobystrickej nemocnici
-            ponúknuť naším pacientom uzavretý liečebný okruh: <span className="bold yellow">pacient- rodina- psychológ- psychiater- kvalifikovaný nutričný terapeut</span>
-
-            . To pre nás znamená snahu o vyškolenie nutričného terapeuta, ktorý bude dostatočne
-            vzdelaný v tejto oblasti a bude s nami spolupracovať na ceste liečby hneď, od prepustenia
-            pacienta, pokiaľ to stav dovolí. Zároveň by sme našim pacientom tieto konzultácie podľa
-            možností uhrádzali. A teraz obuť tenisky, zaviazať šnúrky a bežíme ďalej. Na dlhej trati, do kopca s novým 
-            projektom Šnúrka. Kým sa nám to podarí, budeme sa snažiť zabezpečovať kvalifikovaných odborníkov a podľa
-            možností uhrádzať tieto konzultácie.
-            <div className="bold padding">Viac o nutričnom poradenstve</div>
-
-            Cieľom je dosiahnutie normálneho stravovania, ktoré pokrýva všetky nutričné potreby
-            pravidelným vyváženým a udržateľným spôsobom a zároveň vedie k dosiahnutiu a
-            udržaniu zdraviu zodpovedajúcej telesnej hmotnosti.
-            <br/>
-            Ako tento program prebieha cez <a href="https://chutzit.sk/">OZ Chuť žiť</a>?
-            Počas niekoľko mesačného poradenstva sú odborníčky spolu s pacientmi v intenzívnom
-            kontakte. Pomáhajú im opäť nájsť väčšiu slobodu v stravovaní a spoločne nastaviť nové
-            návyky tak, aby bola strava pestrá a dostatočná.
-            V aktuálnej dobe prebieha poradenstvo online cez videohovor, čím odpadajú náklady na
-            cestovanie a tiež sa nestane, že by sa poradenstvo vplyvom aktuálnych
-            protipandemických opatrení muselo prerušiť.
-            Na začiatku sa zhodnotí aktuálny stav výživy a spíše sa nutričná anamnézu, na základe
-            ktorej je vypracovaná analýza a individuálny plán spolu s praktickými zmenami a
-            jednotlivými krokmi.
-            Počas mesačnej, respektíve niekoľkomesačnej spolupráce je nutričný tím s pacientmi
-            neraz v každodennom kontakte.
-            Pacienti posielajú fotografie svojich jedál, tak je to možné na diaľku zhodnotiť a napísať
-            spätnú väzbu či povzbudiť v udržaní dohodnutých zmien.
-            Následne prebiehajú každotýždenné kontrolné videokonzultácie, kde sa dohadujeme na
-            ďalších zmenách.
-            Poradenstvo prebieha vždy za účasti minimálne jedného rodiča či zákonného zástupcu,
-            keďže tí najbližší sú práve tou najväčšou oporou a podporou v každodennom udržiavaní
-            zmien a nastavovaní správneho stravovania.
+            <div><span className="bold yellow">Šnúrku sme odštartovali 8. ročníkom Mikulášskeho behu.</span> Projekt Šnúrka má za cieľ podporiť 
+            a vyzdvihnúť potrebu vzdelávania nutričných terapeutov v oblasti porúch príjmu potravy a pre našich detských pacientov 
+              v Banskobystrickej Detskej fakultnej nemocnici ponúknuť uzavretý liečebný okruh: <span className="bold yellow">pacient- rodina- psychológ- psychiater- kvalifikovaný nutričný terapeut</span>. 
+              To pre nás znamená nájsť nutričného terapeuta, ktorý sa bude vzdelávať v tejto oblasti a bude s nami spolupracovať pri liečbe našich pacientov. 
+              Zároveň by sme týmto pacientom konzultácie podľa našich možností uhrádzali. <span className="bold yellow">Na projekte Šnúrka s nami začala spolupracovať od júna 2022 s nutričná poradkyňa Ing. Magdaléna Moller.</span>
+            </div>
+            
             </div>
       </StyledMidBanner>
     );
