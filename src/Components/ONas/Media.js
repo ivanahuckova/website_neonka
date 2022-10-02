@@ -13,6 +13,15 @@ export default class Media extends React.Component {
         <StyledContentSection>
           <StyledDescribtionCard>
             <h3 className="heading">Videli ste nás</h3>
+            <div className="content-div">
+              <a
+                href="https://www.youtube.com/watch?v=FMl5N0STdu0"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Rozhovor na JOJ ŠPORT o 24-hodinovom charitatívnom behu Šnúrka
+              </a>
+            </div>
 
             <div className="content-div">
               <a

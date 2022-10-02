@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import * as colors from '../../style/colors';
 import * as fonts from '../../style/fonts';
 import snurka from "../../assets/snurka.png";
-import snurka_beh from "../../assets/snurka_beh.jpg";
+import snurka_beh from "../../assets/snurka_beh.png";
 
 //Main component
 export default function Snurka() {

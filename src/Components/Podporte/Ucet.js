@@ -4,6 +4,7 @@ import styled from 'styled-components';
 //Colors + Fonts
 import * as colors from '../../style/colors';
 import * as fonts from '../../style/fonts';
+import qrPodpora from '../../assets/qr_podpora.png';
 
 //Main component
 export default class PodporteNas extends React.Component {
@@ -15,6 +16,7 @@ export default class PodporteNas extends React.Component {
         <h2>OZ Neónka</h2>
         <div>Číslo účtu: SK 96 1100 0000 0029 4507 2424</div>
         <div>IČO: 52301826</div>
+        <div><img src={qrPodpora} alt="qr kod na podporu"></img></div>
         {/* <h2>Aktívne zbierky</h2>
         <div>
           V súčasnosti prebieha naša zbierka na kúpu hodinkového prístroja na
@@ -63,6 +65,9 @@ const StyledMidBanner = styled.div`
     font-weight: bold;
     @media screen and (max-width: 600px) {
       ont-size: ${fonts.textMobile};
+    }
+    img {
+      max-width: 300px;
     }
   }
   a {

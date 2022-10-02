@@ -94,6 +94,13 @@ const CommonMenu = (props) => {
     >
       {[
         <SubMenu className={subMenuItemCss} title="Projekty" key="2">
+          <MenuItem 
+            className={menuItemCss}
+            key="2-0"
+            onClick={() => updateLocation("/nemcianska-cyklomotanica")}
+            >
+            Nemčianska cyklomotanica
+          </MenuItem>
           <MenuItem
             className={menuItemCss}
             key="2-1"

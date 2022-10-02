@@ -14,6 +14,7 @@ import activeplanet from "../../assets/partners/activeplanet.jpg";
 import crazywomen from "../../assets/partners/crazywomen.jpg";
 import panpagacik from "../../assets/partners/panpagacik.jpeg";
 import ladonuteria from "../../assets/partners/ladonuteria.jpg"
+import nemcianskacyklomotanica from "../../assets/partners/nemcianskacyklomotanica.png"
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -122,13 +123,23 @@ export default class Partneri extends React.Component {
                   <img src={panpagacik} alt="logo pan pagacik"></img>
                 </a>
               </PartnersCard>
-                            <PartnersCard>
+              <PartnersCard>
                 <a
                   href="https://www.facebook.com/ladonuteriabanskabystrica/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img src={ladonuteria} alt="logo la donutiera"></img>
+                </a>
+              </PartnersCard>
+
+              <PartnersCard>
+                <a
+                  href="https://mtbliga.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={nemcianskacyklomotanica} alt="WELDTITE Nemčianska cyklomotanica"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>

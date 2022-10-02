@@ -5,7 +5,7 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../style/colors";
 
-import modal from "../assets/snurka_beh.jpg";
+import modal from "../assets/snurka_beh.png";
 
 export default class WelcomeModal extends Component {
   updateLocation = (href) => {

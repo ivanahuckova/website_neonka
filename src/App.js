@@ -19,6 +19,7 @@ import NervoveCentrum from './Components/Projekty/NervoveCentrum';
 import MikBeh from './Components/Projekty/MikBeh';
 import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
+import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
 
 function App() {
   const [showModal, setShowModal] = useState(!localStorage.getItem('behSnurka2022'));
@@ -31,13 +32,13 @@ function App() {
   return (
     <Router>
       <StyledLandingContainer>
-        {showModal && (
+        {/* {showModal && (
           <WelcomeModal
             visible={showModal}
             onClickAway={closeModal}
             closeModal={closeModal}
           />
-        )}
+        )} */}
         <Navbar />
         <Switch>
           <Route exact path="/" render={(props) => <General {...props} />} />
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/mikulassky-beh" render={(props) => <MikBeh {...props} />} />
           <Route exact path="/cysticka-fibroza" render={(props) => <Fibroza {...props} />} />
           <Route exact path="/snurka" render={(props) => <Snurka {...props} />} />
+          <Route exact path="/nemcianska-cyklomotanica" render={(props) => <NemcianskaCyklomotanica {...props} />} />
 
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
         </Switch>
