@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as colors from "../../style/colors";
 import styled from "styled-components";
-import PulseLoader from "react-spinners/PulseLoader";
+import galeria from "../../assets/galeria.png";
 
 export default function Galeria() {
   const [loading, setLoading] = useState(true);
@@ -12,40 +12,17 @@ export default function Galeria() {
   }, []);
   return (
     <StyledContainer onClick={(e) => e.preventDefault()}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "0px",
-          paddingTop: "5px",
-        }}
-      >
-        <PulseLoader size={8} color="#D3D3D3" loading={loading} />
-      </div>
-      <iframe
-        title="instagram feed"
-        src="https://snapwidget.com/embed/867385"
-        className="snapwidget-widget"
-        allowtransparency="true"
-        frameBorder="0"
-        scrolling="no"
-        style={{
-          border: "none",
-          overflow: "hidden",
-          width: "100%",
-        }}
-        onClick={(e) => e.preventDefault()}
-      ></iframe>
-      <div>
-        Viac fotiek si môžete pozrieť na našom <a href="/">Instagrame</a>.
-      </div>
+    <div style={{ marginTop: '30px'}}>Viac fotiek si môžete pozrieť na našom <a href="https://www.instagram.com/smeneonka/" rel="noopener noreferrer" target="_blank">Instagrame</a> 🙂</div>
+      <img src={galeria} style={{maxWidth: '70vw', marginTop: '30px', cursor: 'pointer'}} onClick={() => window.open("https://www.instagram.com/smeneonka/", '_blank', 'noopener,noreferrer')}/>
+
+
     </StyledContainer>
   );
 }
 
 const StyledContainer = styled.div`
   max-width: 100%;
+  font-weight: bold;
 
   padding-top: 85px;
   @media screen and (min-width: 1000px) {
@@ -57,6 +34,7 @@ const StyledContainer = styled.div`
     text-align: center;
     a {
       color: ${colors.pinkColor};
+      weight: bold;
     }
   }
 `;

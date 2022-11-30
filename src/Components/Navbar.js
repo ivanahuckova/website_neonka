@@ -114,18 +114,25 @@ const CommonMenu = (props) => {
             key="2-2-1"
             onClick={() => updateLocation("/mikulassky-beh#novinky")}
           >
-            Mikulášsky beh 2021
+            Mikulášsky beh 2022
           </MenuItem>
           <MenuItem
             className={menuItemCss}
             key="2-2-2"
+            onClick={() => updateLocation("/mikulassky-beh#mikbeh2021")}
+          >
+            Mikulášsky beh 2021
+          </MenuItem>
+          <MenuItem
+            className={menuItemCss}
+            key="2-2-3"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2020")}
           >
             Mikulášsky beh 2020
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2-3"
+            key="2-2-4"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2019")}
           >
             Mikulášsky beh 2019

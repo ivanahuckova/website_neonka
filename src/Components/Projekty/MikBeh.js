@@ -9,6 +9,8 @@ import mik2020_1 from "../../assets/events/mik2020_1.jpg";
 import mik2020_2 from "../../assets/events/mik2020_2.jpg";
 import mik2021_1 from "../../assets/events/mik2021_1.png";
 import mik2021_2 from "../../assets/events/mik2021_2.png";
+import mik2022_1 from "../../assets/events/mik2022_1.png";
+import mik2022_2 from "../../assets/events/mik2022_2.png";
 // import neonkaBeh from "../../assets/neonka_beh.svg";
 
 //Main component
@@ -16,6 +18,22 @@ export default class MikBeh extends React.Component {
   render() {
     return (
       <StyledMidBanner id="novinky" >
+      <h1>„Mikuláš na baterky“ - Charitatívny Mikulášsky beh 2022</h1>
+      <img src={mik2022_1} alt="mikulassky beh" /> 
+      <div>Bola raz jedna baterka. Viete, tá okrúhla baterka, ktorá patrí do hodiniek, nie do úst. Prehltnutá baterka dokáže v čreve narobiť veľkú pohromu.
+        Prehltnutá baterka vo veľkosti jednoeurovej mince sa prilepila na stenu pažeráka malej
+        Zary. Popálila a spálila časť pažeráka a za istý čas vytvorila drobnú dierku až do
+        najväčšej tepny, priamo za pažerákom- aorty. Z tejto “dierky” následne Zara
+        niekoľkokrát skoro vykrvácala a bolo ju treba oživovať.  Vďaka odborníkom v
+        detskom kardiocentre sa podarilo dierku v tepne úspešne uzatvoriť. 
+        Závažné  krvácanie však spôsobilo stav podobný mŕtvici a tak Zarina pravá ruka a
+        pravá noha nefungujú na 100%. Šibalský pohľad sa však nezmenil.
+        Závažné  krvácanie však spôsobilo stav podobný mŕtvici a tak Zarina pravá ruka a
+        pravá noha nefungujú na 100%.
+        </div>
+      <br id="mikbeh2021"/> 
+      <img src={mik2022_2} alt="Zara" /> 
+
       <h1>#Šnúrka - Charitatívny Mikulášsky beh 2021</h1>
       <div>Mikuláššky Beh je srdcovka. S <a href="https://www.activeplanet.sk/">Active Planet Outdoor Centrum</a> 
         sme počas 3 rokov vytvorili silný  organizačný tím. Tento rok odštartoval Mikulášsky beh náš nový Neónka projekt  

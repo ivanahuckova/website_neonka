@@ -111,10 +111,9 @@ export default class Centrum extends React.Component {
           otvorili Stredoslovenské centrum pre diagnostiku a liečbu
           nervovo-svalových ochorení v detskom veku.
         </div>
-        {size > 500 && (
           <iframe
-            width="500"
-            height="297"
+            width={size > 500 ? "500" : "350"}
+            height={size > 500 ? "297" : "209"}
             src="https://www.youtube.com/embed/Hs2bO7_3uvo"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -122,19 +121,6 @@ export default class Centrum extends React.Component {
             title="Sibylka o ochoreni vacsie"
             className="padding"
           ></iframe>
-        )}
-        {size < 501 && (
-          <iframe
-            width="350"
-            height="208"
-            src="https://www.youtube.com/embed/Hs2bO7_3uvo"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="Sibylka o ochoreni mensie"
-            className="padding"
-          ></iframe>
-        )}
       </StyledMidBanner>
     );
   }
