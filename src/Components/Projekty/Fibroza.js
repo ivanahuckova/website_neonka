@@ -32,32 +32,28 @@ export default class Fibroza extends React.Component {
     const { size } = this.state;
     return (
       <StyledMidBanner>
-        <h1>Oznam o ukončení verejnej zbierky Čas je drahý</h1>
-        <div>
-          Oznam o ukončení verejnej zbierky Čas je drahý - "Pomôžte nám zmodernizovať diagnostiku cystickej fibrózy na
-          Slovensku“ zapísanú do registra verejných zbierok pod registrovým číslom verejnej zbierky 000-2020-028069.
-          Spolu s Vami sa nám podarilo vyzbierať{' '}
-          <span className="bold yellow">7290 eur potrebných na kúpu hodinkového prístroja Macroduct</span>. Tento
-          prístroj sme zakúpili 3.5.2021 a od polovice mája sme ním začali vyšetrovať naše deti! Vzhľadom nato, že toho
-          času toto moderné vyšetrenie nieje hradené zdravotnou poisťovňou (naši pneumológovia vybavujú zaradenie výkonu
-          k výkonom hradených zdravotnou poisťovňou) pomohlo a{' '}
-          <span className="bold yellow">
-            podporilo náš projekt aj Svetielko nádeje a táto diagnostická metóda je dostupná pre všetkých detských
-            pacientov bez hradenia
-          </span>
-          . Sme radi, že takýto “zlatý štandard” v pneumologickej ambulancii máme a myšlienku modernej a finančne
-          dostupnej diagnostiky cystickej fibrózy budeme naďalej podporovať! Na tomto projekte sa podieľalo množstvo
-          ľudí a my vám všetkým zo srdca ďakujeme! <span role="img">❤️</span> Vážime si jedinečnú spoluprácu s Jana
-          Križová a Michaela Mimi Križová! Zvládli sme to?! Iba čas ukáže. Stále platí, že čas je drahý!
-          <span role="img">⏱</span>
-        </div>
+        <h1>Oznam o ukončení verejnej zbierky "Čas je drahý"</h1>
+        <div>Oznam o ukončení verejnej zbierky Čas je drahý - "Pomôžte nám zmodernizovať diagnostiku cystickej 
+          fibrózy na Slovensku“ zapísanú do registra verejných zbierok pod registrovým číslom verejnej zbierky 
+          000-2020-028069. Spolu s Vami sa nám  <span className="bold yellow">podarilo vyzbierať 7290 eur potrebných na kúpu hodinkového prístroja 
+          Macroduct</span>. Tento prístroj sme zakúpili 3.5.2021 a od polovice mája sme ním začali vyšetrovať naše deti!
+          <br/>
+          Vzhľadom nato, že toho času toto moderné vyšetrenie nie je hradené zdravotnou poisťovňou (naši pneumológovia 
+          vybavujú zaradenie výkonu k výkonom hradených zdravotnou poisťovňou) je nutné dokupovanie vyšetrovacích 
+          setov do prístroja. <span className="bold yellow">Aby táto vyšetrovacia metóda bola pre pacienta bezplatná nakúpilo vyšetrovacie sety 
+          okrem OZ Neónka aj  Svetielko nádeje a Klub priateľov DFN</span>. Sme radi, že takýto “zlatý štandard” v 
+          pneumologickej ambulancii máme a myšlienku modernej a finančne dostupnej diagnostiky cystickej fibrózy budeme
+          naďalej podporovať! Na tomto projekte sa podieľalo množstvo ľudí a my vám všetkým zo srdca ďakujeme! <span role="img" aria-label="heart emoji">❤️</span> Vážime 
+          si jedinečnú spoluprácu s Jana Križová a Michaela Mimi Križová! Zvládli sme to?! Iba čas ukáže. Stále platí, 
+          že čas je drahý!<span role="img" aria-label="heart emoji">⏱</span>
+          </div>
         <StyledImageBox>
           <img src={zbierka0} alt="fotka z pouzitia zakupeneho prostroja" />
           <img src={zbierka1} alt="fotka z pouzitia zakupeneho prostroja" />
           <img src={zbierka2} alt="fotka z pouzitia zakupeneho prostroja" />
           <img src={zbierka3} alt="fotka z pouzitia zakupeneho prostroja" />
         </StyledImageBox>
-        <h1>O ukončenej zbierke </h1>
+        <h1>O zbierke</h1>
         {size > 560 && (
           <iframe
             width="560"

@@ -79,12 +79,12 @@ const StyledButtons = styled.div`
   }
 `;
 
-const StyledText = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  a {
-    font-weight: bold;
-    color: ${colors.pinkColor} !important;
-  }
-`;
+// const StyledText = styled.div`
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   a {
+//     font-weight: bold;
+//     color: ${colors.pinkColor} !important;
+//   }
+// `;

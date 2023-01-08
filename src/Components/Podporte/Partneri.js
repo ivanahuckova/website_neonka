@@ -6,15 +6,17 @@ import styled from "styled-components";
 import rallyklub from "../../assets/partners/rallyklub.jpg";
 import koliba from "../../assets/partners/kolibaozdany.png";
 import cincuacik from "../../assets/partners/cincuacik.png";
-import mnambox from "../../assets/partners/mnambox.png";
 import invelity from "../../assets/partners/invelity.png";
-import nebalene from "../../assets/partners/nebalene.png";
 import modrapupava from "../../assets/partners/modrapupava.png";
 import activeplanet from "../../assets/partners/activeplanet.jpg";
 import crazywomen from "../../assets/partners/crazywomen.jpg";
 import panpagacik from "../../assets/partners/panpagacik.jpeg";
-import ladonuteria from "../../assets/partners/ladonuteria.jpg"
 import nemcianskacyklomotanica from "../../assets/partners/nemcianskacyklomotanica.png"
+import akkord from "../../assets/partners/akkord.jpg"
+import luna from "../../assets/partners/luna.png"
+import magurazborov from "../../assets/partners/magurazborov.jpg"
+import staratrznica from "../../assets/partners/staratrznica.png"
+
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -52,15 +54,6 @@ export default class Partneri extends React.Component {
               </PartnersCard>
               <PartnersCard>
                 <a
-                  href="https://mnambox.sk/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img src={mnambox} alt="logo mnambox"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a
                   href="https://kolibaozdany.sk/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -75,16 +68,6 @@ export default class Partneri extends React.Component {
                   target="_blank"
                 >
                   <img src={invelity} alt="logo invelity"></img>
-                </a>
-              </PartnersCard>
-
-              <PartnersCard>
-                <a
-                  href="https://nebalene.sk/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img src={nebalene} alt="logo nebalene"></img>
                 </a>
               </PartnersCard>
               <PartnersCard>
@@ -125,21 +108,47 @@ export default class Partneri extends React.Component {
               </PartnersCard>
               <PartnersCard>
                 <a
-                  href="https://www.facebook.com/ladonuteriabanskabystrica/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img src={ladonuteria} alt="logo la donutiera"></img>
-                </a>
-              </PartnersCard>
-
-              <PartnersCard>
-                <a
                   href="https://mtbliga.sk/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img src={nemcianskacyklomotanica} alt="WELDTITE Nemčianska cyklomotanica"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://harmoniachuti.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={akkord} alt="harmonia chuti logo"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://lunastudio.sk/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={luna} alt="luna logo"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://www.facebook.com/staratrznica.bb"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={staratrznica} alt="staratrznica logo"></img>
+                </a>
+              </PartnersCard>
+              <PartnersCard>
+                <a
+                  href="https://www.facebook.com/tjmagura.zborov"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img src={magurazborov} alt="magurazborov logo"></img>
                 </a>
               </PartnersCard>
             </PartnersContainer>

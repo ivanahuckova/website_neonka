@@ -1,21 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as colors from "../../style/colors";
 import styled from "styled-components";
 import galeria from "../../assets/galeria.png";
 
 export default function Galeria() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
   return (
     <StyledContainer onClick={(e) => e.preventDefault()}>
     <div style={{ marginTop: '30px'}}>Viac fotiek si môžete pozrieť na našom <a href="https://www.instagram.com/smeneonka/" rel="noopener noreferrer" target="_blank">Instagrame</a> 🙂</div>
-      <img src={galeria} style={{maxWidth: '70vw', marginTop: '30px', cursor: 'pointer'}} onClick={() => window.open("https://www.instagram.com/smeneonka/", '_blank', 'noopener,noreferrer')}/>
-
-
+      <img alt="instagram feed" src={galeria} style={{maxWidth: '70vw', marginTop: '30px', cursor: 'pointer'}} onClick={() => window.open("https://www.instagram.com/smeneonka/", '_blank', 'noopener,noreferrer')}/>
     </StyledContainer>
   );
 }
