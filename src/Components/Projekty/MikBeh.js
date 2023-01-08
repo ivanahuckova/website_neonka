@@ -9,7 +9,7 @@ import mik2020_1 from "../../assets/events/mik2020_1.jpg";
 import mik2020_2 from "../../assets/events/mik2020_2.jpg";
 import mik2021_1 from "../../assets/events/mik2021_1.png";
 import mik2021_2 from "../../assets/events/mik2021_2.png";
-import mik2022_1 from "../../assets/events/mik2022_1.png";
+import mik2022_1 from "../../assets/events/mik2022_1.jpg";
 import mik2022_2 from "../../assets/events/mik2022_2.png";
 // import neonkaBeh from "../../assets/neonka_beh.svg";
 
@@ -19,20 +19,22 @@ export default class MikBeh extends React.Component {
     return (
       <StyledMidBanner id="novinky" >
       <h1>„Mikuláš na baterky“ - Charitatívny Mikulášsky beh 2022</h1>
-      <img src={mik2022_1} alt="mikulassky beh" /> 
-      <div>Bola raz jedna baterka. Viete, tá okrúhla baterka, ktorá patrí do hodiniek, nie do úst. Prehltnutá baterka dokáže v čreve narobiť veľkú pohromu.
-        Prehltnutá baterka vo veľkosti jednoeurovej mince sa prilepila na stenu pažeráka malej
-        Zary. Popálila a spálila časť pažeráka a za istý čas vytvorila drobnú dierku až do
-        najväčšej tepny, priamo za pažerákom- aorty. Z tejto “dierky” následne Zara
-        niekoľkokrát skoro vykrvácala a bolo ju treba oživovať.  Vďaka odborníkom v
-        detskom kardiocentre sa podarilo dierku v tepne úspešne uzatvoriť. 
-        Závažné  krvácanie však spôsobilo stav podobný mŕtvici a tak Zarina pravá ruka a
-        pravá noha nefungujú na 100%. Šibalský pohľad sa však nezmenil.
-        Závažné  krvácanie však spôsobilo stav podobný mŕtvici a tak Zarina pravá ruka a
-        pravá noha nefungujú na 100%.
-        </div>
+      <div><span className="bold">Prečo „Mikuláš na baterky“ alebo, kto je to Zara?</span></div>
+      <div>Zara má teraz 4 roky, je typické, veľmi zvedavé batoľa, ktoré prehltlo pred vyše rokom baterku. 
+        Prehltnutá baterka (vo veľkosti 1€) sa prilepila na stenu jej pažeráka. Spôsobila drobné prederavenie 
+        pažeráka a aj najväčšej tepny,  priamo za pažerákom- aorty. Z tejto “dierky” následne Zara niekoľkokrát 
+        skoro vykrvacala a bolo ju treba oživovať.  Zaru sa vďaka odborníkom  podarilo zachrániť... Závažné 
+        krvácanie však spôsobilo stav podobný mŕtvici a tak Zarina pravá ruka a noha nefungujú na 100%. 
+        <span className="bold yellow">Výťažok z 9. ročníka Mikulášskeho behu je určený na kúpu špeciálneho  bicykla- typ MOTOmed gracile</span>, 
+        ktorý slúži na posilňovanie a udržanie svalovej sily (cena bicykla 2650 eur).</div>
+        <img src={mik2022_2} alt="Zara" /> 
+        <div><span className="bold">Bilancia 2022</span></div>
+        <div>9. ročníka Mikuláškeho behu "Mikuláš na baterky" sa aktívne zúčastnilo   <span className="bold yellow">98 červených mikulášov a výťažok zo 
+          štartovného dosiahol 1205 eur!</span> Bicykel sme zakúpili 11.12.2022. Prostriedky naň sa nám podarilo dať dokopy 
+          aj za pomoci Starej tržnice, Luna studio- jogový kurz JOGA pre ZARU, Telovýchovná jednota Magura Zborov (futbalový zápas), 
+          1. ročník Nemčianskej cyklomotanice.</div>
       <br id="mikbeh2021"/> 
-      <img src={mik2022_2} alt="Zara" /> 
+       <img src={mik2022_1} alt="Zara" /> 
 
       <h1>#Šnúrka - Charitatívny Mikulášsky beh 2021</h1>
       <div>Mikuláššky Beh je srdcovka. S <a href="https://www.activeplanet.sk/">Active Planet Outdoor Centrum</a> 

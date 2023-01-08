@@ -22,12 +22,12 @@ import Snurka from './Components/Projekty/Snurka';
 import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
 
 function App() {
-  const [showModal, setShowModal] = useState(!localStorage.getItem('behSnurka2022'));
+  // const [showModal, setShowModal] = useState(!localStorage.getItem('behMikulas2022'));
 
-  const closeModal = () => {
-    setShowModal(false);
-    localStorage.setItem('behSnurka2022', true);
-  };
+  // const closeModal = () => {
+  //   setShowModal(false);
+  //   localStorage.setItem('behMikulas2022', true);
+  // };
 
   return (
     <Router>
