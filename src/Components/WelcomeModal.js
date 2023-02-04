@@ -5,7 +5,7 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../style/colors";
 
-import modal from "../assets/events/mik2022_1.jpg";
+import modal from "../assets/2percent.png";
 
 export default class WelcomeModal extends Component {
   updateLocation = (href) => {
@@ -20,14 +20,14 @@ export default class WelcomeModal extends Component {
       >
         <StyledModal>
           <h2 style={{ margin: "10px", textAlign: "center" }}>
-           „Mikuláš na baterky“ - Charitatívny Mikulášsky beh
+           Venujte svoje 2% a pomôžte chronicky chorým deťom
           </h2>
-          <img src={modal} alt="Beh ŠNÚRKA" />
+          <img src={modal} alt="percenta" />
           <StyledButtons>
             <span
               onClick={() => {
                 this.props.closeModal();
-                window.location.replace("/mikulassky-beh");
+                window.location.replace("/podpora");
               }}
             >
               Chcem sa dozvedieť viac

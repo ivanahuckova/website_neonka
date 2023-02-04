@@ -11,6 +11,7 @@ import mik2021_1 from "../../assets/events/mik2021_1.png";
 import mik2021_2 from "../../assets/events/mik2021_2.png";
 import mik2022_1 from "../../assets/events/mik2022_1.jpg";
 import mik2022_2 from "../../assets/events/mik2022_2.png";
+import mik2022_3 from "../../assets/events/mik2022_3.jpeg";
 // import neonkaBeh from "../../assets/neonka_beh.svg";
 
 //Main component
@@ -34,8 +35,10 @@ export default class MikBeh extends React.Component {
           aj za pomoci Starej tržnice, Luna studio- jogový kurz JOGA pre ZARU, Telovýchovná jednota Magura Zborov (futbalový zápas), 
           1. ročník Nemčianskej cyklomotanice.</div>
       <br id="mikbeh2021"/> 
-       <img src={mik2022_1} alt="Zara" /> 
-
+      <div>
+       <img src={mik2022_1} alt="Beh" />
+       <img src={mik2022_3} alt="Zara" />
+      </div>
       <h1>#Šnúrka - Charitatívny Mikulášsky beh 2021</h1>
       <div>Mikuláššky Beh je srdcovka. S <a href="https://www.activeplanet.sk/">Active Planet Outdoor Centrum</a> 
         sme počas 3 rokov vytvorili silný  organizačný tím. Tento rok odštartoval Mikulášsky beh náš nový Neónka projekt  
