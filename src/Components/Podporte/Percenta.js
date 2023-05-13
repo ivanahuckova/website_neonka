@@ -17,7 +17,7 @@ export default class Percenta extends React.Component {
             <h2>Venujte svoje 2% a pomôžte chronicky chorým deťom</h2>
             <div>
               Vyplnené tlačivo si môžete stiahnuť tu:{' '}
-              <a href="/files/tlacivo.pdf" download="danove_tlacivo_neonka">
+              <a href="/files/tlacivo.pdf" download="tlacivo">
                 Vyplnený forumlár na venovanie 2% daní
               </a>
             </div>
