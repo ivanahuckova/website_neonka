@@ -12,7 +12,8 @@ import mik2021_2 from "../../assets/events/mik2021_2.png";
 import mik2022_1 from "../../assets/events/mik2022_1.jpg";
 import mik2022_2 from "../../assets/events/mik2022_2.png";
 import mik2022_3 from "../../assets/events/mik2022_3.jpeg";
-import mik2023_1 from "../../assets/events/mik2023_1.jpeg";
+import mik2023_1 from "../../assets/events/mik2023_1.jpg";
+import mik2023_2 from "../../assets/events/mik2023_2.jpg";
 // import neonkaBeh from "../../assets/neonka_beh.svg";
 
 //Main component
@@ -21,25 +22,24 @@ export default class MikBeh extends React.Component {
     return (
       <StyledMidBanner id="novinky" >
       <h1>Rebrina - Charitatívny Mikulášsky beh 2023</h1>
-      <div>Rebrina je pomôcka na cvičenie. Pri jej pravidelnom cvičení si vybudujete väčšiu silu, a tak sa dokážete zodvihnúť o
-        stupienok vyšsie. Ale potrebujete nato ČAS,TRPEZLIVOSŤ A PEVNÚ VÔĽU. Takýmito superschopnosťami disponujú rodičia našich 
-        PREDČASNE narodených detských pacientov. Pozývame Vás na <span className="bold yellow">10. ročník Mikulášskeho behu s názvom Rebrina</span>. 
-        Uskutoční sa predčasne, <span className="bold yellow">2.12.2023 na tradičnej trase od Europa Shopping Center na námestie, v celkovej dĺžke 1 km.</span>
-        <img src={mik2023_1} alt="Beh" />
+      <div>Rebrina je pomôcka na cvičenie. Pri jej pravidelnom cvičení si vybudujete väčšiu silu, a tak sa dokážete zodvihnúť o stupienok vyšsie. Ale potrebujete 
+        na to ČAS,TRPEZLIVOSŤ A PEVNÚ VÔĽU. Takýmito superschopnosťami disponujú rodičia našich PREDČASNE narodených detských pacientov. 10. ročník Mikulášskeho behu pod názvom 
+        Rebrina bol venovaný <span className="bold yellow">predčasne narodenému Tomášovi</span>, ktorý sa narodil o 4 mesiace skôr (v 25. týždni tehotenstva). 
+        <img src={mik2023_1} alt="Tomas" />
         <div>
-        Tento rok sa hlavní organizátori rozhodli  <span className="bold yellow">pomôcť predčasne narodenému Tomášovi</span>, ktorý sa narodil o 4 mesiace skôr (v 25. týždni tehotenstva). 
-        Predčasne narodené deti majú mnoho komplikácií, ktoré súvisia s nezrelosťou všetkých orgánov v tele. Fyzické a mentálne znevýhodnenie veľmi 
-        závisí od poškodenia mozgu. Od najťažších foriem detskej mozgovej obrny, kedy sú deti 100% odkázané na svojich opatrovníkov doma a v 
-        centrách pre rodiny s deťmi, až po ľahšie formy, ktoré sú schopné CHÔDZE a iných pre nás úplne samozrejmých činností ako sa najesť, 
-        obliecť, vycikať. A niekedy sú deti zázrakom úplne v poriadku. Rodičia takýchto detí sú neustále na BEHU. Jeden z ich hlavných cieľov 
-        je zabezpečiť dieťaťu primeraný svalový pohyb, lebo svaly potrebujú pohyb, tak ako pľúca potrebujú vzduch. 
-        Veľkou snahou je naučiť ich samostatnej chôdzi, samozrejme ak je to čo i len trošku možné. Pri budovaní svalovej sily pomáha 
-        rehabilitačné cvičenie. Rehabilitácie sú často hradené z rodinného rozpočtu a sú finančne náročné. Je potrebné ich absolvovať 
-        pravidelne, aby bol efekt viditeľný. Vytvorme spolu pomyseľnú rebrinu, vďaka ktorej budú mať predčasne narodené deti prístupnejšie rehabilitácie. Ďakujeme!
+          Predčasne narodené deti majú mnoho komplikácií, ktoré súvisia s nezrelosťou všetkých orgánov v tele. Fyzické a mentálne znevýhodnenie veľmi závisí od poškodenia mozgu. 
+          Od najťažších foriem detskej mozgovej obrny, kedy sú deti 100% odkázané na svojich opatrovníkov doma a v centrách pre rodiny s deťmi, až po ľahšie formy, ktoré sú schopné 
+          CHÔDZE a iných pre nás úplne samozrejmých činností ako sa najesť, obliecť, vycikať. A niekedy sú deti zázrakom úplne v poriadku. Rodičia takýchto detí sú neustále na BEHU. 
+          Jeden z ich hlavných cieľov je zabezpečiť dieťaťu primeraný svalový pohyb, lebo svaly potrebujú pohyb, tak ako pľúca potrebujú vzduch. Veľkou snahou je naučiť ich samostatnej 
+          chôdzi, samozrejme ak je to čo i len trošku možné. Pri budovaní svalovej sily pomáha rehabilitačné cvičenie. Rehabilitácie sú často hradené z rodinného rozpočtu a sú 
+          finančne náročné. Je potrebné ich absolvovať pravidelne, aby bol efekt viditeľný. 
         </div>
-        <div><span className="bold yellow">Štart 2.12.2023 o 17:00 pred ESC v Banskej Bystrici/ alebo dištančne na celom území Slovenska. Cena štartovného 15 eur. Dĺžka 
-        trate 1km. Registrácia od 11.11.2023</span> a viac info na <a href="https://www.katarinabelicova.sk/">www.katarinabelicova.sk</a></div>
+        <img src={mik2023_2} alt="Beh" />
+        <div>
+          <span className="bold yellow">2.12.2023 sa 70 Mikulášov postavilo na štart a zabehli pre Tomáša. K výťažku 1000 eur sme pridali Neonkovských 500 a celková suma venovaná Tomáškovi tak dosiahla 1500 eur</span>, 
+          čo mu vystačí na 3 mesiace neurorehabilitácií pod vedením skúsených fyzioterapeutov z Neurogymu.
         </div>
+      </div>
       <br id="mikbeh2022"/>
       <h1>„Mikuláš na baterky“ - Charitatívny Mikulášsky beh 2022</h1>
       <div><span className="bold">Prečo „Mikuláš na baterky“ alebo, kto je to Zara?</span></div>
