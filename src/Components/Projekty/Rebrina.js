@@ -83,8 +83,8 @@ const StyledMidBanner = styled.div`
     font-weight: bold;
   }
   img {
-    width: 100%;
-    max-width: 1000px;
+    // width: 100%;
+    // max-width: 1000px;
   }
   h1 {
     font-size: ${fonts.mainHeadingScreen};
