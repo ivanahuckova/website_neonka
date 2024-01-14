@@ -20,6 +20,7 @@ import MikBeh from './Components/Projekty/MikBeh';
 import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
 import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
+import Rebrina from './Components/Projekty/Rebrina';
 
 function App() {
   // const [showModal, setShowModal] = useState(!localStorage.getItem('percenta2023'));
@@ -48,6 +49,7 @@ function App() {
           <Route exact path="/cysticka-fibroza" render={(props) => <Fibroza {...props} />} />
           <Route exact path="/snurka" render={(props) => <Snurka {...props} />} />
           <Route exact path="/nemcianska-cyklomotanica" render={(props) => <NemcianskaCyklomotanica {...props} />} />
+          <Route exact path="/rebrina" render={(props) => <Rebrina {...props} />} />
 
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
         </Switch>

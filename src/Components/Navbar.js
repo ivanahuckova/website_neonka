@@ -97,13 +97,20 @@ const CommonMenu = (props) => {
           <MenuItem 
             className={menuItemCss}
             key="2-0"
+            onClick={() => updateLocation("/rebrina")}
+          >
+            Rebrina
+          </MenuItem>
+          <MenuItem 
+            className={menuItemCss}
+            key="2-1"
             onClick={() => updateLocation("/nemcianska-cyklomotanica")}
             >
             Nemčianska cyklomotanica
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-1"
+            key="2-2"
             onClick={() => updateLocation("/snurka")}
           >
             #Šnúrka
@@ -111,35 +118,35 @@ const CommonMenu = (props) => {
           <SubMenu title="Mikulášsky beh">
             <MenuItem
               className={menuItemCss}
-              key="2-2-1"
+              key="2-3-1"
               onClick={() => updateLocation("/mikulassky-beh#novinky")}
             >
             Mikulášsky beh 2023
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2-2"
+            key="2-3-2"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2022")}
           >
             Mikulášsky beh 2022
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2-3"
+            key="2-3-3"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2021")}
           >
             Mikulášsky beh 2021
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2-4"
+            key="2-3-4"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2020")}
           >
             Mikulášsky beh 2020
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-2-5"
+            key="2-3-5"
             onClick={() => updateLocation("/mikulassky-beh#mikbeh2019")}
           >
             Mikulášsky beh 2019
@@ -147,14 +154,14 @@ const CommonMenu = (props) => {
           </SubMenu>
           <MenuItem
             className={menuItemCss}
-            key="2-3"
+            key="2-4"
             onClick={() => updateLocation("/nervovo-svalove-centrum")}
           >
             Centrum nervovo-svalových ochorení
           </MenuItem>
           <MenuItem
             className={menuItemCss}
-            key="2-4"
+            key="2-5"
             onClick={() => updateLocation("/cysticka-fibroza")}
           >
             Diagnostika cystickej fibrózy
