@@ -21,6 +21,7 @@ import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
 import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
 import Rebrina from './Components/Projekty/Rebrina';
+import Formulare from './Components/Formulare';
 
 function App() {
   // const [showModal, setShowModal] = useState(!localStorage.getItem('percenta2023'));
@@ -50,7 +51,7 @@ function App() {
           <Route exact path="/snurka" render={(props) => <Snurka {...props} />} />
           <Route exact path="/nemcianska-cyklomotanica" render={(props) => <NemcianskaCyklomotanica {...props} />} />
           <Route exact path="/rebrina" render={(props) => <Rebrina {...props} />} />
-
+          <Route exact path="/formulare" render={(props) => <Formulare {...props} />} />
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
         </Switch>
       </StyledLandingContainer>

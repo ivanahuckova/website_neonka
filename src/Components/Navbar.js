@@ -215,11 +215,18 @@ const CommonMenu = (props) => {
           title="Podporte nás"
         >
           Podporte nás
+        </MenuItem>,     
+        <MenuItem
+          className={menuItemCss}
+          key="4"
+          onClick={() => updateLocation("/formulare")}
+        >
+          Formuláre
         </MenuItem>,
 
         <MenuItem
           className={menuItemCss}
-          key="4"
+          key="5"
           onClick={() => updateLocation("/galeria")}
         >
           Galéria
