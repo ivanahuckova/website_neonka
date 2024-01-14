@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import * as colors from '../../style/colors';
 // import * as fonts from "../../style/fonts";
 
-import percenta from '../../assets/percenta.jpg';
+import percenta from '../../assets/percenta.png';
 
 //Main component
 export default class Percenta extends React.Component {
