@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 //Import icons/images
-import Team from "../../assets/team.jpg";
+import Team from "../../assets/team.jpeg";
 
 //Colors + Fonts
 import * as colors from "../../style/colors";
@@ -16,15 +16,15 @@ export default function ONas() {
       <h3>O nás</h3>
       <StyledPeopleConatiner>
         <div>
-          Sme 4 mladé lekárky v príprave na pediatriu -{" "}
+          Sme 4 mladé pediatričky -{" "}
           <span className="name">Ninka</span>,{" "}
           <span className="name">Ľudka</span>,{" "}
           <span className="name">Žofka</span> a{" "}
-          <span className="name">Mirka</span> z Detskej fakultnej nemocnice v
-          Banskej Bystrici. Túžime pomáhať deťom a rodinám chronicky chorých
-          detí, či už finančne, alebo prostredníctvom zlepšovania podmienok na
-          našom detskom oddelení. Neónka je známa tým, že svieti v tme. A aj my
-          chceme byť takýmto svetielkom pre všetky choré deti.
+          <span className="name">Mirka</span> z Detskej fakultnej 
+          nemocnice v Banskej Bystrici. Pomáhame od roku 2019 deťom a 
+          rodinám chronicky chorých detí, či už finančne, alebo 
+          prostredníctvom zlepšovania podmienok na našom detskom 
+          oddelení a ambulanciách.
         </div>
         <CarouselContainer>
           <div>

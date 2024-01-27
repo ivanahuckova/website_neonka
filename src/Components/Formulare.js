@@ -30,6 +30,12 @@ export default class Formulate extends React.Component {
               Formulár Neonka - liečba
               </a>
             </div>
+            <div>
+              <a href="/files/formular_neopedia.docx" download="Formulár Neonka - Žiadosť na preplatenie vzdelávania">
+                Žiadosť na preplatenie vzdelávania
+              </a>
+            </div>
+            
             </div>
             </div>
           </StyledDownload>
