@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 //Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
+import * as colors from '../../style/colors';
+import * as fonts from '../../style/fonts';
 
 //Main component
 export default class Media extends React.Component {
@@ -14,11 +14,12 @@ export default class Media extends React.Component {
           <StyledDescribtionCard>
             <h3 className="heading">Videli ste nás</h3>
             <div className="content-div">
-              <a
-                href="https://www.youtube.com/watch?v=FMl5N0STdu0"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href="https://www.lumen.sk/archiv-play/186231" rel="noopener noreferrer" target="_blank">
+                Rozhovor v rádiu Lumen
+              </a>
+            </div>
+            <div className="content-div">
+              <a href="https://www.youtube.com/watch?v=FMl5N0STdu0" rel="noopener noreferrer" target="_blank">
                 Rozhovor na JOJ ŠPORT o 24-hodinovom charitatívnom behu Šnúrka
               </a>
             </div>
@@ -29,18 +30,13 @@ export default class Media extends React.Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Reportáž TA3 o otvorení Stredoslovenského centra pre diagnostiku
-                a liečbu nervovo-svalových ochorení v detskom veku
+                Reportáž TA3 o otvorení Stredoslovenského centra pre diagnostiku a liečbu nervovo-svalových ochorení
+                v detskom veku
               </a>
             </div>
             <div className="content-div">
-              <a
-                href="https://youtu.be/Y21nN6zfoPU"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Reportáž Markízy o našej benefičnej akcii Rally Show v Dolnej
-                Strehovej
+              <a href="https://youtu.be/Y21nN6zfoPU" rel="noopener noreferrer" target="_blank">
+                Reportáž Markízy o našej benefičnej akcii Rally Show v Dolnej Strehovej
               </a>
             </div>
             <div className="content-div">
@@ -49,8 +45,7 @@ export default class Media extends React.Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Článok v Bystricoviny.sk o našej benefičnej akcii Rally Show v
-                Dolnej Strehovej
+                Článok v Bystricoviny.sk o našej benefičnej akcii Rally Show v Dolnej Strehovej
               </a>
             </div>
             <div className="content-div">
@@ -59,8 +54,7 @@ export default class Media extends React.Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Článok na priekopnik.sk o našom benefinčnom Mikulášskom behu,
-                ktorého sa zúčastnilo viac ako 250 bežcov
+                Článok na priekopnik.sk o našom benefinčnom Mikulášskom behu, ktorého sa zúčastnilo viac ako 250 bežcov
               </a>
             </div>
             <div className="content-div">
@@ -69,8 +63,8 @@ export default class Media extends React.Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Článok na bystrica.dnes24.sk o benefičnom punči v areáli
-                Gymnázia J. G. Tajovského, z ktorého výťažok podporil Neónku
+                Článok na bystrica.dnes24.sk o benefičnom punči v areáli Gymnázia J. G. Tajovského, z ktorého výťažok
+                podporil Neónku
               </a>
             </div>
             <div className="content-div">
