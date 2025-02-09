@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Menu, { SubMenu, Item as MenuItem } from "rc-menu";
+import React from 'react';
+import styled from 'styled-components';
+import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
 
-import { css } from "emotion";
-import "rc-menu/assets/index.css";
+import { css } from 'emotion';
+import 'rc-menu/assets/index.css';
 
 //Assets
-import logoText from "../assets/logo_text.svg";
+import logoText from '../assets/logo_text.svg';
 
 //Colors + Fonts
-import * as colors from "../style/colors";
+import * as colors from '../style/colors';
 
 //Main component
 
@@ -23,11 +23,11 @@ export default class Navbar extends React.Component {
     this.fonts = [colors.pinkColor, colors.yellowColor];
   }
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll, true);
+    window.addEventListener('scroll', this.handleScroll, true);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll, true);
+    window.removeEventListener('scroll', this.handleScroll, true);
   }
   handleScroll = () => {
     if (window.scrollY < 30) {
@@ -87,148 +87,101 @@ const CommonMenu = (props) => {
 
   return (
     <Menu
-      selectedKeys={["1"]}
+      selectedKeys={['1']}
       mode={props.mode}
       openAnimation={props.openAnimation}
       defaultOpenKeys={props.defaultOpenKeys}
     >
       {[
         <SubMenu className={subMenuItemCss} title="Projekty" key="2">
-          <MenuItem 
-            className={menuItemCss}
-            key="2-0"
-            onClick={() => updateLocation("/rebrina")}
-          >
+          <MenuItem className={menuItemCss} key="2-0" onClick={() => updateLocation('/rebrina')}>
             Rebrina
           </MenuItem>
-          <MenuItem 
-            className={menuItemCss}
-            key="2-1"
-            onClick={() => updateLocation("/nemcianska-cyklomotanica")}
-            >
-            Nemčianska cyklomotanica
+          <MenuItem className={menuItemCss} key="2-1" onClick={() => updateLocation('/kava-je-vzdy-dobry-napad')}>
+            Káva je vždy dobrý nápad
           </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-2"
-            onClick={() => updateLocation("/snurka")}
-          >
-            #Šnúrka
+          <MenuItem className={menuItemCss} key="2-2" onClick={() => updateLocation('/vzdelavanie-lekarov-a-sestier')}>
+            Vzdelávanie lekárov a sestier
           </MenuItem>
-          <SubMenu title="Mikulášsky beh">
-            <MenuItem
-              className={menuItemCss}
-              key="2-3-1"
-              onClick={() => updateLocation("/mikulassky-beh#novinky")}
-            >
-            Mikulášsky beh 2023
-          </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-3-2"
-            onClick={() => updateLocation("/mikulassky-beh#mikbeh2022")}
-          >
-            Mikulášsky beh 2022
-          </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-3-3"
-            onClick={() => updateLocation("/mikulassky-beh#mikbeh2021")}
-          >
-            Mikulášsky beh 2021
-          </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-3-4"
-            onClick={() => updateLocation("/mikulassky-beh#mikbeh2020")}
-          >
-            Mikulášsky beh 2020
-          </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-3-5"
-            onClick={() => updateLocation("/mikulassky-beh#mikbeh2019")}
-          >
-            Mikulášsky beh 2019
-          </MenuItem>
+          <SubMenu title="Prebehnuté">
+            <MenuItem className={menuItemCss} key="2-3" onClick={() => updateLocation('/nemcianska-cyklomotanica')}>
+              Nemčianska cyklomotanica
+            </MenuItem>
+            <MenuItem className={menuItemCss} key="2-4" onClick={() => updateLocation('/snurka')}>
+              #Šnúrka
+            </MenuItem>
+            <MenuItem className={menuItemCss} key="2-5" onClick={() => updateLocation('/nervovo-svalove-centrum')}>
+              Centrum nervovo-svalových ochorení
+            </MenuItem>
+            <MenuItem className={menuItemCss} key="2-6" onClick={() => updateLocation('/cysticka-fibroza')}>
+              Diagnostika cystickej fibrózy
+            </MenuItem>
+            <SubMenu title="Mikulášsky beh">
+              <MenuItem className={menuItemCss} key="2-7-1" onClick={() => updateLocation('/mikulassky-beh#novinky')}>
+                Mikulášsky beh 2023
+              </MenuItem>
+              <MenuItem
+                className={menuItemCss}
+                key="2-7-2"
+                onClick={() => updateLocation('/mikulassky-beh#mikbeh2022')}
+              >
+                Mikulášsky beh 2022
+              </MenuItem>
+              <MenuItem
+                className={menuItemCss}
+                key="2-7-3"
+                onClick={() => updateLocation('/mikulassky-beh#mikbeh2021')}
+              >
+                Mikulášsky beh 2021
+              </MenuItem>
+              <MenuItem
+                className={menuItemCss}
+                key="2-7-4"
+                onClick={() => updateLocation('/mikulassky-beh#mikbeh2020')}
+              >
+                Mikulášsky beh 2020
+              </MenuItem>
+              <MenuItem
+                className={menuItemCss}
+                key="2-7-5"
+                onClick={() => updateLocation('/mikulassky-beh#mikbeh2019')}
+              >
+                Mikulášsky beh 2019
+              </MenuItem>
+            </SubMenu>
           </SubMenu>
-          <MenuItem
-            className={menuItemCss}
-            key="2-4"
-            onClick={() => updateLocation("/nervovo-svalove-centrum")}
-          >
-            Centrum nervovo-svalových ochorení
-          </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="2-5"
-            onClick={() => updateLocation("/cysticka-fibroza")}
-          >
-            Diagnostika cystickej fibrózy
-          </MenuItem>
         </SubMenu>,
         <SubMenu className={subMenuItemCss} title="O nás" key="1">
-          <MenuItem
-            className={menuItemCss}
-            key="1-1"
-            onClick={() => updateLocation("/#team")}
-          >
+          <MenuItem className={menuItemCss} key="1-1" onClick={() => updateLocation('/#team')}>
             OZ Neónka
           </MenuItem>
 
-          <MenuItem
-            className={menuItemCss}
-            key="1-2"
-            onClick={() => updateLocation("/#ciele")}
-          >
+          <MenuItem className={menuItemCss} key="1-2" onClick={() => updateLocation('/#ciele')}>
             Naše ciele
           </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="1-3"
-            onClick={() => updateLocation("/#media")}
-          >
+          <MenuItem className={menuItemCss} key="1-3" onClick={() => updateLocation('/#media')}>
             Videli ste nás
           </MenuItem>
           <MenuItem
             className={menuItemCss}
             key="1-4"
-            onClick={() =>
-              updateLocation("https://www.facebook.com/neonkabanskabystrica")
-            }
+            onClick={() => updateLocation('https://www.facebook.com/neonkabanskabystrica')}
           >
             Facebook
           </MenuItem>
-          <MenuItem
-            className={menuItemCss}
-            key="1-5"
-            onClick={() => updateLocation("/#kontakt")}
-          >
+          <MenuItem className={menuItemCss} key="1-5" onClick={() => updateLocation('/#kontakt')}>
             Kontakt
           </MenuItem>
         </SubMenu>,
 
-        <MenuItem
-          className={menuItemCss}
-          key="3"
-          onClick={() => updateLocation("/podpora")}
-          title="Podporte nás"
-        >
+        <MenuItem className={menuItemCss} key="3" onClick={() => updateLocation('/podpora')} title="Podporte nás">
           Podporte nás
-        </MenuItem>,     
-        <MenuItem
-          className={menuItemCss}
-          key="4"
-          onClick={() => updateLocation("/formulare")}
-        >
+        </MenuItem>,
+        <MenuItem className={menuItemCss} key="4" onClick={() => updateLocation('/formulare')}>
           Formuláre
         </MenuItem>,
 
-        <MenuItem
-          className={menuItemCss}
-          key="5"
-          onClick={() => updateLocation("/galeria")}
-        >
+        <MenuItem className={menuItemCss} key="5" onClick={() => updateLocation('/galeria')}>
           Galéria
         </MenuItem>,
       ]}

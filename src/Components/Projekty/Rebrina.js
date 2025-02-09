@@ -5,33 +5,34 @@ import styled from 'styled-components';
 import * as colors from '../../style/colors';
 import * as fonts from '../../style/fonts';
 
-import rebrina from "../../assets/rebrina.jpg";
+import rebrina from '../../assets/rebrina.jpg';
 
 //Main component
-export default function Snurka() {
+export default function Rebrina() {
   return (
     <StyledMidBanner>
       {/* <h1>O čom je projekt Rebrina?</h1> */}
       <div>
-      <img src={rebrina} alt="Rebrina logo" style={{height: '40vh'}}/>
-      <div>
-        Rebrina je pomôcka na cvičenie. Pri jej pravidelnom cvičení si vybudujete väčšiu silu, a tak sa dokážete zodvihnúť 
-        o stupienok vyššie. Ale potrebujete nato ČAS,TRPEZLIVOSŤ A PEVNÚ VÔĽU. A dobrého fyzioterapeuta! 
-        <span className="bold yellow">
-          Projekt REBRINA vznikol pre potreby lepšieho prístupu ku kvalitným detským rehabilitáciám.
-        </span>
-        V tomto projekte spolupracujeme s fyzioterapeutkou <a href="https://bbfyzioterapia.sk">Mgr. Zlaticou Žigmundovou</a>, ktorá má 
-        skúsenosti s detskými pacientami. Našim cieľom sú rýchlo dostupné a kvalitne prevedené cvičenia nielen pre detských neurologických 
-        pacientov. 
-        <br />
-        Cvičenia sú uhrádzané plne. Do konca roka 2023 sme uhradili rehabilitácie 4 pacientom v približnej hodnote 800 eur. Plánujeme spolupracovať aj 
-        s neurorehabilitačným <a href="https://turehabilitujem.sk">NEUROGYmom</a>, ktorý navštevujú hlavne predčasne narodené deti z našich ambulancií.
-        <br />
+        <img src={rebrina} alt="Rebrina logo" style={{ height: '40vh' }} />
         <div>
-         S projektom rebrina bol prepojený aj 10. ročník Mikulášskeho behu, kde celý výťažok bol určený pre predčasne  <a href="/mikulassky-beh#novinky">narodeného Tomáška</a>.
+          Rebrina je pomôcka na cvičenie. Pri jej pravidelnom cvičení si vybudujete väčšiu silu, a tak sa dokážete
+          zodvihnúť o stupienok vyššie. Ale potrebujete nato ČAS,TRPEZLIVOSŤ A PEVNÚ VÔĽU. A dobrého fyzioterapeuta!
+          <span className="bold yellow">
+            Projekt REBRINA vznikol pre potreby lepšieho prístupu ku kvalitným detským rehabilitáciám.
+          </span>
+          Našim cieľom sú rýchlo dostupné a kvalitne prevedené cvičenia nielen pre detských neurologických pacientov. V
+          tomto projekte spolupracujeme s{' '}
+          <a href="https://bbfyzioterapia.sk">fyzioterapeutkou Mgr. Zlaticou Žigmundovou</a>, ktorá má skúsenosti s
+          detskými pacientami. Cvičenia sú uhrádzané plne.
+          <br />
+          Spolupracujeme s neurorehabilitačným zariadením <a href="https://turehabilitujem.sk">NEUROGYM</a>, ktorý
+          navštevujú hlavne predčasne narodené deti z našich ambulancií. Čiastočne uhrádzame rehabilitácie po traumách
+          mozgu a miechy.
+          <div>
+            Za rok 2024 sme uhradili rehabilitácie v sume 3203,5 EUR. Projekt od začiatku fungovania od 1/25 pomohol 10
+            pacientom k prístupnejším rehabilitáciám.
+          </div>
         </div>
-      </div>
-
       </div>
     </StyledMidBanner>
   );

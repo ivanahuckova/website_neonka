@@ -19,6 +19,8 @@ import NervoveCentrum from './Components/Projekty/NervoveCentrum';
 import MikBeh from './Components/Projekty/MikBeh';
 import Fibroza from './Components/Projekty/Fibroza';
 import Snurka from './Components/Projekty/Snurka';
+import Kava from './Components/Projekty/Kava';
+import Vzdelavanie from './Components/Projekty/Vzdelavanie';
 import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
 import Rebrina from './Components/Projekty/Rebrina';
 import Formulare from './Components/Formulare';
@@ -34,13 +36,7 @@ function App() {
   return (
     <Router>
       <StyledLandingContainer>
-        {showModal && (
-          <WelcomeModal
-            visible={showModal}
-            onClickAway={closeModal}
-            closeModal={closeModal}
-          />
-        )}
+        {showModal && <WelcomeModal visible={showModal} onClickAway={closeModal} closeModal={closeModal} />}
         <Navbar />
         <Switch>
           <Route exact path="/" render={(props) => <General {...props} />} />
@@ -51,6 +47,8 @@ function App() {
           <Route exact path="/snurka" render={(props) => <Snurka {...props} />} />
           <Route exact path="/nemcianska-cyklomotanica" render={(props) => <NemcianskaCyklomotanica {...props} />} />
           <Route exact path="/rebrina" render={(props) => <Rebrina {...props} />} />
+          <Route exact path="/kava-je-vzdy-dobry-napad" render={(props) => <Kava {...props} />} />
+          <Route exact path="/vzdelavanie-lekarov-a-sestier" render={(props) => <Vzdelavanie {...props} />} />
           <Route exact path="/formulare" render={(props) => <Formulare {...props} />} />
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
         </Switch>
