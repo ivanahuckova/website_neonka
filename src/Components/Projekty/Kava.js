@@ -6,18 +6,21 @@ import * as colors from '../../style/colors';
 import * as fonts from '../../style/fonts';
 
 import kava from '../../assets/kava.png';
+import kavaPhoto from '../../assets/kava_photo.jpeg';
 
 //Main component
 export default function Kava() {
   return (
     <StyledMidBanner>
       <div>
+        <img src={kava} alt="Káva je dobrý nápad" />
+      </div>
+      <div>
         Projekt <span className="bold yellow">Káva je vždy dobrý nápad</span> zabezpečuje pre rodičov pacientov teplú
         kávu (dobrú 🙂) a čaj.
       </div>
-      <div>
-        <img src={kava} alt="Káva je dobrý nápad" />
-      </div>
+
+      <img src={kavaPhoto} alt="Fotka" />
     </StyledMidBanner>
   );
 }
@@ -90,6 +93,7 @@ const StyledMidBanner = styled.div`
   div {
     font-size: ${fonts.textScreen};
     padding-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     @media screen and (max-width: 600px) {
       ont-size: ${fonts.textMobile};
@@ -101,7 +105,7 @@ const StyledMidBanner = styled.div`
       }
     }
     img {
-      max-width: 600px;
+      max-width: 270px;
     }
   }
 `;
