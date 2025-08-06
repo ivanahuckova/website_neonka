@@ -27,7 +27,7 @@ import Formulare from './Components/Formulare';
 import Akvarium from './Components/Projekty/Akvarium';
 
 function App() {
-  const [showModal, setShowModal] = useState(!localStorage.getItem('skvarium2025'));
+  const [showModal, setShowModal] = useState(!localStorage.getItem('akvarium2025'));
 
   const closeModal = () => {
     setShowModal(false);
