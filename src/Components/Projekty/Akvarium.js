@@ -38,6 +38,9 @@ export default function Akvarium() {
         <img src={akvarium2} alt="Akvarium 2" style={{ maxWidth: 300, margin: 8 }} />
         <img src={akvarium3} alt="Akvarium 3" style={{ maxWidth: 300, margin: 8 }} />
       </div>
+      <div style={{ textAlign: 'center', color: '#888', fontSize: '0.95em', marginBottom: 16, fontStyle: 'italic' }}>
+        Zverejnenie so súhlasom zákonného zástupcu
+      </div>
       <h2>Príbeh Aničky a kabíny, ktorá počúva pľúca</h2>
       <div>
         Anička má 10 rokov. Miluje jazdu na kolobežke, spieva v zbore a doma má škrečka menom Hopsík. V posledných mesiacoch ju však pri behu začalo pichať v hrudníku, v noci ju budil kašeľ a rýchlo sa zadýchala. Jej pani doktorka ju poslala na špeciálne vyšetrenie do Detskej fakultnej nemocnice v Banskej Bystrici.
@@ -76,7 +79,7 @@ export default function Akvarium() {
         <br />
         <span role="img" aria-label="mobil">📱</span> Alebo pomocou QR kódu:<br />
         <img src={qrPodpora} alt="QR kód pre podporu" style={{ maxWidth: 200, margin: 16 }} />
-        <div style={{ fontSize: 14, color: colors.pinkColor }}>(Otvoríte v mobilnej aplikácii banky)</div>
+        <div style={{ fontSize: 14, color: colors.pinkColor, fontStyle: 'italic' }}>Otvoríte v mobilnej aplikácii banky</div>
       </div>
     </StyledMidBanner>
   );
