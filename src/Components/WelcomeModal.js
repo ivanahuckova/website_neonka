@@ -5,7 +5,7 @@ import styled from "styled-components";
 //Colors + Fonts
 import * as colors from "../style/colors";
 
-import modal from "../assets/2percent.png";
+import qrPodpora from '../assets/qr_neonka_akvarium.png';
 
 export default class WelcomeModal extends Component {
   updateLocation = (href) => {
@@ -20,14 +20,20 @@ export default class WelcomeModal extends Component {
       >
         <StyledModal>
           <h2 style={{ margin: "10px", textAlign: "center" }}>
-           Venujte svoje 2% a pomôžte chronicky chorým deťom
+            Zbierka „Akvárium“ pre detskú pľúcnu ambulanciu
           </h2>
-          <img src={modal} alt="percenta" />
+          <div style={{ textAlign: 'center', margin: '0 0 16px 0' }}>
+            Pomôžte nám dofinancovať prístroj na presnú diagnostiku detských pľúcnych ochorení.
+          </div>
+          <img src={qrPodpora} alt="QR kód pre podporu" style={{ maxWidth: 180, margin: '8px auto', display: 'block' }} />
+          <div style={{ textAlign: 'center', fontWeight: 'bold', margin: '8px 0' }}>
+            SK72 0900 0000 0052 2909 7405
+          </div>
           <StyledButtons>
             <span
               onClick={() => {
                 this.props.closeModal();
-                window.location.replace("/podpora");
+                window.location.replace("/akvarium");
               }}
             >
               Chcem sa dozvedieť viac

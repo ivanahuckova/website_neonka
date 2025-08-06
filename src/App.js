@@ -24,13 +24,14 @@ import Vzdelavanie from './Components/Projekty/Vzdelavanie';
 import NemcianskaCyklomotanica from './Components/Projekty/NemcianskaCyklomotanica';
 import Rebrina from './Components/Projekty/Rebrina';
 import Formulare from './Components/Formulare';
+import Akvarium from './Components/Projekty/Akvarium';
 
 function App() {
-  const [showModal, setShowModal] = useState(!localStorage.getItem('percenta2024'));
+  const [showModal, setShowModal] = useState(!localStorage.getItem('skvarium2025'));
 
   const closeModal = () => {
     setShowModal(false);
-    localStorage.setItem('percenta2024', true);
+    localStorage.setItem('akvarium2025', true);
   };
 
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route exact path="/vzdelavanie-lekarov-a-sestier" render={(props) => <Vzdelavanie {...props} />} />
           <Route exact path="/formulare" render={(props) => <Formulare {...props} />} />
           <Route exact path="/podpora" render={(props) => <Podporte {...props} />} />
+          <Route exact path="/akvarium" render={(props) => <Akvarium {...props} />} />
         </Switch>
       </StyledLandingContainer>
       <Footer />
