@@ -5,32 +5,26 @@ import styled from 'styled-components';
 //Colors + Fonts
 import * as colors from '../style/colors';
 
-import akvariumLogo from '../assets/akvarium-logo.png';
-import qrPodpora from '../assets/qr_neonka_akvarium.png';
+import percenta from '../assets/2percent.png';
 
 export default class WelcomeModal extends Component {
-  updateLocation = (href) => {
-    window.location.replace(href);
-  };
   render() {
     return (
       <Modal visible={this.props.visible} effect="fadeInUp" onClickAway={this.props.closeModal}>
         <StyledModal>
-          <img src={akvariumLogo} alt="Akvárium logo" style={{ maxWidth: '120px', margin: '0 auto 12px auto', display: 'block' }} />
-          <h2 style={{ margin: '-5px', textAlign: 'center' }}>Zbierka „Akvárium“ pre detskú pľúcnu ambulanciu</h2>
+          <h2>Venujte svoje 2% a pomôžte chronicky chorým deťom</h2>
+          <img src={percenta} alt="2% z daní" />
           <div style={{ textAlign: 'center', fontWeight: 500 }}>
-            Projekt Akvárium pomáha deťom s pľúcnymi ochoreniami k lepšej diagnostike a starostlivosti vďaka špeciálnemu prístroju. 
-            Prispejte a pomôžte nám dofinancovať tento dôležitý prístroj pre detskú ambulanciu.
+            Vyplnené tlačivo si môžete stiahnuť tu:{' '}
+            <a href="/files/Vyhlasenie-2025-neonka.pdf" download="Vyhlasenie-2025-neonka">
+              Vyplnený formulár na venovanie 2% daní
+            </a>
           </div>
-          <DesktopSupportSection>
-            <img src={qrPodpora} alt="QR kód pre podporu" style={{ maxWidth: 120, margin: '10px auto', display: 'block' }} />
-            <div style={{ fontWeight: 'bold', marginBottom: 8 }}>SK72 0900 0000 0052 2909 7405</div>
-          </DesktopSupportSection>
           <StyledButtons>
             <span
               onClick={() => {
                 this.props.closeModal();
-                window.location.replace('/akvarium');
+                window.location.replace('/podpora#percenta');
               }}
             >
               Chcem sa dozvedieť viac
@@ -65,6 +59,17 @@ const StyledModal = styled.div`
     max-width: 50%;
     max-height: 50%;
   }
+  h2 {
+    padding: 2px 10px;
+    background-color: ${colors.pinkColor};
+    text-align: center;
+    margin: 5px 0;
+  }
+  a {
+    color: ${colors.pinkColor} !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+  }
 `;
 
 const StyledButtons = styled.div`
@@ -85,23 +90,3 @@ const StyledButtons = styled.div`
     }
   }
 `;
-
-const DesktopSupportSection = styled.div`
-  display: none;
-  @media (min-width: 700px) {
-    display: block;
-    text-align: center;
-    color: ${colors.pinkColor};
-    font-size: 1em;
-  }
-`;
-
-// const StyledText = styled.div`
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   a {
-//     font-weight: bold;
-//     color: ${colors.pinkColor} !important;
-//   }
-// `;
