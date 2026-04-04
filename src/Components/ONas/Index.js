@@ -1,24 +1,33 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-//Colors
-import { yellowColor, pinkColor } from "../../style/colors";
+import { yellowColor } from '../../style/colors';
 
-//Import components
-import LandingBanner from "./LandingBanner";
-import Ciele from "./Ciele";
-import NasiPacienti from "./NasiPacienti";
-import Kontakt from "./Kontakt";
-import Media from "./Media";
+import LandingBanner from './LandingBanner';
+import ONeonke from './ONeonke';
+import NasiPacienti from './NasiPacienti';
+import Ciele from './Ciele';
+import Media from './Media';
+import Kontakt from './Kontakt';
 
-import ONeonke from "./ONeonke";
-
-function General() {
+export default function General() {
   return (
     <Wrapper>
-      <TopLandingContainer>
+      <HeroContainer>
         <LandingBanner />
-      </TopLandingContainer>
+        <WaveBottom>
+          <svg
+            viewBox="0 0 1440 160"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0,80 C240,160 480,20 720,90 C960,160 1200,30 1440,90 L1440,160 L0,160 Z"
+              fill="white"
+            />
+          </svg>
+        </WaveBottom>
+      </HeroContainer>
       <ONeonke />
       <NasiPacienti />
       <Ciele />
@@ -28,58 +37,53 @@ function General() {
   );
 }
 
-export default General;
+const Wrapper = styled.div``;
 
-const Wrapper = styled.div`
-  .sticky {
-    position: sticky;
-    top: 80vh;
-    left: 70vw;
-    height: 100px;
-    width: 100px;
-    z-index: 1000;
-    cursor: pointer;
-    img {
-      border: 4px solid ${pinkColor};
-      border-radius: 50%;
-      width: 100%;
-    }
+const HeroContainer = styled.div`
+  background-color: ${yellowColor};
+  padding: 3rem 12vw 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1500px) {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  @media (max-width: 1000px) {
+    min-height: auto;
+    padding: 2.5rem 6vw 9rem;
+  }
+
+  @media (max-width: 600px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5rem;
   }
 `;
 
-const TopLandingContainer = styled.div`
-  height: 75vh;
-  padding: 0 15vw;
-  display: flex;
-  flex-direction: column;
-  &::after {
-    content: "";
-    background-color: ${yellowColor};
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 70px;
-    -webkit-transform: skewY(3deg);
-    -ms-transform: skewY(3deg);
-    transform: skewy(-7deg);
-    -webkit-transform-origin: 70%;
-    -ms-transform-origin: 70%;
-    transform-origin: 0;
-    z-index: -1;
-  }
-  @media screen and (max-width: 1500px) {
-    padding: 0 10vw;
-  }
+const WaveBottom = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
 
-  @media screen and (max-width: 1000px) {
-    background-color: ${yellowColor};
-    height: auto;
-    &::after {
-      display: none;
+  svg {
+    display: block;
+    width: 100%;
+    height: 160px;
+
+    @media (max-width: 768px) {
+      height: 110px;
+    }
+
+    @media (max-width: 480px) {
+      height: 80px;
     }
   }
-  /* @media screen and (max-width: 400px) {
-        padding: 0 7vw;
-    } */
 `;

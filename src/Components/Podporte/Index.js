@@ -6,8 +6,8 @@ import Percenta from './Percenta';
 export default function Podporte() {
   return (
     <div>
-      <Percenta />
       <Ucet />
+      <Percenta />
       <Partneri />
     </div>
   );
