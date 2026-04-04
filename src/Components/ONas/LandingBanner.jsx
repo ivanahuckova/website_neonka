@@ -8,22 +8,22 @@ const FISH_PATH =
   'M25.6249 25.3C29.1249 25.3 34.3249 21.5 36.2249 20C37.6249 21.5 38.7249 22.3 39.6249 22.3C39.8249 22.3 40.1249 22.2 40.3249 22.1C41.6249 21.5 41.7249 19.5 41.7249 18.7C41.7249 18.1 41.6249 15.9 40.3249 15.2C39.3249 14.7 37.9249 15.4 36.2249 17.3C34.2249 15.8 29.1249 12 25.6249 12C21.2249 12 16.8249 17.8 16.6249 18.1C16.3249 18.4 16.3249 18.9 16.6249 19.3C16.7249 19.5 21.1249 25.3 25.6249 25.3ZM22.1249 17.8C22.6249 17.4 23.4249 17.4 23.8249 17.8C24.3249 18.3 24.3249 19 23.8249 19.5C23.4249 20 22.6249 20 22.1249 19.5C21.6249 19.1 21.6249 18.3 22.1249 17.8Z';
 
 const FISH_CONFIGS = [
-  { top: '55%', size: 52, color: '#F23695', delay: 0,  delayMobile: 0,   wobble: 0.85 },
-  { top: '28%', size: 52, color: '#ffffff', delay: 5,  delayMobile: -3,  wobble: 0.72 },
-  { top: '18%', size: 52, color: '#F23695', delay: 10, delayMobile: -7,  wobble: 0.7  },
-  { top: '65%', size: 52, color: '#ffffff', delay: 16, delayMobile: -10, wobble: 0.88 },
-  { top: '72%', size: 52, color: '#F23695', delay: 21, delayMobile: -14, wobble: 1.05 },
-  { top: '12%', size: 52, color: '#ffffff', delay: 29, delayMobile: -17, wobble: 0.78 },
-  { top: '32%', size: 52, color: '#F23695', delay: 36, delayMobile: -21, wobble: 0.65 },
-  { top: '48%', size: 52, color: '#ffffff', delay: 42, delayMobile: -24, wobble: 0.92 },
-  { top: '8%',  size: 52, color: '#F23695', delay: 48, delayMobile: -28, wobble: 0.9  },
-  { top: '70%', size: 52, color: '#ffffff', delay: 54, delayMobile: -31, wobble: 0.68 },
-  { top: '62%', size: 52, color: '#F23695', delay: 60, delayMobile: -35, wobble: 0.75 },
-  { top: '22%', size: 52, color: '#ffffff', delay: 66, delayMobile: -38, wobble: 0.82 },
-  { top: '42%', size: 52, color: '#F23695', delay: 72, delayMobile: -42, wobble: 0.95 },
-  { top: '58%', size: 52, color: '#ffffff', delay: 78, delayMobile: -45, wobble: 0.73 },
-  { top: '78%', size: 52, color: '#F23695', delay: 84, delayMobile: -49, wobble: 0.7  },
-  { top: '38%', size: 52, color: '#ffffff', delay: 90, delayMobile: -52, wobble: 0.87 },
+  { top: '55%', size: 52, color: '#F23695', delay: 0,  delayMobile: 0,   wobble: 0.75 },
+  { top: '28%', size: 52, color: '#ffffff', delay: 5,  delayMobile: -3,  wobble: 1.8  },
+  { top: '18%', size: 52, color: '#F23695', delay: 10, delayMobile: -7,  wobble: 0.88 },
+  { top: '65%', size: 52, color: '#ffffff', delay: 16, delayMobile: -10, wobble: 1.5  },
+  { top: '72%', size: 52, color: '#F23695', delay: 21, delayMobile: -14, wobble: 0.7  },
+  { top: '12%', size: 52, color: '#ffffff', delay: 29, delayMobile: -17, wobble: 2.1  },
+  { top: '32%', size: 52, color: '#F23695', delay: 36, delayMobile: -21, wobble: 1.9  },
+  { top: '48%', size: 52, color: '#ffffff', delay: 42, delayMobile: -24, wobble: 0.82 },
+  { top: '8%',  size: 52, color: '#F23695', delay: 48, delayMobile: -28, wobble: 1.6  },
+  { top: '70%', size: 52, color: '#ffffff', delay: 54, delayMobile: -31, wobble: 0.92 },
+  { top: '62%', size: 52, color: '#F23695', delay: 60, delayMobile: -35, wobble: 0.68 },
+  { top: '22%', size: 52, color: '#ffffff', delay: 66, delayMobile: -38, wobble: 1.45 },
+  { top: '42%', size: 52, color: '#F23695', delay: 72, delayMobile: -42, wobble: 0.78 },
+  { top: '58%', size: 52, color: '#ffffff', delay: 78, delayMobile: -45, wobble: 2.0  },
+  { top: '78%', size: 52, color: '#F23695', delay: 84, delayMobile: -49, wobble: 1.55 },
+  { top: '38%', size: 52, color: '#ffffff', delay: 90, delayMobile: -52, wobble: 0.73 },
 ];
 
 export default function LandingBanner() {
