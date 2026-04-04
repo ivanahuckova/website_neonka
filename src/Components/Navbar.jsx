@@ -414,10 +414,9 @@ const MobileDrawer = styled.div`
   display: none;
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease;
-  background: linear-gradient(135deg, ${yellowColor} 0%, ${yellowColor} 50%, #ffb0d8 100%);
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s ease;
+  background: ${yellowColor};
   overflow-y: auto;
-  backdrop-filter: blur(2px);
 
   @media (max-width: 768px) {
     display: block;
@@ -468,7 +467,7 @@ const MobileAccordionBody = styled.div`
   overflow: hidden;
   max-height: ${props => (props.nested ? '600px' : '800px')};
   max-height: 0;
-  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: max-height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(0, 0, 0, 0.03);
   padding-left: ${props => (props.nested ? '1rem' : '0')};
 
