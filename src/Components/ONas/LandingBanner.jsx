@@ -5,25 +5,25 @@ import neonkaImg from '../../assets/logo_animated.svg';
 import { pinkColor } from '../../style/colors';
 
 const FISH_PATH =
-  'M25.6249 25.3C29.1249 25.3 34.3249 21.5 36.2249 20C37.6249 21.5 38.7249 22.3 39.6249 22.3C39.8249 22.3 40.1249 22.2 40.3249 22.1C41.6249 21.5 41.7249 19.5 41.7249 18.7C41.7249 18.1 41.6249 15.9 40.3249 15.2C39.3249 14.7 37.9249 15.4 36.2249 17.3C34.2249 15.8 29.1249 12 25.6249 12C21.2249 12 16.8249 17.8 16.6249 18.1C16.3249 18.4 16.3249 18.9 16.6249 19.3C16.7249 19.5 21.1249 25.3 25.6249 25.3ZM22.1249 17.8C22.6249 17.4 23.4249 17.4 23.8249 17.8C24.3249 18.3 24.3249 19 23.8249 19.5C23.4249 20 22.6249 20 22.1249 19.5C21.6249 19.1 21.6249 18.3 22.1249 17.8Z';
+  'M25.7704 19.5C20.1524 19.5 12.9511 13.5191 9.90133 11.2807C7.65416 13.5191 1.97175 17.2497 0.527145 17.2497C0.848169 17.399 0.206121 17.2497 0.527145 17.2497C-1.55951 16.3544 3.2229 10.1938 3.2229 9C3.2229 8.10464 -1.01325 1.87971 1.07341 0.835117C2.67853 0.0889807 7.17263 4.41622 9.90133 7.25154C13.1116 5.01313 20.1524 0 25.7704 0C32.8329 0 42.4019 7.55232 42.7229 8C43.2044 8.44768 43.5838 8.26392 42.2227 9.5C42.0622 9.79845 32.9934 19.5 25.7704 19.5ZM33.6961 6.70778C32.8936 6.11087 31.6095 6.11087 30.9674 6.70778C30.1648 7.45392 30.1648 8.4985 30.9674 9.24464C31.6095 9.99078 32.8936 9.99078 33.6961 9.24464C34.4987 8.64773 34.4987 7.45392 33.6961 6.70778Z';
 
 const FISH_CONFIGS = [
-  { top: '55%', size: 52, color: '#F23695', delay: 0,  delayMobile: 0,   wobble: 0.75 },
-  { top: '28%', size: 52, color: '#ffffff', delay: 5,  delayMobile: -3,  wobble: 1.8  },
-  { top: '18%', size: 52, color: '#F23695', delay: 10, delayMobile: -7,  wobble: 0.88 },
-  { top: '65%', size: 52, color: '#ffffff', delay: 16, delayMobile: -10, wobble: 1.5  },
-  { top: '72%', size: 52, color: '#F23695', delay: 21, delayMobile: -14, wobble: 0.7  },
-  { top: '12%', size: 52, color: '#ffffff', delay: 29, delayMobile: -17, wobble: 2.1  },
-  { top: '32%', size: 52, color: '#F23695', delay: 36, delayMobile: -21, wobble: 1.9  },
-  { top: '48%', size: 52, color: '#ffffff', delay: 42, delayMobile: -24, wobble: 0.82 },
-  { top: '8%',  size: 52, color: '#F23695', delay: 48, delayMobile: -28, wobble: 1.6  },
-  { top: '70%', size: 52, color: '#ffffff', delay: 54, delayMobile: -31, wobble: 0.92 },
-  { top: '62%', size: 52, color: '#F23695', delay: 60, delayMobile: -35, wobble: 0.68 },
-  { top: '22%', size: 52, color: '#ffffff', delay: 66, delayMobile: -38, wobble: 1.45 },
-  { top: '42%', size: 52, color: '#F23695', delay: 72, delayMobile: -42, wobble: 0.78 },
-  { top: '58%', size: 52, color: '#ffffff', delay: 78, delayMobile: -45, wobble: 2.0  },
-  { top: '78%', size: 52, color: '#F23695', delay: 84, delayMobile: -49, wobble: 1.55 },
-  { top: '38%', size: 52, color: '#ffffff', delay: 90, delayMobile: -52, wobble: 0.73 },
+  { top: '64%', size: 34, color: '#F23695', delay: 0,  delayMobile: 0,   wobble: 0.75, duration: 95  },
+  { top: '11%', size: 34, color: '#ffffff', delay: 5,  delayMobile: -3,  wobble: 1,  duration: 108 },
+  { top: '28%', size: 34, color: '#F23695', delay: 10, delayMobile: -7,  wobble: 0.88, duration: 130  },
+  { top: '68%', size: 34, color: '#ffffff', delay: 16, delayMobile: -10, wobble: 1.5,  duration: 70 },
+  { top: '80%', size: 34, color: '#F23695', delay: 21, delayMobile: -14, wobble: 0.7,  duration: 100 },
+  { top: '12%', size: 34, color: '#ffffff', delay: 29, delayMobile: -17, wobble: 2.1,  duration: 92  },
+  { top: '32%', size: 34, color: '#F23695', delay: 36, delayMobile: -21, wobble: 1.9,  duration: 105 },
+  { top: '48%', size: 34, color: '#ffffff', delay: 42, delayMobile: -24, wobble: 0.82, duration: 85  },
+  { top: '8%',  size: 34, color: '#F23695', delay: 48, delayMobile: -28, wobble: 1.6,  duration: 110 },
+  { top: '70%', size: 34, color: '#ffffff', delay: 54, delayMobile: -31, wobble: 0.92, duration: 98  },
+  { top: '62%', size: 34, color: '#F23695', delay: 60, delayMobile: -35, wobble: 0.68, duration: 90  },
+  { top: '22%', size: 34, color: '#ffffff', delay: 66, delayMobile: -38, wobble: 1.45, duration: 115 },
+  { top: '42%', size: 34, color: '#F23695', delay: 72, delayMobile: -42, wobble: 0.78, duration: 102 },
+  { top: '58%', size: 34, color: '#ffffff', delay: 78, delayMobile: -45, wobble: 2.0,  duration: 87  },
+  { top: '78%', size: 34, color: '#F23695', delay: 84, delayMobile: -49, wobble: 1.55, duration: 107 },
+  { top: '38%', size: 34, color: '#ffffff', delay: 90, delayMobile: -52, wobble: 0.73, duration: 93  },
 ];
 
 export default function LandingBanner() {
@@ -36,7 +36,7 @@ export default function LandingBanner() {
             style={{
               '--top': fish.top,
               '--color': fish.color,
-              '--duration': '100s',
+              '--duration': `${fish.duration}s`,
               '--delay': `${fish.delay}s`,
               '--delay-mobile': `${fish.delayMobile}s`,
               '--wobble': `${fish.wobble}s`,
@@ -45,11 +45,11 @@ export default function LandingBanner() {
             <FishBody>
               <svg
                 width={fish.size}
-                height={fish.size}
-                viewBox="0 0 66 66"
+                height={Math.round(fish.size * 20 / 44)}
+                viewBox="0 0 44 20"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                style={{ transform: 'scaleX(-1)' }}
+                style={{ transform: 'scaleX(1)' }}
               >
                 <path d={FISH_PATH} fillRule="evenodd" />
               </svg>
@@ -151,6 +151,11 @@ const FishWrapper = styled.div`
 
 const FishBody = styled.div`
   animation: ${swimWiggle} var(--wobble) ease-in-out infinite;
+
+  @media (max-width: 600px) {
+    transform-origin: left center;
+    scale: 0.75;
+  }
 `;
 
 const LandingHeader = styled.div`
