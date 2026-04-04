@@ -116,11 +116,14 @@ const LogoBubble = styled.div`
   }
 
   @media (max-width: 1000px) {
+    align-self: center;
     width: 160px;
     height: 160px;
   }
 
   @media (max-width: 600px) {
-    display: none;
+    align-self: center;
+    width: 140px;
+    height: 140px;
   }
 `;
