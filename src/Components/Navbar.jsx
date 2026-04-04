@@ -197,11 +197,11 @@ const Nav = styled.nav`
   right: 0;
   z-index: 1000;
   height: 70px;
-  background-color: ${yellowColor};
-  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  background: ${yellowColor};
+  transition: background 0.4s ease, box-shadow 0.4s ease;
 
   &[data-scrolled='true'] {
-    background-color: rgba(242, 54, 149, 0.96);
+    background: rgba(242, 54, 149, 0.96);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     box-shadow: 0 2px 24px rgba(0, 0, 0, 0.12);
@@ -415,8 +415,9 @@ const MobileDrawer = styled.div`
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s ease;
-  background-color: ${yellowColor};
+  background: linear-gradient(135deg, ${yellowColor} 0%, ${yellowColor} 50%, #ffb0d8 100%);
   overflow-y: auto;
+  backdrop-filter: blur(2px);
 
   @media (max-width: 768px) {
     display: block;

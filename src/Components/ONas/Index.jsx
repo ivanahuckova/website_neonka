@@ -40,7 +40,8 @@ export default function General() {
 const Wrapper = styled.div``;
 
 const HeroContainer = styled.div`
-  background-color: ${yellowColor};
+  background: linear-gradient(to bottom, ${yellowColor} 0%, #ffbcdf 100%);
+  // background-color: ${yellowColor};
   padding: 3rem 12vw 12rem;
   display: flex;
   flex-direction: column;

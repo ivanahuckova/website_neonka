@@ -48,7 +48,7 @@ const Container = styled.div`
 `;
 
 const Inner = styled.div`
-  margin: 6rem 0;
+  margin: 2rem 0 4rem;
 `;
 
 const Heading = styled.h3`

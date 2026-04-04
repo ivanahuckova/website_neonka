@@ -27,8 +27,10 @@ const FISH_CONFIGS = [
 ];
 
 export default function LandingBanner() {
+  const showFish = false;
   return (
     <StyledLandingBanner>
+      {showFish &&
       <FishLayer aria-hidden="true">
         {FISH_CONFIGS.map((fish, i) => (
           <FishWrapper
@@ -57,6 +59,7 @@ export default function LandingBanner() {
           </FishWrapper>
         ))}
       </FishLayer>
+      }
       <LandingHeader>
         <h1>
           Vitajte na našej stránke <span className="pink">Neónky!</span>
