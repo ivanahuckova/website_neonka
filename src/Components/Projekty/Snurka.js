@@ -114,7 +114,7 @@ export default function Snurka() {
 
 const VideoContainer = styled.div`
   width: 100%;
-  max-width: 480px;
+  max-width: 900px;
   margin: 2rem auto;
 
   video {

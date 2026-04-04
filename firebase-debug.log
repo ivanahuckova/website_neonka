@@ -1,0 +1,36 @@
+[debug] [2026-04-04T11:18:42.748Z] ----------------------------------------------------------------------
+[debug] [2026-04-04T11:18:42.749Z] Command:       /Users/ivanahuckova/.nvm/versions/node/v25.2.1/bin/node /Users/ivanahuckova/.nvm/versions/node/v25.2.1/bin/firebase deploy
+[debug] [2026-04-04T11:18:42.749Z] CLI Version:   15.5.1
+[debug] [2026-04-04T11:18:42.749Z] Platform:      darwin
+[debug] [2026-04-04T11:18:42.749Z] Node Version:  v25.2.1
+[debug] [2026-04-04T11:18:42.749Z] Time:          Sat Apr 04 2026 13:18:42 GMT+0200 (Central European Summer Time)
+[debug] [2026-04-04T11:18:42.749Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-04T11:18:43.429Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-04T11:18:43.429Z] > authorizing via signed-in user (ivana.huckova@gmail.com)
+[debug] [2026-04-04T11:18:43.429Z] [iam] checking project neonka-2a7b3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-04T11:18:43.430Z] Checked if tokens are valid: false, expires at: 1775299711170
+[debug] [2026-04-04T11:18:43.430Z] Checked if tokens are valid: false, expires at: 1775299711170
+[debug] [2026-04-04T11:18:43.430Z] > refreshing access token with scopes: []
+[debug] [2026-04-04T11:18:43.430Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-04T11:18:43.431Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-04T11:18:43.925Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-04T11:18:43.925Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-04T11:18:43.938Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/neonka-2a7b3:testIamPermissions [none]
+[debug] [2026-04-04T11:18:43.938Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/neonka-2a7b3:testIamPermissions  x-goog-user-project=neonka-2a7b3
+[debug] [2026-04-04T11:18:43.938Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neonka-2a7b3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-04T11:18:44.454Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/neonka-2a7b3:testIamPermissions 200
+[debug] [2026-04-04T11:18:44.454Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/neonka-2a7b3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-04T11:18:44.454Z] Checked if tokens are valid: true, expires at: 1775305122925
+[debug] [2026-04-04T11:18:44.454Z] Checked if tokens are valid: true, expires at: 1775305122925
+[debug] [2026-04-04T11:18:44.454Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/neonka-2a7b3 [none]
+[debug] [2026-04-04T11:18:45.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/neonka-2a7b3 200
+[debug] [2026-04-04T11:18:45.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/neonka-2a7b3 {"projectId":"neonka-2a7b3","projectNumber":"880509159530","displayName":"neonka","name":"projects/neonka-2a7b3","resources":{"hostingSite":"neonka-2a7b3","realtimeDatabaseInstance":"neonka-2a7b3"},"state":"ACTIVE","etag":"1_9a3c8cda-89ec-4cd1-8022-357ed0cc91e4"}
+[info] 
+[info] === Deploying to 'neonka-2a7b3'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-04-04T11:18:45.155Z] Checked if tokens are valid: true, expires at: 1775305122925
+[debug] [2026-04-04T11:18:45.155Z] Checked if tokens are valid: true, expires at: 1775305122925
+[debug] [2026-04-04T11:18:45.155Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/neonka-2a7b3/versions [none]
+[debug] [2026-04-04T11:18:45.155Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/neonka-2a7b3/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

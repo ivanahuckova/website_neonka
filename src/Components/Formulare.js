@@ -32,15 +32,13 @@ export default function Formulare() {
 const Page = styled.div`
   min-height: 100vh;
   background: ${yellowColor};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 2rem;
+  padding: 2.5rem 2rem 5rem;
 `;
 
 const Inner = styled.div`
   max-width: 560px;
   width: 100%;
+  margin: 40px auto 0;
 `;
 
 const Heading = styled.h1`
