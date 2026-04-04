@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-//Assets
-
 import rallyklub from '../../assets/partners/rallyklub.jpg';
 import koliba from '../../assets/partners/kolibaozdany.png';
 import cincuacik from '../../assets/partners/cincuacik.png';
@@ -18,198 +16,116 @@ import magurazborov from '../../assets/partners/magurazborov.jpg';
 import staratrznica from '../../assets/partners/staratrznica.png';
 import straznianjeli from '../../assets/partners/strazni_anjeli.png';
 
-//Colors + Fonts
-import * as colors from '../../style/colors';
-import * as fonts from '../../style/fonts';
+import { pinkColor } from '../../style/colors';
+import { useReveal } from '../../hooks/useReveal';
 
-//Main component
-export default class Partneri extends React.Component {
-  render() {
-    return (
-      <StyledContent id="partneri">
-        <StyledContentSection>
-          <StyledDescribtionCard>
-            <h3 className="heading">Ďakujeme naším partnerom</h3>
-            <PartnersContainer>
-              <PartnersCard>
-                <a href="http://cincuacik.sk" rel="noopener noreferrer" target="_blank">
-                  <img src={cincuacik} alt="logo cincuacik"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="http://rallyshowds.sk" rel="noopener noreferrer" target="_blank">
-                  <img src={rallyklub} alt="logo rally klubu dolna strehova"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://kolibaozdany.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={koliba} alt="logo koliba ozdany"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://invelity.com/" rel="noopener noreferrer" target="_blank">
-                  <img src={invelity} alt="logo invelity"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://modrapupava.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={modrapupava} alt="logo modra pupava"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://www.activeplanet.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={activeplanet} alt="logo active planet"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a
-                  href="https://www.katarinabelicova.sk/mili-priatelia-sportu-a-o-z-crazy-woman-active-planet/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img src={crazywomen} alt="logo crazy women"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://www.instagram.com/panpagacik" rel="noopener noreferrer" target="_blank">
-                  <img src={panpagacik} alt="logo pan pagacik"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://mtbliga.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={nemcianskacyklomotanica} alt="WELDTITE Nemčianska cyklomotanica"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://harmoniachuti.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={akkord} alt="harmonia chuti logo"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://lunastudio.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={luna} alt="luna logo"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://www.facebook.com/staratrznica.bb" rel="noopener noreferrer" target="_blank">
-                  <img src={staratrznica} alt="staratrznica logo"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://www.facebook.com/tjmagura.zborov" rel="noopener noreferrer" target="_blank">
-                  <img src={magurazborov} alt="magurazborov logo"></img>
-                </a>
-              </PartnersCard>
-              <PartnersCard>
-                <a href="https://www.straznianjeli.sk/" rel="noopener noreferrer" target="_blank">
-                  <img src={straznianjeli} alt="oz strazni anjeli presov logo"></img>
-                </a>
-              </PartnersCard>
-            </PartnersContainer>
-          </StyledDescribtionCard>
-        </StyledContentSection>
-      </StyledContent>
-    );
-  }
+const PARTNERS = [
+  { src: cincuacik,               alt: 'Cincuačík',                href: 'http://cincuacik.sk' },
+  { src: rallyklub,               alt: 'Rally klub Dolná Strehová', href: 'http://rallyshowds.sk' },
+  { src: koliba,                  alt: 'Koliba Ozdany',            href: 'https://kolibaozdany.sk/' },
+  { src: invelity,                alt: 'Invelity',                 href: 'https://invelity.com/' },
+  { src: modrapupava,             alt: 'Modrá Púpava',             href: 'https://modrapupava.sk/' },
+  { src: activeplanet,            alt: 'Active Planet',            href: 'https://www.activeplanet.sk/' },
+  { src: crazywomen,              alt: 'Crazy Women',              href: 'https://www.katarinabelicova.sk/mili-priatelia-sportu-a-o-z-crazy-woman-active-planet/' },
+  { src: panpagacik,              alt: 'Pán Pagáčik',              href: 'https://www.instagram.com/panpagacik' },
+  { src: nemcianskacyklomotanica, alt: 'Nemčianska cyklomotanica', href: 'https://mtbliga.sk/' },
+  { src: akkord,                  alt: 'Harmónia Chutí',           href: 'https://harmoniachuti.sk/' },
+  { src: luna,                    alt: 'Luna Studio',              href: 'https://lunastudio.sk/' },
+  { src: staratrznica,            alt: 'Stará Tržnica',            href: 'https://www.facebook.com/staratrznica.bb' },
+  { src: magurazborov,            alt: 'Magura Zborov',            href: 'https://www.facebook.com/tjmagura.zborov' },
+  { src: straznianjeli,           alt: 'Strážni anjeli Prešov',    href: 'https://www.straznianjeli.sk/' },
+];
+
+export default function Partneri() {
+  const ref = useReveal();
+
+  return (
+    <Section id="partneri">
+      <Inner ref={ref} className="reveal">
+        <Eyebrow>Spolupráca</Eyebrow>
+        <Heading>Ďakujeme naším partnerom</Heading>
+        <Sub>Bez ich pomoci by sme nemohli robiť to, čo robíme.</Sub>
+        <Grid>
+          {PARTNERS.map(p => (
+            <PartnerLink key={p.href} href={p.href} rel="noopener noreferrer" target="_blank" title={p.alt}>
+              <img src={p.src} alt={p.alt} />
+            </PartnerLink>
+          ))}
+        </Grid>
+      </Inner>
+    </Section>
+  );
 }
 
-const StyledContent = styled.div`
-  padding: 0 15vw;
-  display: flex;
-  justify-content: center;
-  @media screen and (max-width: 1500px) {
-    padding: 0 10vw;
-  }
-  @media screen and (max-width: 800px) {
-    padding: 0 5vw;
-    margin-top: 0vh;
-  }
-  @media screen and (max-width: 400px) {
-    padding: 7vw;
-    padding-bottom: 3vw;
-  }
+const Section = styled.section`
+  background: #f8f8f8;
+  padding: 6rem 12vw;
+
+  @media (max-width: 1200px) { padding: 5rem 8vw; }
+  @media (max-width: 600px)  { padding: 4rem 5vw; }
 `;
 
-const StyledContentSection = styled.div`
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 15vh 0;
-`;
-
-const StyledDescribtionCard = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+const Inner = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
   text-align: center;
-
-  .heading {
-    color: ${colors.pinkColor};
-    margin-bottom: 40px;
-  }
-  @media screen and (max-width: 1000px) {
-    padding-bottom: 50px;
-  }
-  h3 {
-    font-size: ${fonts.mainHeadingScreen};
-    @media screen and (max-width: 500px) {
-      font-size: ${fonts.mainHeadingMobile};
-    }
-  }
-  .content-div {
-    font-size: ${fonts.textScreen};
-    padding-bottom: 30px;
-    text-align: center;
-    @media screen and (max-width: 1200px) {
-      padding-bottom: 10px;
-    }
-    @media screen and (max-width: 600px) {
-      font-size: ${fonts.textMobile};
-    }
-    .pink {
-      color: ${colors.pinkColor};
-      font-weight: bold;
-    }
-
-    li {
-      margin-top: 15px;
-      .main-part {
-        font-weight: bold;
-      }
-    }
-  }
 `;
 
-const PartnersContainer = styled.div`
-  width: 100%;
+const Eyebrow = styled.p`
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: ${pinkColor};
+  margin: 0 0 0.75rem;
+`;
+
+const Heading = styled.h3`
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem;
+
+  @media (max-width: 500px) { font-size: 1.75rem; }
+`;
+
+const Sub = styled.p`
+  font-size: 1rem;
+  color: #777;
+  margin: 0 0 3rem;
+`;
+
+const Grid = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  a {
-    filter: grayscale(100%);
-    &:hover {
-      cursor: pointer;
-      filter: grayscale(0);
-    }
-  }
+  gap: 2rem 2.5rem;
+
+  @media (max-width: 600px) { gap: 1.5rem 2rem; }
 `;
 
-const PartnersCard = styled.div`
-  height: 100px;
-  margin: 10px;
-  margin-bottom: 30px;
-  @media screen and (max-width: 600px) {
-    margin: 50px;
-    width: 150px;
+const PartnerLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  opacity: 0.55;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.07);
   }
-  @media screen and (max-width: 400px) {
-    margin: 30px;
-  }
+
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-height: 72px;
+    max-width: 130px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
 `;

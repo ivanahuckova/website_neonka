@@ -10,6 +10,7 @@ import { pinkColor } from './style/colors';
 
 //Import components
 import Navbar from './Components/Navbar';
+import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
 import WelcomeModal from './Components/WelcomeModal';
 import General from './Components/ONas/Index';
@@ -37,6 +38,7 @@ function App() {
   return (
     <Router>
       <StyledLandingContainer>
+        <ScrollToTop />
         {showModal && <WelcomeModal visible={showModal} onClickAway={closeModal} closeModal={closeModal} />}
         <Navbar />
         <Switch>
@@ -63,13 +65,17 @@ function App() {
 export default App;
 
 const StyledLandingContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  letter-spacing: 1.1;
+  padding-top: 70px;
+  letter-spacing: 0.01em;
   line-height: 1.7;
+
   a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease, opacity 0.2s ease;
+
     &:hover {
       color: ${pinkColor};
     }

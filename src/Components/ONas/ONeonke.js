@@ -1,101 +1,103 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-//Import icons/images
-import Team from "../../assets/team.jpeg";
+import Team from '../../assets/team.jpeg';
+import { pinkColor } from '../../style/colors';
+import { useReveal } from '../../hooks/useReveal';
 
-//Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
+export default function ONeonke() {
+  const ref = useReveal();
 
-//Main component
-export default function ONas() {
   return (
-    <StyledTeamContainer>
-      <div id="team"></div>
-      <h3>O nás</h3>
-      <StyledPeopleConatiner>
-        <div>
-          Sme 4 mladé pediatričky -{" "}
-          <span className="name">Ninka</span>,{" "}
-          <span className="name">Ľudka</span>,{" "}
-          <span className="name">Žofka</span> a{" "}
-          <span className="name">Mirka</span> z Detskej fakultnej 
-          nemocnice v Banskej Bystrici. Pomáhame od roku 2019 deťom a 
-          rodinám chronicky chorých detí, či už finančne, alebo 
-          prostredníctvom zlepšovania podmienok na našom detskom 
-          oddelení a ambulanciách.
-        </div>
-        <CarouselContainer>
-          <div>
-            <img className="main-img" src={Team} alt="fotografia teamu" />
-          </div>
-        </CarouselContainer>
-      </StyledPeopleConatiner>
-    </StyledTeamContainer>
+    <Container>
+      <div id="team" />
+      <Inner ref={ref} className="reveal">
+        <Heading>O nás</Heading>
+        <Body>
+          <TextBlock>
+            Sme 4 mladé pediatričky –{' '}
+            <span className="name">Ninka</span>,{' '}
+            <span className="name">Ľudka</span>,{' '}
+            <span className="name">Žofka</span> a{' '}
+            <span className="name">Mirka</span> z Detskej fakultnej nemocnice
+            v Banskej Bystrici. Pomáhame od roku 2019 deťom a rodinám chronicky
+            chorých detí, či už finančne, alebo prostredníctvom zlepšovania
+            podmienok na našom detskom oddelení a ambulanciách.
+          </TextBlock>
+          <ImageBlock>
+            <img src={Team} alt="tím Neónky" />
+          </ImageBlock>
+        </Body>
+      </Inner>
+    </Container>
   );
 }
 
-const StyledTeamContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const Container = styled.div`
   position: relative;
-  margin-top: 100px;
-  h3 {
-    color: ${colors.pinkColor};
-    font-size: ${fonts.mainHeadingScreen};
-    text-align: center;
-    @media screen and (max-width: 500px) {
-      font-size: ${fonts.mainHeadingMobile};
-    }
-  }
+  padding: 0 12vw;
+
+  @media (max-width: 1500px) { padding: 0 8vw; }
+  @media (max-width: 800px)  { padding: 0 6vw; }
+  @media (max-width: 600px)  { padding: 0 5vw; }
+
   #team {
     position: absolute;
-    margin-top: -100px;
+    top: -80px;
   }
 `;
 
-const StyledPeopleConatiner = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: ${fonts.textScreen};
-  margin: 0 0 50px 0;
+const Inner = styled.div`
+  margin: 6rem 0;
+`;
+
+const Heading = styled.h3`
+  color: ${pinkColor};
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem;
+
+  @media (max-width: 500px) { font-size: 2rem; }
+`;
+
+const Body = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 15vw;
-  max-width: 100vw;
-  box-sizing: border-box;
+  gap: 2rem;
+`;
+
+const TextBlock = styled.p`
+  font-size: 1.15rem;
+  line-height: 1.75;
+  margin: 0;
+
+  @media (max-width: 600px) { font-size: 1.05rem; }
+
   .name {
-    color: ${colors.pinkColor};
-    font-weight: bold;
-  }
-  @media screen and (max-width: 1100px) {
-    width: 70%;
-    padding: 0;
-  }
-  @media screen and (max-width: 800px) {
-    width: 80%;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: ${fonts.textMobile};
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
+    color: ${pinkColor};
+    font-weight: 700;
   }
 `;
 
-const CarouselContainer = styled.div`
-  margin-top: 30px;
-  width: 75%;
-  @media screen and (max-width: 1000px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 600px) {
-    width: 100%;
-  }
+const ImageBlock = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   img {
-    width: 100%;
+    width: 75%;
+    max-width: 680px;
+    border-radius: 16px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+
+    @media (max-width: 800px) {
+      width: 80%;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 `;

@@ -1,140 +1,129 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
-//Import icons/images
-import neonkaImg from "../../assets/logo_animated.svg";
+import neonkaImg from '../../assets/logo_animated.svg';
+import { pinkColor } from '../../style/colors';
 
-//Colors + Fonts
-import * as colors from "../../style/colors";
-import * as fonts from "../../style/fonts";
-
-//Main component
-export default class LandingBanner extends React.Component {
-  render() {
-    return (
-      <StyledLandingBanner>
-        <LandingHeader>
-          <h1>
-            Vitajte na našej stránke <span className="pink">Neónky!</span>
-          </h1>
-          <div>
-            Sme občianske združenie na pomoc detským pacientom s
-            neonkologickými, často veľmi závažnými ochoreniami. Pomáhame
-            hospitalizovaným deťom na detskom oddelení v Detskej fakultnej
-            nemocnici v Banskej Bystrici a deťom v ambulantnej starostlivosti
-            našej nemocnice. Neónka je známa tým, že svieti v tme. A aj my
-            chceme byť takýmto svetielkom pre všetky choré deti a ich rodiny.
-          </div>
-        </LandingHeader>
-        <LandingBubble>
-          <img className="banner" src={neonkaImg} alt="neonka logo" />
-        </LandingBubble>
-        <LandingBubbleSmall>
-          <img className="banner-small" src={neonkaImg} alt="neonka logo" />
-        </LandingBubbleSmall>
-      </StyledLandingBanner>
-    );
-  }
+export default function LandingBanner() {
+  return (
+    <StyledLandingBanner>
+      <LandingHeader>
+        <h1>
+          Vitajte na našej stránke <span className="pink">Neónky!</span>
+        </h1>
+        <p>
+          Sme občianske združenie na pomoc detským pacientom s neonkologickými,
+          často veľmi závažnými ochoreniami. Pomáhame hospitalizovaným deťom na
+          detskom oddelení v Detskej fakultnej nemocnici v Banskej Bystrici a
+          deťom v ambulantnej starostlivosti našej nemocnice. Neónka je známa
+          tým, že svieti v tme. A aj my chceme byť takýmto svetielkom pre
+          všetky choré deti a ich rodiny.
+        </p>
+      </LandingHeader>
+      <LogoBubble>
+        <img src={neonkaImg} alt="Neónka logo" />
+      </LogoBubble>
+    </StyledLandingBanner>
+  );
 }
 
+const fadeSlideIn = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+const float = keyframes`
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+`;
+
 const StyledLandingBanner = styled.div`
-  margin-top: 130px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 1000px) {
-    align-items: center;
-    justify-content: center;
+  gap: 2rem;
+
+  @media (max-width: 1000px) {
     flex-direction: column;
-  }
-  @media screen and (max-width: 800px) {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  @media screen and (max-width: 600px) {
     align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 130px;
-  }
-  .banner {
-    width: 100%;
-    @media screen and (max-width: 1000px) {
-      height: 20vw;
-      width: 20vw;
-    }
-  }
-`;
-
-const LandingBubbleSmall = styled.div`
-  display: none;
-  @media screen and (max-width: 1000px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    width: 30vw;
-    img {
-      width: 100%;
-      margin: 40px;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    width: 50vw;
-  }
-`;
-
-const LandingBubble = styled.div`
-  height: 18vw;
-  width: 18vw;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 1300px) {
-    height: 18vw;
-    width: 18vw;
-  }
-
-  @media screen and (max-width: 1000px) {
-    width: 0;
-    height: 0;
-    display: none;
+    gap: 1.5rem;
   }
 `;
 
 const LandingHeader = styled.div`
   width: 60%;
-  line-height: 1.6;
-  @media screen and (max-width: 1000px) {
-    width: 75%;
-    text-align: center;
-  }
-  @media screen and (max-width: 800px) {
-    margin-top: 5vh;
+  line-height: 1.65;
+  animation: ${fadeSlideIn} 0.8s ease both;
+
+  @media (max-width: 1000px) {
     width: 100%;
     text-align: left;
   }
-  @media screen and (max-width: 600px) {
-    margin-bottom: 10px;
-  }
-  div {
-    font-size: 1.2rem;
-    padding: 10px 0;
-    @media screen and (max-width: 500px) {
-      font-size: 1.1rem;
-    }
-  }
+
   h1 {
-    font-size: ${fonts.mainHeadingScreen};
-    @media screen and (max-width: 500px) {
-      font-size: ${fonts.mainHeadingMobile};
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem;
+
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+
+    .pink {
+      color: ${pinkColor};
     }
   }
-  .pink {
-    color: ${colors.pinkColor};
+
+  p {
+    font-size: 1.15rem;
+    margin: 0;
+    opacity: 0.85;
+    animation: ${fadeSlideIn} 0.8s 0.15s ease both;
+
+    @media (max-width: 600px) {
+      font-size: 1.05rem;
+    }
+  }
+`;
+
+const LogoBubble = styled.div`
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: ${fadeSlideIn} 0.8s 0.25s ease both;
+
+  img {
+    width: 100%;
+    height: 100%;
+    animation: ${float} 4s ease-in-out infinite;
+  }
+
+  @media (max-width: 1200px) {
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (max-width: 1000px) {
+    align-self: center;
+    width: 160px;
+    height: 160px;
+  }
+
+  @media (max-width: 600px) {
+    align-self: center;
+    width: 140px;
+    height: 140px;
   }
 `;
